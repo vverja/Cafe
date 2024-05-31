@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4ca201f2-6d60-474a-84d9-6f5c534608ef">
+  <name>УстановитьПометкуУдаленияПрисоединенныхФайловДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить пометку удаления присоединенных файлов документы</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Встановити позначку вилучення приєднаних файлів документи</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ЗаказПоставщику</types>
+    <types>DocumentObject.РегистрацияЦенНоменклатурыПоставщика</types>
+    <types>DocumentObject.ВнутреннееПотреблениеТоваров</types>
+    <types>DocumentObject.РеализацияУслугПрочихАктивов</types>
+    <types>DocumentObject.ВозвратТоваровОтКлиента</types>
+    <types>DocumentObject.ВозвратТоваровПоставщику</types>
+    <types>DocumentObject.ВзаимозачетЗадолженности</types>
+    <types>DocumentObject.ВыкупВозвратнойТарыУПоставщика</types>
+    <types>DocumentObject.КорректировкаПоступления</types>
+    <types>DocumentObject.ПланПродаж</types>
+    <types>DocumentObject.АктВыполненныхРабот</types>
+    <types>DocumentObject.ОтчетКомиссионераОСписании</types>
+    <types>DocumentObject.ЗаявкаНаРасходованиеДенежныхСредств</types>
+    <types>DocumentObject.СчетНаОплатуКлиенту</types>
+    <types>DocumentObject.КорректировкаРеализации</types>
+    <types>DocumentObject.СписаниеБезналичныхДенежныхСредств</types>
+    <types>DocumentObject.СверкаВзаиморасчетов</types>
+    <types>DocumentObject.ТаможеннаяДекларацияИмпорт</types>
+    <types>DocumentObject.СписаниеЗадолженности</types>
+    <types>DocumentObject.ПланЗакупок</types>
+    <types>DocumentObject.ВыкупВозвратнойТарыКлиентом</types>
+    <types>DocumentObject.ОтчетКомитенту</types>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.ЗаданиеНаПеревозку</types>
+    <types>DocumentObject.ЗаказКлиента</types>
+    <types>DocumentObject.КоммерческоеПредложениеКлиенту</types>
+    <types>DocumentObject.ОтчетКомиссионера</types>
+    <types>DocumentObject.УстановкаЦенНоменклатуры</types>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.ЗаданиеТорговомуПредставителю</types>
+    <types>DocumentObject.ПланПродажПоКатегориям</types>
+    <types>DocumentObject.ЗаявкаНаВозвратТоваровОтКлиента</types>
+    <types>DocumentObject.ПоступлениеУслугПрочихАктивов</types>
+    <types>DocumentObject.ПланСборкиРазборки</types>
+    <types>DocumentObject.ЗаказНаВнутреннееПотребление</types>
+    <types>DocumentObject.ОжидаемоеПоступлениеДенежныхСредств</types>
+    <types>DocumentObject.ОтчетКомитентуОСписании</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПрисоединенныеФайлы.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</handler>
+</mdclass:EventSubscription>

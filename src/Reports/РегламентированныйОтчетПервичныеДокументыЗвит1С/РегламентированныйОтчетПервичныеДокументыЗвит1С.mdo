@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85ae9c1b-848f-455f-83f9-b935764a34ec">
+  <producedTypes>
+    <objectType typeId="57354f8d-b0dd-4b02-8b75-32a2b6389dae" valueTypeId="c063ebbf-c1d1-4d8b-bc2e-72d34f65d316"/>
+    <managerType typeId="c9d9a53a-ea0c-4012-9bb5-c616dd598aaf" valueTypeId="3e3386c0-9cd4-4f0f-94d0-8ebffc3b8e55"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетПервичныеДокументыЗвит1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Первичные документы (для выгрузки в FREDO ДокМен)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Первинні документи (для вивантаження до FREDO ДокМен)</value>
+  </synonym>
+  <defaultForm>Report.РегламентированныйОтчетПервичныеДокументыЗвит1С.Form.ОсновнаяФорма</defaultForm>
+  <attributes uuid="3792273d-11a9-493f-8df4-a2145ed4afac">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="122fa86a-f1df-4311-8f93-e49d00c33ccc">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="489c8ef6-3097-4213-87f0-a276dd22a5d5">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5fb70042-343b-4a80-8c65-9f7471b3f376">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ade31398-f407-4150-8485-b5a914c5de24">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="16e21380-5995-49e7-9a08-892d2327421b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="26a74124-7e60-49d2-988f-74ccd1d8cf29">
+    <name>ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Первинний документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="5644c190-20f8-4c60-ae8e-4b59a8b2d5b7">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первичные документы (для выгрузки в FREDO ДокМен)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Первинні документи (для вивантаження до FREDO ДокМен)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f574afc0-d9b1-43cc-9fa6-e1dc696e58bd">
+    <name>ФормаОтчетаСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет на оплату,  НДС не начисляется</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок на оплату, ПДВ не нараховується</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4a05e296-6e4d-478a-a520-e6ecc644a8c8">
+    <name>ФормаОтчетаСчетСНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет на оплату, цены с НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок на оплату, ціни з ПДВ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2ec97b93-834c-4684-80e7-6daa6dcb0fb2">
+    <name>ФормаОтчетаСчетБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет на оплату, цены без НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок на оплату, ціни без ПДВ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e64de2f3-9a77-4b60-9b1e-0091b48cb243">
+    <name>ФормаОтчетаАкт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт выполненных работ,  НДС не начисляется</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Акт виконаних робіт, ПДВ не нараховується</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="39be6ac8-a48a-4c43-ac6e-e851b4eeeca5">
+    <name>ФормаОтчетаАктСНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт выполненных работ, цены с НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Акт виконаних робіт, ціни з ПДВ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3eb64e08-33de-4805-9836-8a79b8fa9bd0">
+    <name>ФормаОтчетаАктБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт выполненных работ, цены без НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Акт виконаних робіт, ціни без ПДВ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ba8e3e17-2512-4dcf-99c3-232742a36bda">
+    <name>ФормаОтчетаНакладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Накладная,  НДС не начисляется</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Накладна, ПДВ не нараховується</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6c61bf18-d0f3-4352-86e1-18bc77967ea4">
+    <name>ФормаОтчетаНакладнаяСНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Накладная, цены с НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Накладна, ціни з ПДВ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1345da13-6738-4763-8271-df4aa93b01aa">
+    <name>ФормаОтчетаНакладнаяБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Накладная, цены без НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Накладна, ціни без ПДВ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="53be39b2-cece-4a7f-8e1d-95fc543ed2ea">
+    <name>ФормаОтчетаВозвратнаяНакладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Накладная,  НДС не начисляется</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Накладна, ПДВ не нараховується</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="86c77df1-241c-4635-8d63-0513abd753e1">
+    <name>ФормаОтчетаВозвратнаяНакладнаяСНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Накладная, цены с НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Накладна, ціни з ПДВ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="73d1ecc4-1908-4eef-8d8e-ebc285114f32">
+    <name>ФормаОтчетаВозвратнаяНакладнаяБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Накладная, цены без НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Накладна, ціни без ПДВ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="0c84b3ee-15ef-412b-bb35-202b8952bdf2">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Показатели &quot;FREDO Звіт&quot;</value>
+    </synonym>
+  </templates>
+  <templates uuid="a740d707-2d0f-43ae-a9a5-e1f63144017e">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Состав показателей</value>
+    </synonym>
+  </templates>
+  <templates uuid="17513700-1826-4556-b7ac-be2233e146cf">
+    <name>ФормаОтчетаСчет_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета счет первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета счет первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="c2825d0c-94b4-43e0-bb40-06324e647f7f">
+    <name>ФормаОтчетаСчетСНДС_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета счет СНДС первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета счет СНДС первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="8e518a0c-4652-430c-a4af-8dc9cc7f3c4b">
+    <name>ФормаОтчетаСчетБезНДС_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета счет без НДС первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета счет без НДС первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="2cb76432-d3db-45c9-8b38-aaaada5c575a">
+    <name>ФормаОтчетаАкт_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета акт первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета акт первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="a05edeae-46f2-4356-919e-edeb711df3cd">
+    <name>ФормаОтчетаАктСНДС_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета акт СНДС первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета акт СНДС первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="9e03aaaa-5ec0-4c07-813f-d26c7e6f0980">
+    <name>ФормаОтчетаАктБезНДС_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета акт без НДС первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета акт без НДС первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="eb620ded-6b5e-4e41-b318-18917f6c875b">
+    <name>ФормаОтчетаНакладная_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета накладная первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета накладная первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="5a594759-53d0-4cae-b5f6-d52955b1fa51">
+    <name>ФормаОтчетаНакладнаяСНДС_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета накладная СНДС первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета накладная СНДС первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="0325d84f-be63-4c99-9cb7-f4fdb8c427c8">
+    <name>ФормаОтчетаНакладнаяБезНДС_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета накладная без НДС первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета накладная без НДС первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="114aa696-75a8-458b-8d05-ec48556f40cf">
+    <name>ФормаОтчетаСчет2020_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета счет2020 первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета счет2020 первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="864a30ea-fa7c-4211-8c82-48eb3da20860">
+    <name>ФормаОтчетаСчетСНДС2020_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета счет СНДС2020 первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета счет СНДС2020 первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="c16f6183-c07a-44fd-bf3c-4bf857a1f765">
+    <name>ФормаОтчетаСчетБезНДС2020_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета счет без НДС2020 первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета счет без НДС2020 первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="51bb7cd2-cdaf-4896-ae4b-69343df6a333">
+    <name>ФормаОтчетаВозвратнаяНакладнаяСНДС_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета возвратная накладная СНДС первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета возвратная накладная СНДС первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="f75138d5-969f-484b-951c-b58383e1cdc2">
+    <name>ФормаОтчетаВозвратнаяНакладнаяБезНДС_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета возвратная накладная без НДС первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета возвратная накладная без НДС первичный документ</value>
+    </synonym>
+  </templates>
+  <templates uuid="e8eca4a2-bcf6-4ab3-b28e-fab17b539952">
+    <name>ФормаОтчетаВозвратнаяНакладная_ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета возвратная накладная первичный документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета возвратная накладная первичный документ</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

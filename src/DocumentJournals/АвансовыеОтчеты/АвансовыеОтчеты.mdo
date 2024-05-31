@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f294e80d-7a47-4be6-807a-5fd807c73e7b">
+  <producedTypes>
+    <selectionType typeId="720f078a-5afb-44d2-b90c-1597e976dc70" valueTypeId="14258287-0a05-4913-a017-52b50f7223c0"/>
+    <listType typeId="f88e9db4-77de-44f0-b839-6361deb40734" valueTypeId="4cc920b2-7b95-47b8-926c-8b652426478d"/>
+    <managerType typeId="89dea8d8-309f-4a96-af8e-acf426ffb517" valueTypeId="7282978d-17b6-4a4f-aa08-de351359b51b"/>
+  </producedTypes>
+  <name>АвансовыеОтчеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Авансовые отчеты</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Авансові звіти</value>
+  </synonym>
+  <defaultForm>DocumentJournal.АвансовыеОтчеты.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.АвансовыйОтчет</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеТоваровУслуг</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеУслугПрочихАктивов</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="7d51f925-7895-481c-a474-6bcc86f24184">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.АвансовыйОтчет.Attribute.Организация</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.Организация</references>
+    <references>Document.ПоступлениеУслугПрочихАктивов.Attribute.Организация</references>
+  </columns>
+  <columns uuid="b32f8663-0ad7-4f19-9e86-0b78e6fefc4c">
+    <name>ПодотчетноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подотчетное лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підзвітна особа</value>
+    </synonym>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.АвансовыйОтчет.Attribute.ПодотчетноеЛицо</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.ПодотчетноеЛицо</references>
+    <references>Document.ПоступлениеУслугПрочихАктивов.Attribute.ПодотчетноеЛицо</references>
+  </columns>
+  <columns uuid="a5913565-50fe-4769-9f9f-7157a862b125">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.АвансовыйОтчет.Attribute.Валюта</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.Валюта</references>
+    <references>Document.ПоступлениеУслугПрочихАктивов.Attribute.Валюта</references>
+  </columns>
+  <columns uuid="b913daf3-d042-4a85-a41c-733153d004e9">
+    <name>Израсходовано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Израсходовано</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрачено</value>
+    </synonym>
+    <references>Document.АвансовыйОтчет.Attribute.СуммаИзрасходовано</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.СуммаДокумента</references>
+    <references>Document.ПоступлениеУслугПрочихАктивов.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="edc7916b-36c6-436d-a4cb-def46456ea3c">
+    <name>Отклонено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отклонено</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відхилено</value>
+    </synonym>
+    <references>Document.АвансовыйОтчет.Attribute.СуммаОтклонено</references>
+  </columns>
+  <columns uuid="a8dc23f0-8d6f-4907-86b2-879fb92f7b43">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственная операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Господарська операція</value>
+    </synonym>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ПоступлениеУслугПрочихАктивов.Attribute.ХозяйственнаяОперация</references>
+  </columns>
+  <columns uuid="25bfe6d4-1d8c-427e-9e3c-2cc75aff6c40">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Статус</value>
+    </synonym>
+    <references>Document.АвансовыйОтчет.Attribute.Статус</references>
+  </columns>
+  <columns uuid="26db7b1c-db71-4ede-ba17-3db608ef31ca">
+    <name>НазначениеАванса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение аванса</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Призначення авансу</value>
+    </synonym>
+    <references>Document.АвансовыйОтчет.Attribute.НазначениеАванса</references>
+    <references>Document.ПоступлениеТоваровУслуг.Attribute.НазначениеАванса</references>
+    <references>Document.ПоступлениеУслугПрочихАктивов.Attribute.НазначениеАванса</references>
+  </columns>
+  <forms uuid="d1ace12d-28fb-4c60-802d-fad6f5b01dac">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

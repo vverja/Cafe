@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7fe096b3-0cbb-41d6-91d7-b6dee1ce5573">
+  <producedTypes>
+    <selectionType typeId="69bfe078-af24-464f-b578-0790f2e7cc1e" valueTypeId="84eaff07-a703-4401-9454-3e4a6d678345"/>
+    <listType typeId="d7381534-cb2f-4579-a18e-0aed4278d218" valueTypeId="49bfab35-7a88-4b33-a5d0-744a566d7cfc"/>
+    <managerType typeId="bb71d9b5-2cc7-402f-aef2-83eef0ca8984" valueTypeId="d4ead711-2218-4398-aadc-5622a512ae92"/>
+    <recordSetType typeId="401ae1d0-6e65-4c40-bf2a-ad30bfb6fbe3" valueTypeId="1ce68fe3-7e33-467c-b1c1-ab4772b2a081"/>
+    <recordKeyType typeId="a0ea6b22-e917-47d9-9af9-41258cf58595" valueTypeId="e8b7e9d8-d243-4f99-88f8-2b5c8f43cf3e"/>
+    <recordType typeId="34cf6179-ecaa-413f-86d6-e3a5aece1c9f" valueTypeId="a26d6349-66c0-4a5b-9683-8aef9907ed9a"/>
+    <recordManagerType typeId="6892c849-ad6e-4ebe-b448-efad003083b3" valueTypeId="a937a629-0e1e-4b4f-a259-d3d72d5364ff"/>
+  </producedTypes>
+  <name>ПараметрыНалоговогоУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры налогового учета</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Параметри податкового обліку</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПараметрыНалоговогоУчета.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПараметрыНалоговогоУчета.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="640c9919-bfbd-4506-bb93-cb39c715e297">
+    <name>ОбъемДоходаЕНПерваяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщика единого налога первой группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платника єдиного податку першої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="05d624ee-fe19-476c-9632-a076d6cec20e">
+    <name>ОбъемДоходаЕНВтораяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога второй группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку другої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7494ef4b-2124-4aba-bf28-1967e395857d">
+    <name>ОбъемДоходаЕНТретьяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога третьей группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку третьої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a8214fb8-fd22-4a3a-9246-4684e7127b29">
+    <name>ОбъемДоходаЕНЧетвертаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога четвертой группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку четвертої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6ee78406-0946-4641-8f00-182a659f4104">
+    <name>ОбъемДоходаЕНПятаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога пятой группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку п'ятої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8459705b-549b-42a0-b0d0-6af1fd94d271">
+    <name>ОбъемДоходаЕНШестаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога шестой группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку шостої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <forms uuid="51c1d4aa-e5a2-4b9e-be33-bcf47697f2c5">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9417a73b-19ce-4743-a7ed-4c7fa3de090d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5ca3bebc-848c-4fb3-a7cb-482f7fe795df">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

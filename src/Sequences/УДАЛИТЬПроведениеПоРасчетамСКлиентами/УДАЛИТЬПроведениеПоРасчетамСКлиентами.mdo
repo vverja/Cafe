@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef77c003-8338-4984-9cf2-30b71ba38b21">
+  <producedTypes>
+    <recordType typeId="c04c32db-d794-4967-b2c3-c99b036353ca" valueTypeId="eb05f704-8516-4323-a6f1-caa2a30d6b8a"/>
+    <managerType typeId="3ef865f1-2215-436c-8e6e-c86ba8944066" valueTypeId="b86821f0-61cc-4a64-9e3d-9d4032ecdde3"/>
+    <recordSetType typeId="52bfec20-fc96-4f02-84e0-cbde0a5086c7" valueTypeId="887e54d8-752f-483c-bd39-8dc36b4777df"/>
+  </producedTypes>
+  <name>УДАЛИТЬПроведениеПоРасчетамСКлиентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Проведение по расчетам с клиентами</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Проведення за розрахунками з клієнтами</value>
+  </synonym>
+  <moveBoundaryOnPosting>DontMove</moveBoundaryOnPosting>
+  <documents>Document.ВзаимозачетЗадолженности</documents>
+  <documents>Document.ПередачаТоваровМеждуОрганизациями</documents>
+  <documents>Document.ВозвратТоваровОтКлиента</documents>
+  <documents>Document.ОперацияПоПлатежнойКарте</documents>
+  <documents>Document.ОтчетКомиссионера</documents>
+  <documents>Document.РеализацияТоваровУслуг</documents>
+  <documents>Document.СписаниеБезналичныхДенежныхСредств</documents>
+  <documents>Document.СписаниеЗадолженности</documents>
+  <documents>Document.РасходныйКассовыйОрдер</documents>
+  <documents>Document.ПриходныйКассовыйОрдер</documents>
+  <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
+  <documents>Document.ЗаказКлиента</documents>
+  <documents>Document.ОтчетКомитенту</documents>
+  <documents>Document.ВводОстатков</documents>
+  <documents>Document.ОтчетКомиссионераОСписании</documents>
+  <documents>Document.ОтчетПоКомиссииМеждуОрганизациями</documents>
+  <documents>Document.ЗаявкаНаВозвратТоваровОтКлиента</documents>
+  <documents>Document.АктВыполненныхРабот</documents>
+  <documents>Document.ВозвратТоваровМеждуОрганизациями</documents>
+  <documents>Document.РеализацияУслугПрочихАктивов</documents>
+  <documents>Document.ВыкупВозвратнойТарыКлиентом</documents>
+  <registerRecords>AccumulationRegister.РасчетыСКлиентами</registerRecords>
+  <dimensions uuid="5579aa39-33ce-41f4-90a7-99874f13ab81">
+    <name>АналитикаУчетаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку за партнерами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоПартнерам</types>
+    </type>
+    <registerRecordsMap>AccumulationRegister.РасчетыСКлиентами.Dimension.АналитикаУчетаПоПартнерам</registerRecordsMap>
+  </dimensions>
+</mdclass:Sequence>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34071d89-4cc8-4362-b67f-01635df3ac9c">
+  <producedTypes>
+    <selectionType typeId="f3606969-53d4-42bb-816c-c0ee3ac57566" valueTypeId="3c0d94e8-e48f-4e9f-a957-9d0040a39fe5"/>
+    <listType typeId="bdd02cd1-1345-4e1b-b22c-6a6899b6f4b1" valueTypeId="c07a8237-f79c-4da2-ac71-f8fc86936913"/>
+    <managerType typeId="11acda2f-de97-4019-bdd8-9505f96a3a87" valueTypeId="79106a55-402c-4763-8948-38318a739ab0"/>
+    <recordSetType typeId="e232cc4b-6d26-464f-846c-47681ed0198a" valueTypeId="92f0e57f-bd9c-4c6d-99a8-ce971078d4df"/>
+    <recordKeyType typeId="058d5606-a276-4d53-8bef-b00e4ce69a3e" valueTypeId="c5935ee7-4582-4b65-ab67-a5db79646a7b"/>
+    <recordType typeId="5716c349-fe36-4aee-86b7-fd0fdde54251" valueTypeId="ca62aaf0-6fad-49fc-8f24-17388b4ab2d5"/>
+  </producedTypes>
+  <name>УДАЛИТЬДенежныеСредстваКСписаниюБезналичные</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Денежные средства к списанию (безналичные)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Грошові кошти до списання (безготівкові)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.УДАЛИТЬДенежныеСредстваКСписаниюБезналичные.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="19b0e75a-3030-44a2-9846-49f45c4e99ac">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума грошових коштів</value>
+    </toolTip>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="1a95c16d-e93e-4d27-83f6-5d9413474689">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственная операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Господарська операція</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ХозяйственныеОперации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хозяйственая операция, по которой отражены движения денежных средств.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Господаська операція, по якій відображені рухи грошових коштів.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4b08aeed-fa61-4659-a045-8bc05374b153">
+    <name>АналитикаУчетаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку за партнерами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоПартнерам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику расчетов с поставщиками и клиентами.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Визначає аналітику розрахунків з постачальниками і клієнтами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b35c7855-602e-48b3-99a4-4c5cd099689d">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Замовлення</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказПоставщику</types>
+      <types>DocumentRef.ЗаказКлиента</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ клиента или заказ поставщику, по которому производится поступление или списание денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Замовлення клієнта або замовлення постачальнику, за яким проводиться надходження або списання грошових коштів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="0914ab8a-161f-4749-8f24-6cdbd65d4264">
+    <name>СтатьяДвиженияДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья ДДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття РГК</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиДвиженияДенежныхСредств</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья движения денежных средств, по которой планируется списание безналичных денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Стаття руху грошових коштів, за якою планується списання безготівкових коштів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="961e1ca3-d063-42c5-a829-81d895a79b76">
+    <name>ТипДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тип грошових коштів</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УДАЛИТЬТипыДенежныхСредствКСписанию</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип денежных средств, отраженных к списанию с банковского счета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Тип грошових коштів, відображених до списання з банківського рахунку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d4395982-d176-485d-8825-eae63f7316bd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, по которой ведется учет безналичных денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація, по якій ведеться облік безготівкових коштів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1e3319e3-0d31-4969-b43d-332052b09afe">
+    <name>БанковскийСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Банківський рахунок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанковскиеСчетаОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет организации, с которого будут списаны денежные средства</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Банківський рахунок організації, з якого будуть списані грошові кошти</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0e1e8c9b-e2c9-473e-a748-28007952bb1d">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+      <types>DocumentRef.ОперацияПоПлатежнойКарте</types>
+      <types>DocumentRef.СписаниеБезналичныхДенежныхСредств</types>
+      <types>DocumentRef.ОтчетБанкаПоОперациямЭквайринга</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, которым оформлено списание денежных средств с банковского счета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Документ, яким оформлено списання грошових коштів з банківського рахунку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="803cac82-63ad-43fc-89ea-21382417ba79">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

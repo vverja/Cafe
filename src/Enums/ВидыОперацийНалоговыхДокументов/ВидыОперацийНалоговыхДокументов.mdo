@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="18f41a3e-35d9-4fc4-96c9-e069b6d366a0">
+  <producedTypes>
+    <refType typeId="a8786d7a-eb64-40ba-87ca-f198f9d13811" valueTypeId="3f14f9f3-b1f6-4c9b-9c97-829c78f10160"/>
+    <listType typeId="d248b1ca-2eb7-4289-a4a2-818f25f5d11b" valueTypeId="286a071a-cb26-4e92-a1c1-204875de9f0e"/>
+    <managerType typeId="7763aa06-3f69-4f87-8603-7deafd5eda8e" valueTypeId="c91c5192-e3d8-4d01-ac5c-12bc50ab9d21"/>
+  </producedTypes>
+  <name>ВидыОперацийНалоговыхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций налоговых документов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Види операцій податкових документів</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5d44b43f-bccd-4db0-aeef-a48b5493ab51">
+    <name>ОблагаемыеОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операции, облагаемые НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Операції, оподатковувані ПДВ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3905d9ab-1674-4db0-b6ca-2b826544cf32">
+    <name>ОсвобожденныеОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операции, освобожденные от НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Операції, звільнені від ПДВ</value>
+    </synonym>
+    <comment>Операции, освобожденные от НДС (п.5)</comment>
+  </enumValues>
+  <enumValues uuid="05147f02-c7ad-46b3-92c9-227e954fad1d">
+    <name>НеНДСОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операции, не являющиеся объектом налогообложения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Операції, що не є об'єктом оподатковування</value>
+    </synonym>
+    <comment>Операции, не объекты налогообложения по НДС (п. 3.2)</comment>
+  </enumValues>
+  <enumValues uuid="e52c3e17-48c3-449c-a49d-2b11c9c73f17">
+    <name>ИтоговаяРозницаОблагаемыеОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Итоговая в рознице по операциям, облагаемым НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підсумкова в роздробі по операціях, оподатковуваних ПДВ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8993fe4a-1673-4788-9875-97cb6045bf25">
+    <name>ИтоговаяРозницаОсвобожденныеОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Итоговая в рознице по операциям, освобожденным от НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підсумкова в роздробі за операціями, що звільнені від ПДВ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="55eccca0-73de-4acf-89cf-f3b4d492ea05">
+    <name>УсловнаяПродажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условная продажа при использовании</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Умовний продаж при використанні</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6352f729-221d-47c8-b866-6e8fd934e6cd">
+    <name>СводнаяУсловнаяПродажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условная продажа при приобретении</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Умовний продаж при придбанні</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="318c638d-d0aa-4521-86b2-cbbd2ace260f">
+    <name>УсловнаяПродажаНеоборотныхАктивов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условная продажа необоротных активов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Умовний продаж необоротних активів</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a959879f-eade-4b94-8857-188325d4147a">
+    <name>РозницаКонрагентуОблагаемыеОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализация в розницу плательщику НДС по облагаемому НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Реалізація в роздріб платнику ПДВ по оподатковуваному ПДВ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="be46aad2-bf54-4c2f-90c5-43b8f1d7a345">
+    <name>РозницаКонрагентуОсвобожденныеОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализация в розницу плательщику НДС по освобожденному НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Реалізація в роздріб платнику ПДВ по звільненому ПДВ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d583156a-5c25-4489-b385-8faa630f5f6c">
+    <name>РаботыОтНерезидента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работы от нерезидента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Роботи від нерезидента</value>
+    </synonym>
+    <comment>Работы, полученные от нерезидента</comment>
+  </enumValues>
+  <enumValues uuid="cce1a3f6-178b-43d7-a235-e9bd5a78dd87">
+    <name>ПродажаНижеОбычнойЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Превышение базы над ценой поставки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Перевищення бази над ціною поставки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="639fa376-dbdb-4bff-8e6b-a4adeeac7eca">
+    <name>УсловнаяПродажаСписаниеОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ликвидация ОС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ліквідація ОЗ</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

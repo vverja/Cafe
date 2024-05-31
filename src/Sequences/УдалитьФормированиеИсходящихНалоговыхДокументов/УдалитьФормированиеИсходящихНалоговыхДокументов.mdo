@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fe8cc0f-fb72-4aa7-b890-a63586e0d468">
+  <producedTypes>
+    <recordType typeId="5b768575-a861-4b0a-b708-4607cc2c6679" valueTypeId="74c76736-f01a-4ccd-b861-81b6c4134cba"/>
+    <managerType typeId="32db3e71-84ed-4119-bac0-4eef13ffc36a" valueTypeId="aea67966-16a9-433a-9914-bc9d6845d8b1"/>
+    <recordSetType typeId="946ad105-dafe-444c-b54b-d52f1a4cff59" valueTypeId="4f235faa-06bd-42c2-95f6-6c80386a940d"/>
+  </producedTypes>
+  <name>УдалитьФормированиеИсходящихНалоговыхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не используется) Формирование исходящих налоговых документов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(Не використовується) Формування вихідних податкових документів</value>
+  </synonym>
+  <moveBoundaryOnPosting>DontMove</moveBoundaryOnPosting>
+  <documents>Document.ОтчетКомиссионера</documents>
+  <documents>Document.РеализацияТоваровУслуг</documents>
+  <documents>Document.АктВыполненныхРабот</documents>
+  <documents>Document.РеализацияУслугПрочихАктивов</documents>
+  <documents>Document.ОтчетОРозничнойВыручке</documents>
+  <documents>Document.ОтчетОРозничныхПродажах</documents>
+  <documents>Document.ПередачаТоваровМеждуОрганизациями</documents>
+  <documents>Document.ВозвратТоваровОтКлиента</documents>
+  <documents>Document.ВводОстатков</documents>
+  <documents>Document.ВзаимозачетЗадолженности</documents>
+  <documents>Document.ВозвратТоваровМеждуОрганизациями</documents>
+  <documents>Document.ЗаказКлиента</documents>
+  <documents>Document.ЗаявкаНаВозвратТоваровОтКлиента</documents>
+  <documents>Document.ОперацияПоПлатежнойКарте</documents>
+  <documents>Document.ОтчетКомитенту</documents>
+  <documents>Document.ОтчетПоКомиссииМеждуОрганизациями</documents>
+  <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
+  <documents>Document.ПриходныйКассовыйОрдер</documents>
+  <documents>Document.РасходныйКассовыйОрдер</documents>
+  <documents>Document.СписаниеБезналичныхДенежныхСредств</documents>
+  <documents>Document.СписаниеЗадолженности</documents>
+  <registerRecords>AccumulationRegister.НДСРасчетНалоговыхОбязательств</registerRecords>
+  <registerRecords>AccumulationRegister.РасчетыСКлиентами</registerRecords>
+  <registerRecords>AccumulationRegister.НДСНоменклатурныйСоставДляНалоговыхНакладных</registerRecords>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="056c0c10-5f24-4c32-b347-941fc77dc95f">
+    <name>АналитикаУчетаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку за партнерами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоПартнерам</types>
+    </type>
+    <registerRecordsMap>AccumulationRegister.НДСРасчетНалоговыхОбязательств.Dimension.АналитикаУчетаПоПартнерам</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.РасчетыСКлиентами.Dimension.АналитикаУчетаПоПартнерам</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.НДСНоменклатурныйСоставДляНалоговыхНакладных.Dimension.АналитикаУчетаПоПартнерам</registerRecordsMap>
+  </dimensions>
+</mdclass:Sequence>

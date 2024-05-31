@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="89770278-2425-4e5f-9edb-0fbbda2c20cb">
+  <name>КонтрольНеразделенныхОбъектовПриЗаписиБРО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных объектов при записи БРО</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Контроль неподілених об'єктів при запису БРО</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.РегламентированныеОтчеты</types>
+  </source>
+  <event>FillCheckProcessing</event>
+  <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхОбъектовПриЗаписи</handler>
+</mdclass:EventSubscription>

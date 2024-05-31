@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="492f859c-898a-4672-ab31-9d0ca13acabc">
+  <producedTypes>
+    <refType typeId="d18f8feb-b37e-47f1-a2d4-8f34f5510b3b" valueTypeId="e0ee36bb-c9c2-4a56-9b9a-346b0c3c3bc6"/>
+    <listType typeId="b40b5834-760b-406a-ad08-7c702839563f" valueTypeId="28f905bc-47ef-4471-916e-8e7086beaf16"/>
+    <managerType typeId="f308fd84-cf80-45e0-b565-5ca7dbd1401a" valueTypeId="3d3b6ccc-985d-4978-b501-c42e77f5ea98"/>
+  </producedTypes>
+  <name>ТипыНалогообложенияНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы налогообложения НДС</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Типи оподаткування ПДВ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Определяет возможный тип налогообложения продажи товаров налогом на добавленную стоимость</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Визначає можливий тип оподаткування продажу товарів податком на додану вартість</value>
+  </explanation>
+  <enumValues uuid="127d0818-4cdb-4ef5-8c34-d4d285a68c79">
+    <name>ПоФактическомуИспользованию</name>
+    <synonym>
+      <key>ru</key>
+      <value>По фактическому использованию</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>По фактичному використанню</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9f70eac4-2b8c-4400-9fb7-f3d4230ad33e">
+    <name>ПродажаНаЭкспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа на экспорт (ставка 0%)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Продаж на експорт (ставка 0%)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5df46640-a48c-42a3-84ec-3c9f97ce2844">
+    <name>ПродажаНеОблагаетсяНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставка не облагается НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Постачання не оподатковується ПДВ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="507f3953-94e1-46ef-8c8d-0688fd890a1d">
+    <name>ПродажаОблагаетсяНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставка облагается НДС по основной ставке</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Постачання оподатковується ПДВ за основною ставкою</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="636a928d-dc9c-49ba-9526-3bcefc2fdff5">
+    <name>ПродажаОсвобожденаОтНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставка освобождена от НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Постачання звільнено від ПДВ</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

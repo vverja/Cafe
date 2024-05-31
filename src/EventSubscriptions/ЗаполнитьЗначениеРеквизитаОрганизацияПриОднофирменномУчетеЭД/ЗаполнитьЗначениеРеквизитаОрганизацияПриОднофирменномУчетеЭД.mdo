@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d81b312a-fb9b-4e55-8d61-d6ab6768ec43">
+  <name>ЗаполнитьЗначениеРеквизитаОрганизацияПриОднофирменномУчетеЭД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнить значение реквизита организация при однофирменном учете ЭД</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Заповнити значення реквізиту організація при однофирменном обліку ЕД</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ПроизвольныйЭД</types>
+    <types>DocumentObject.ПакетЭД</types>
+  </source>
+  <event>Filling</event>
+  <handler>CommonModule.ОбменСКонтрагентамиПереопределяемый.ЗаполнитьЗначениеРеквизитаОрганизацияПриОднофирменномУчетеОбработкаЗаполнения</handler>
+</mdclass:EventSubscription>

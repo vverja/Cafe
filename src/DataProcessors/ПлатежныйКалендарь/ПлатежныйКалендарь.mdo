@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3dfbe09c-0d9d-4542-a494-0ef115b92e2a">
+  <producedTypes>
+    <objectType typeId="d9bc5c6d-a3c6-4bf7-bae7-99e18f7b3853" valueTypeId="b3e6536e-cfbd-42de-961f-700557cd6c86"/>
+    <managerType typeId="d35e54f5-f603-4bbe-87d4-eefb23a3a7df" valueTypeId="543c2036-1b2d-4da3-9474-e1df2c5fe0a7"/>
+  </producedTypes>
+  <name>ПлатежныйКалендарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Платежный календарь</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Платіжний календар</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПлатежныйКалендарь.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="ad094ea9-6749-4dd7-b610-1f7c3b6d33e9">
+    <name>ДнейПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней планирования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Днів планування</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Число дней на которые требуется распределить заявки</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Число днів, на які потрібно розподілити заявки</value>
+    </toolTip>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>31</value>
+    </maxValue>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="19778251-77a5-4443-976c-4ea0fcaba749">
+    <name>ПланироватьСДаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планировать с даты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Планувати з дати</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, начиная с которой будут распределяться заявки</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата, починаючи з якої будуть розподілятися заявки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="74ca8e19-0269-4c31-87dd-f294cf6e0b7b">
+    <name>ОтображатьНеутвержденные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отображать неутвержденные заявки на расходование денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відображати незатверджені заявки на витрачання грошових коштів</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если флаг не указан - то в платежном календаре отображаются только заявки в статусах &quot;Согласована&quot; и &quot;К оплате&quot;.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Якщо прапорець не встановлений - у платіжному календарі відображаються тільки заявки в статусах &quot;Погоджено&quot; та &quot;До оплати&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2a5d08dd-e10e-49bd-9c23-4698d378c7da">
+    <name>ЗаказыПокупателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы покупателей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Замовлення покупців</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6fa82fde-8e7a-47cc-a664-44240e5e7dd6">
+    <name>ЗаказыПоставщикам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы поставщикам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Замовлення постачальникам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bc9429ce-da20-42a9-8924-ae60d8f836d6">
+    <name>ВозвратыТоваровОтКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возвраты товаров от клиента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Повернення товарів від клієнта</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="87d8d4c2-a8cc-4fde-a887-7c1f350e98be">
+    <name>ВозвратыТоваровПоставщику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возвраты товаров поставщику</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Повернення товарів постачальнику</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6dd736cf-914f-41f2-8741-61a0fc0730f4">
+    <name>ВедомостиНаВыплатуЗарплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомости на выплату зарплаты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відомості на виплату зарплати</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f5e50c32-2d43-424c-8c0f-94a94d9c3069">
+    <name>СчетаНаОплатуПокупателям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счета на оплату покупателям</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунки на оплату покупцям</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fda928d2-5ee2-49ee-b0e5-c6505d4efe3c">
+    <name>ПоступленияПоФинансовойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления по финансовой деятельности (кредиты и депозиты)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження за фінансовою діяльністю (кредити і депозити)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bc260738-ec2f-410b-b79f-e9f1bb9786e3">
+    <name>РасходыПоФинансовойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы по финансовой деятельности (кредиты и депозиты)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрати за фінансовою діяльністю (кредити і депозити)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c1a67ba3-64e6-4a25-b4f5-6cc54dbcfbd9">
+    <name>ПоступленияПоЭквайрингу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления по эквайрингу</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження за еквайрингом</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="db2ef584-8249-468e-b1e5-e8ad478a7daa">
+    <name>ОтображениеСумм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отображение сумм</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відображення сум</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОтображениеСуммВПлатежномКалендаре</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2e6e99a9-6d6e-4d12-b020-77ce245a07f9">
+    <name>ТекущаяГруппировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущая группировка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Поточне групування</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c7c28bf3-8846-414f-a412-6f75e18f9f00">
+    <name>ОтражатьОтрицательныеСуммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отрицательные суммы в ячейках календаря</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Від'ємні суми в комірках календаря</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОтображениеОтрицательныхСуммВПлатежномКалендаре</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6cbd431c-df55-4a61-875d-7aac4ce96ac8">
+    <name>ОтображатьНераспределенныеПоСчетамПоступленияИСписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отображать нераспределенные по счетам поступления и списания</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відображати нерозподілені за рахунками надходження і списання</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="da879328-8608-4bea-b4bf-fd2d3d85a8ef">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="814ce948-757f-4b45-a63d-b169c3837e1a">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма настройок</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dc86290b-a427-464e-b884-2687eb739871">
+    <name>ВыбранныеСчетаИКассы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбранные счета и кассы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вибрані рахунки та каси</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b87db646-303d-4c6b-bb49-b8e9876370b9">
+    <name>ДанныеПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные планирования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дані планування</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="998c070e-60da-4d98-87cc-88cb9859fc02">
+    <name>ТекущиеОстаткиДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущие остатки ДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Поточні залишки грошових коштів</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="9f153bb2-55b3-4b36-bab3-8ae11d3117bb">
+    <name>ЗаявкиЗаПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки за период</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Заявки за період</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="6f08a4a7-3b31-4157-b217-df0f380a4878">
+    <name>ДанныеПоРасчетам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные по расчетам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дані за розрахунками</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="cae14a6a-ceca-431a-9d6d-c01da6cf36e9">
+    <name>ПлатежныйКалендарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежный календарь</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платіжний календар</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3016de38-69d3-4317-9d3c-86d3bbf5f327">
+  <producedTypes>
+    <selectionType typeId="7d1db855-725b-4e98-9d16-c64202040e6f" valueTypeId="3a98d07f-04a8-45b9-a68f-b7f98429503f"/>
+    <listType typeId="78504963-b1d2-4726-883e-65979a7cfe89" valueTypeId="9d67c6d5-860d-4909-b195-60ea2f992129"/>
+    <managerType typeId="d06481ff-9c1f-469d-a691-10881b1f29f3" valueTypeId="e7b97520-acda-4c8f-8834-4762c6d4dddb"/>
+    <recordSetType typeId="aa2840ee-8ea4-47c7-b627-46224c8b4dfa" valueTypeId="430d923d-8735-4726-810c-f0fbb9185eb2"/>
+    <recordKeyType typeId="d1dec0ea-f04f-41b4-8c55-2b34246ef915" valueTypeId="27e84fd9-0e21-4c23-ae36-b01df6569c04"/>
+    <recordType typeId="58f39fdb-bd94-4374-8780-42865c49d0a2" valueTypeId="c6ab0dfd-cbf4-4fcd-8a60-5091e8bbf6e9"/>
+    <recordManagerType typeId="ba0a6c6e-b00b-4f3f-a0af-16dfd4f63990" valueTypeId="b1be95b7-61b2-458e-9e88-ab593d8a1917"/>
+  </producedTypes>
+  <name>НастройкаПечатиНалоговыхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка печати налоговых документов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Настройка друку податкових документів</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкаПечатиНалоговыхДокументов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НастройкаПечатиНалоговыхДокументов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Настройки печати налоговых документов</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>uk</key>
+    <value>Настройки друку податкових документів</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Настройки печати налоговых документов</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>uk</key>
+    <value>Настройки друку податкових документів</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Настройки печати налоговых документов</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Настройки друку податкових документів</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Настройки печати налоговых документов</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Настройки друку податкових документів</value>
+  </extendedListPresentation>
+  <resources uuid="41cfddc2-056f-40c6-b5e7-24fb09afccdc">
+    <name>СимволПустыхПоказателейВНалоговойНакладной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Символ для пустых показателей в налоговой накладной</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Символ для порожніх показників в податковій накладній</value>
+    </synonym>
+    <comment>Чем заполнять пустые показатели (с 2011 г.): Знаком &quot;X&quot;, &quot;-&quot;, или пустой строкой, например</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="762b7af3-c10a-4347-b919-cc81c215c081">
+    <name>ПечататьКодУКТВЭДБезПробелов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатать код УКТ ВЭД без пробелов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Друкувати код УКТ ЗЕД без пробілів</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d2ce3347-87c5-4df7-9880-00739bd63fb7">
+    <name>ПечататьТитульныйЛистДляПриложения2КНалоговойНакладной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатать титульный лист для документа &quot;Приложение 2 к налоговой накладной&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Друкувати титульний аркуш для документа &quot;Додаток 2 до податкової накладної&quot;</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9f68e815-3095-4eac-b98d-595fb0b6ed8f">
+    <name>ПечататьДатыВНалоговыхНакладныхСРазделителями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатать даты в налоговых накладных с разделителями</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Друкувати дати в податкових накладних з роздільниками</value>
+    </synonym>
+    <comment>только для формы по приказу 1379</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f628e7d1-d7ea-4eb5-b085-0cd34f6dcb26">
+    <name>НеДополнятьНаименованиеНомеромГТДВНалоговыхДокументах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить наименование товара без указания номера и даты ГТД</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виводити найменування товару без зазначення номеру та дати ВМД</value>
+    </synonym>
+    <comment>только для формы по приказу 1379</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c6774d8e-120d-4a69-8ca1-c1c9cc6f973a">
+    <name>ДополнятьНаименованиеАдресДаннымиГоловнойОрганизацииВНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнять наименование и адрес организации данными головной организации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Доповнювати найменування й адресу  організації даними головної організації</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eb687ade-54df-4849-a36b-0b26e27df1a5">
+    <name>ВыгрузкаПечатьНН_ПоФормеНаДатуДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка/Печать налоговых документов по форме, действующей на дату составления документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вивантаження/друк податкових документів за формою, що діє на дату складання документа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="235e053e-ad93-4605-8957-dad5c4469a44">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="66e02de5-dd62-480a-baf7-4633f28ddf6c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8e0c6db8-6e55-4ab9-9825-a41003b8fd37">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

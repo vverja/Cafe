@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a0aa5ed-f327-4573-8dde-97319fcc4f64">
+  <producedTypes>
+    <objectType typeId="6003eb13-bd0f-4357-8539-8dfc2715e1e3" valueTypeId="9e849043-00a7-4130-8978-998c2024cde6"/>
+    <managerType typeId="36ac4e4e-82fd-4a06-9954-82782571bad0" valueTypeId="6aa646fc-f16c-4e51-b037-d13a7b552150"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетРасчетЕдиногоНалогаВоенноеПоложение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет единого налога на период военного положения</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Розрахунок єдиного податку на період воєнного стану</value>
+  </synonym>
+  <defaultForm>Report.РегламентированныйОтчетРасчетЕдиногоНалогаВоенноеПоложение.Form.ОсновнаяФорма</defaultForm>
+  <attributes uuid="81a28a9d-4f27-4e11-9d58-728d424a1498">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4ae50c6c-508a-4ea7-b01c-86fe7c89a020">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ceadd6e6-c9ce-4fe5-b708-84433e4f26b0">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="796973de-2dac-47cc-a8a7-e29516897209">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4060b7d3-a412-41f2-9c2f-d8c6eca7a7ff">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8cba4e8e-09c1-4200-b939-5ef429229dc1">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d52e7938-4be1-4e75-948d-f906011a6d55">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация по единому налогу (для юр. лиц)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація з єдиного податку (для юр. осіб)</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f607757b-95fc-472f-b222-4a4291ac7a66">
+    <name>ФормаОтчета2022МесУФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация по единому налогу (месячная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Декларація з єдиного податку (місячна форма)</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4b04eccf-2f97-4cf8-a42a-73d094fd3683">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Показатели &quot;FREDO Звіт&quot;</value>
+    </synonym>
+  </templates>
+  <templates uuid="f6d0341b-d31e-4d02-90df-ccc5dfe0339d">
+    <name>СоставПоказателей2022МесУФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2022 мес УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Состав показателей2022 мес УФ</value>
+    </synonym>
+  </templates>
+  <templates uuid="588c56f6-abc1-4ee4-8166-072ed5eb94e0">
+    <name>ФормаОтчета2022МесУФ_ДекларацияЕН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2022 мес у ф декларация ЕН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета2022 мес у ф декларация ЕН</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

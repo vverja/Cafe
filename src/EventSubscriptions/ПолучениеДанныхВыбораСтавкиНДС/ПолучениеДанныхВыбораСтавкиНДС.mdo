@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1dcf320c-9334-4f5b-b031-3e3541c5c9d8">
+  <name>ПолучениеДанныхВыбораСтавкиНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получение данных выбора ставки НДС</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Отримання даних вибору ставки ПДВ</value>
+  </synonym>
+  <source>
+    <types>EnumManager.СтавкиНДС</types>
+  </source>
+  <event>ChoiceDataGetProcessing</event>
+  <handler>CommonModule.УчетНДСУТ.СтавкиНДСОбработкаПолученияДанныхВыбора</handler>
+</mdclass:EventSubscription>

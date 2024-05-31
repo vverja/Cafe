@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9dc4c3d0-d3da-4561-ad7c-30d546cae2ab">
+  <producedTypes>
+    <selectionType typeId="3b43afa1-b2bd-411a-bb15-4acd6f10f2bb" valueTypeId="b909998b-238f-4775-b643-e804061dfc3f"/>
+    <listType typeId="0b660804-364f-4db8-b216-80f0fb038c13" valueTypeId="52cf3f32-f256-47b3-a3d6-832920f5353a"/>
+    <managerType typeId="7be4c133-b0d9-46d6-8651-571d447ba278" valueTypeId="6cce154b-813f-497b-b31a-e83f54c098fe"/>
+  </producedTypes>
+  <name>ИсходящиеНалоговыеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исходящие налоговые документы</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Вихідні податкові документи</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ИсходящиеНалоговыеДокументы.Form.ФормаСписка</defaultForm>
+  <registeredDocuments>Document.НалоговаяНакладная</registeredDocuments>
+  <registeredDocuments>Document.Приложение2КНалоговойНакладной</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="9ae8f378-66b5-46ee-a92e-73a7023a3d47">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид операції</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.ВидОперации</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="fa473e67-5b37-45fd-ad7d-8b464b32bb08">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.Валюта</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.Валюта</references>
+  </columns>
+  <columns uuid="f0f1c95a-684d-4e25-9060-2ccef5af2043">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума документа</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.СуммаДокумента</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="314918c7-5187-46ad-b51c-a667a0fc96b8">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.Контрагент</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="b3f90522-5516-42b6-9efb-b294a33ffc81">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.Организация</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.Организация</references>
+  </columns>
+  <columns uuid="aa2c4ae1-9040-4e2d-ab5b-fd46a4c6a760">
+    <name>СтатусВыдачиПокупателю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус выдачи покупателю</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Статус видачі покупцеві</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.СтатусВыдачиПокупателю</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.СтатусВыдачиПокупателю</references>
+  </columns>
+  <columns uuid="404e65db-7d76-4373-9abe-38539be2b5fe">
+    <name>СтатусРегистрацииВЕРНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус регистрации в ЕРНН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Статус реєстрації в ЄРПН</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.СтатусРегистрацииВЕРНН</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.СтатусРегистрацииВЕРНН</references>
+  </columns>
+  <columns uuid="4c489cfa-90e6-42f8-ba1c-01287031f81d">
+    <name>ОбособленноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обособленное подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відокремлений підрозділ</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.ОбособленноеПодразделение</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.ОбособленноеПодразделение</references>
+  </columns>
+  <columns uuid="6d528cdf-3e36-45a9-9902-fe7545fa29bd">
+    <name>СтатусАвтокорректировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим автокорректировки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим автокоригування</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.СтатусАвтокорректировки</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.СтатусАвтокорректировки</references>
+  </columns>
+  <columns uuid="ec74bae5-e7ad-481a-8038-231db3f510c2">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Партнер</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.Партнер</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.Партнер</references>
+  </columns>
+  <columns uuid="ec8429ed-abad-48ba-b652-035e012800bf">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Договір</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.Договор</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.Договор</references>
+  </columns>
+  <columns uuid="610343d7-9118-4b85-b90b-5a328faca973">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Статус</value>
+    </synonym>
+    <references>Document.НалоговаяНакладная.Attribute.Статус</references>
+    <references>Document.Приложение2КНалоговойНакладной.Attribute.Статус</references>
+  </columns>
+  <forms uuid="e3ba551d-ca77-4cb2-8e4c-18d5d9a50940">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f4361504-de19-4651-8eeb-afcbfe40ce88">
+    <name>ОформлениеНалоговыхДокументовПоРегистратору</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оформление налоговых документов по регистратору</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Оформлення податкових документів по реєстратору</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="bfd74a0b-a0d4-411e-a23f-dc6d0139a4d6">
+    <name>ИсходящиеНалоговыеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходящие налоговые документы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вихідні податкові документи</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DocumentJournal>

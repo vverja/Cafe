@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79dd884a-58d4-4c5a-af58-654ad62c721a">
+  <name>ПроверитьВозможностьФормированияОнлайнДвиженийКорректировокНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить возможность формирования онлайн движений корректировок НДС</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перевірити можливість формування онлайн рухів коригувань ПДВ</value>
+  </synonym>
+  <source>
+    <types>AccumulationRegisterRecordSet.НДСУсловныеПродажи</types>
+    <types>AccumulationRegisterRecordSet.КорректировкиНДСПартий</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПартионныйУчет.ПроверитьВозможностьФормированияОнлайнДвиженийКорректировокНДСПередЗаписью</handler>
+</mdclass:EventSubscription>

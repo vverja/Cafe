@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1568f1c-25ab-4328-8e77-e0e84788f10f">
+  <name>EquipmentService</name>
+  <synonym>
+    <key>ru</key>
+    <value>Equipment service</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Equipment service</value>
+  </synonym>
+  <namespace>http://www.1c.ru/EquipmentService</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.EquipmentService</value>
+  </xdtoPackages>
+  <descriptorFileName>EquipmentService.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="8fc98a3a-3332-4892-9d4b-3d317c82b346">
+    <name>GetDocTypes</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get doc types</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Get doc types</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetDocTypes</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+  <operations uuid="73ecacdb-0890-4cee-8f24-01d7bad02a80">
+    <name>GetPriceList</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get price list</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Get price list</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetPriceList</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="d10f6207-d57c-4301-bbe9-00e2bf06a609">
+      <name>DeviceID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Device ID</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Device ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="9db94e9c-d83a-408f-9f3a-2afccf534179">
+    <name>GetSettings</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get settings</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Get settings</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetSettings</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="b51f112a-875a-4c25-a43c-ddf21510b7f1">
+      <name>DeviceID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Device ID</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Device ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="cfa8ba33-7abc-455a-9d7f-5028ad83cb6f">
+    <name>PostDocs</name>
+    <synonym>
+      <key>ru</key>
+      <value>Post docs</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Post docs</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>PostDocs</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a43af0ea-d75c-44ee-b098-765fc9195c8b">
+      <name>DeviceID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Device ID</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Device ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="eb2d23ae-4d5c-4a8f-94f8-f4ed4bd5b165">
+      <name>DocType</name>
+      <synonym>
+        <key>ru</key>
+        <value>Doc type</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Doc type</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="44d5dbe0-b39f-47a2-9505-31b2b824bcde">
+      <name>Document</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Document</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="fd49b777-ecf6-4507-843e-ba126630fea5">
+    <name>Connect</name>
+    <synonym>
+      <key>ru</key>
+      <value>Connect</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Connect</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>boolean</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Connect</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="f9a12e8e-cbc7-44ca-8980-0b35fe5786a4">
+      <name>DeviceID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Device ID</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Device ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Запрос</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Організація</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчетКасса</dataPath>
+			<field>БанковскийСчетКасса</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Банковский счет касса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Банківський рахунок каса</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.БанковскиеСчетаОрганизаций</v8:Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Кассы</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Представление</dataPath>
+			<field>Представление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Представлення</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаОстаток</dataPath>
+			<field>СуммаОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма остаток</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сума залишок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	БанковскиеСчетаОрганизаций.Ссылка,
+	БанковскиеСчетаОрганизаций.ВалютаДенежныхСредств КАК Валюта,
+	ПРЕДСТАВЛЕНИЕ(БанковскиеСчетаОрганизаций.Ссылка) КАК Представление,
+	Организации.Ссылка КАК Организация,
+	БанковскиеСчетаОрганизаций.ПометкаУдаления
+ПОМЕСТИТЬ БанковскиеСчетаОрганизаций
+ИЗ
+	Справочник.БанковскиеСчетаОрганизаций КАК БанковскиеСчетаОрганизаций
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Организации КАК Организации
+		ПО БанковскиеСчетаОрганизаций.Владелец = Организации.Ссылка
+{ГДЕ
+	Организации.Ссылка.* КАК Организация,
+	БанковскиеСчетаОрганизаций.Ссылка.* КАК БанковскийСчетКасса,
+	БанковскиеСчетаОрганизаций.ВалютаДенежныхСредств.* КАК Валюта}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Кассы.Ссылка,
+	Кассы.ВалютаДенежныхСредств КАК Валюта,
+	ПРЕДСТАВЛЕНИЕ(Кассы.Ссылка),
+	Организации.Ссылка КАК Организация,
+	Кассы.ПометкаУдаления
+ПОМЕСТИТЬ Кассы
+ИЗ
+	Справочник.Кассы КАК Кассы
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Организации КАК Организации
+		ПО Кассы.Владелец = Организации.Ссылка
+{ГДЕ
+	Организации.Ссылка.* КАК Организация,
+	Кассы.Ссылка.* КАК БанковскийСчетКасса,
+	Кассы.ВалютаДенежныхСредств.* КАК Валюта}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	БанковскиеСчетаОрганизаций.Ссылка КАК БанковскийСчетКасса,
+	БанковскиеСчетаОрганизаций.Валюта КАК Валюта,
+	ПРЕДСТАВЛЕНИЕ(БанковскиеСчетаОрганизаций.Ссылка) КАК Представление,
+	ЕСТЬNULL(ДенежныеСредстваБезналичныеОстатки.СуммаОстаток, 0) КАК СуммаОстаток,
+	БанковскиеСчетаОрганизаций.Организация КАК Организация
+{ВЫБРАТЬ
+	Представление,
+	СуммаОстаток,
+	Валюта.*,
+	БанковскийСчетКасса.*,
+	Организация.*}
+ИЗ
+	БанковскиеСчетаОрганизаций КАК БанковскиеСчетаОрганизаций
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ДенежныеСредстваБезналичные.Остатки({(&amp;НачалоПериода)}, {(Организация).*, (БанковскийСчет).* КАК БанковскийСчетКасса}) КАК ДенежныеСредстваБезналичныеОстатки
+		ПО БанковскиеСчетаОрганизаций.Ссылка = ДенежныеСредстваБезналичныеОстатки.БанковскийСчет
+ГДЕ
+	(НЕ БанковскиеСчетаОрганизаций.ПометкаУдаления
+			ИЛИ ЕСТЬNULL(ДенежныеСредстваБезналичныеОстатки.СуммаОстаток, 0) &lt;&gt; 0)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Кассы.Ссылка,
+	Кассы.Валюта,
+	ПРЕДСТАВЛЕНИЕ(Кассы.Ссылка),
+	ЕСТЬNULL(ДенежныеСредстваНаличныеОстатки.СуммаОстаток, 0),
+	Кассы.Организация
+ИЗ
+	Кассы КАК Кассы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ДенежныеСредстваНаличные.Остатки({(&amp;НачалоПериода)}, {(Организация).*, (Касса).* КАК БанковскийСчетКасса}) КАК ДенежныеСредстваНаличныеОстатки
+		ПО Кассы.Ссылка = ДенежныеСредстваНаличныеОстатки.Касса
+ГДЕ
+	(НЕ Кассы.ПометкаУдаления
+			ИЛИ ЕСТЬNULL(ДенежныеСредстваНаличныеОстатки.СуммаОстаток, 0) &lt;&gt; 0)</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<totalField>
+		<dataPath>СуммаОстаток</dataPath>
+		<expression>Сумма(СуммаОстаток)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Початок періоду</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Основний</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>БанковскийСчетКасса</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтдельныйСчетГОЗ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Представление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Валюта</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

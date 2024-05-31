@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d4f485d-952a-4cb3-a5a4-ebcb15b9dff3">
+  <producedTypes>
+    <objectType typeId="4c19f564-ea59-40ac-8d91-bad5f9667c54" valueTypeId="d4f46876-1e2f-4d0e-8055-76d9ccb13213"/>
+    <refType typeId="b340a630-7a03-4445-9c9f-d46a62183687" valueTypeId="3538bef4-8076-4ec1-a0ba-14660b990d74"/>
+    <selectionType typeId="5bca37ed-263b-4199-82bc-a5ce590709ea" valueTypeId="f923475d-ae9c-4233-9390-1d725d9c628b"/>
+    <listType typeId="1ebf1dce-713f-4dfa-9a2a-4b732a086d87" valueTypeId="3b94385b-0eae-4a9f-870a-dc32616d2eff"/>
+    <managerType typeId="412a721d-a24b-4ee8-b8f6-55e45092e7bf" valueTypeId="ca788a6e-6531-45b4-9518-cb2fe9530e29"/>
+  </producedTypes>
+  <name>СверкаВзаиморасчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сверка взаиморасчетов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звірка взаєморозрахунків</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СверкаВзаиморасчетов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_СверкаВзаиморасчетов</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Сверки взаиморасчетов</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Звірки взаєморозрахунків</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.СверкаВзаиморасчетов.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.СверкаВзаиморасчетов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.СверкаВзаиморасчетов.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="e8df2f1d-517a-49ae-8767-29dc65fa987f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, от имени которой оформляется документ</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація підприємства, від імені якої оформляється документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Организации.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="52868d4d-ae39-4eb4-beba-7444c64f6767">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Клиент или поставщик, с которым производится сверка</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Клієнт або постачальник, з яким проводиться звірка</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Контрагенты.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c145cb85-35e9-4153-8a9d-dba1c4dcf23a">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Партнер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Партнеры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cc6193ca-bfb5-41e4-afc0-a9070229c617">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Договір</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.ВалютаВзаиморасчетов</name>
+      <field>0:ee12b8c1-dced-44a4-aa15-cb1fd1832509</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Контрагент</name>
+      <field>0:888045d6-ba8c-43b1-b536-7c557764fc60</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>0:015a5e71-6dc7-4bc2-a50c-fa1ea71ab233</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Партнер</name>
+      <field>0:50c9ead0-2833-4f57-86bb-47fa6ffdc8aa</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.ХозяйственнаяОперация</name>
+      <field>0:73c9f7da-a335-4b2e-976f-57e95ab06e13</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.Статус</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.СтатусыДоговоровКонтрагентов.EnumValue.Действует</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.СтатусыДоговоровКонтрагентов.EnumValue.Закрыт</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="18d4c9e7-2773-434c-afd0-c8247a27e293">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початок періоду</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Начало периода, за который производится сверка</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Початок періоду, за який проводиться звірка</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fdec22e9-7564-4e3d-bbaf-9b7f0abece54">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кінець періоду</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Конец периода, за который производится сверка</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Кінець періоду, за який проводиться звірка</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="96212542-c867-45e2-b0fe-5a5dd64cc32e">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыСверокВзаиморасчетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текущий статус акта</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Поточний статус акта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СтатусыСверокВзаиморасчетов.EnumValue.Создана</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4819aa07-a94e-44f2-92d0-ad31f60c3785">
+    <name>Менеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Менеджер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ответственный за документ</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Відповідальний за документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Пользователи.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eaddd436-e32e-436e-921b-c587478d11ad">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный текст</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Довільний текст</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="10282bec-1e70-415b-8df1-6c1632e5be9f">
+    <name>ДолжностьРуководителяКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность руководителя контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Посада керівника контрагента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Должность руководителя контрагента для печати</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Посада керівника контрагента для друку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f988f9d4-5934-48b2-b9f9-09bb437a30cd">
+    <name>ФИОРуководителяКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО руководителя контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ПІБ керівника контрагента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ФИО руководителя контрагента для печати</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>ПІБ керівника контрагента для друку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ff5735c1-dc96-4c43-a0a1-55f479f0810f">
+    <name>РасшифровкаПоЗаказам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка по заказам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розшифровка по замовленнях</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="923e9429-2d97-4dda-8b90-3b74fb165f25">
+    <name>РасшифровкаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розшифровка за партнерами</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dc5e14f4-2001-4dfc-af79-a6d01d47232f">
+    <name>РасшифровкаПоДоговорам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка по договорам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розшифровка за договорами</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9d70640a-db81-43c7-bb73-2aa10168defa">
+    <name>КонтактноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактное лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контактна особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КонтактныеЛицаПартнеров</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контактное лицо, для взаимодействия по сверке</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Контактна особа, для взаємодії по звірці</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e9b0f7f5-a2cc-441d-be54-afa2bcdaf5b0">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Керівник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОтветственныеЛицаОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, расписывающийся в печатных формах за руководителя.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Співробітник, який розписується в друкованих формах за керівника.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Дата</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.СверкаВзаиморасчетов.StandardAttribute.Date</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.СверкаВзаиморасчетов.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ОтветственноеЛицо</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ОтветственныеЛицаОрганизаций.EnumValue.Руководитель</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="72f1ea62-e20a-45a8-ab45-c2e9951d0344">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f05cec4f-c218-43cc-a479-8aaf979cc4c7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cc62bf8c-1091-4f4f-bab0-d9f0a6cf342a">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a9752ab2-32f6-4c87-94aa-11848bf3e894">
+    <name>ФормаПомощникаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник создания сверок взаиморасчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Помічник створення звірок взаєморозрахунків</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d30de113-65ba-4898-81bd-d232ba019b04">
+    <name>ФормаНастройкиДетализации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки детализации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма настройки деталізації</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="15d1ccd5-e4e4-4c15-a877-093013e1bdae">
+    <producedTypes>
+      <objectType typeId="7f12201f-ec08-4fbb-957b-1c8a312853e5" valueTypeId="cd809570-fce5-4ace-bd1c-af310e4e4c96"/>
+      <rowType typeId="75ed4fe0-21ef-4980-9190-791d1731108d" valueTypeId="e5f11207-053c-405f-b303-187eda9d6d48"/>
+    </producedTypes>
+    <name>ДанныеКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дані контрагента</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Задолженность по данным контрагента</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Заборгованість за даними контрагента</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="bddf6183-a758-4361-9d56-731971bc98d7">
+      <name>РасчетныйДокумент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект расчетов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Об'єкт розрахунків</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+        <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+        <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
+        <types>DocumentRef.ОтчетКомиссионера</types>
+        <types>DocumentRef.ЗаказПоставщику</types>
+        <types>DocumentRef.ВозвратТоваровПоставщику</types>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+        <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+        <types>DocumentRef.ЗаявкаНаВозвратТоваровОтКлиента</types>
+        <types>DocumentRef.ОтчетКомитенту</types>
+        <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+        <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациямиОСписании</types>
+        <types>DocumentRef.ОтчетКомитентуОСписании</types>
+        <types>DocumentRef.ВыкупВозвратнойТарыКлиентом</types>
+        <types>DocumentRef.ПоступлениеУслугПрочихАктивов</types>
+        <types>DocumentRef.АктВыполненныхРабот</types>
+        <types>DocumentRef.ОтчетКомиссионераОСписании</types>
+        <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+        <types>DocumentRef.ВыкупВозвратнойТарыУПоставщика</types>
+        <types>DocumentRef.ЗаказКлиента</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Документ, по которому зафиксирована задолженность</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Документ, по якому зафіксована заборгованість</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Контрагент</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.СверкаВзаиморасчетов.Attribute.Контрагент</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Отбор.Организация</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.СверкаВзаиморасчетов.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4f6cecce-5dc4-482f-b4b1-34939ab32c96">
+      <name>ОписаниеДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание документа</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Опис документа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Описание документа (вид, номер, дата, сумма, владелец)</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Опис документа (вид, номер, дата, сума, власник)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b9b77db4-0f61-4668-bd58-08e6115e2483">
+      <name>Партнер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Партнер</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Партнер</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Партнеры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="53f4bc33-3b67-44a0-9bee-8f0464de3577">
+      <name>Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Договір</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Контрагент</name>
+        <field>Document.СверкаВзаиморасчетов.Attribute.Контрагент</field>
+      </choiceParameterLinks>
+      <choiceParameters>
+        <name>Отбор.Статус</name>
+        <value xsi:type="core:FixedArrayValue">
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.СтатусыДоговоровКонтрагентов.EnumValue.Действует</value>
+          </values>
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.СтатусыДоговоровКонтрагентов.EnumValue.Закрыт</value>
+          </values>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="47cada53-d997-41b6-b73b-92e0d5858be8">
+      <name>СуммаДолгПартнера</name>
+      <synonym>
+        <key>ru</key>
+        <value>Долг партнера</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Борг партнера</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма долга партнера в валюте взаиморасчетов</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума боргу партнера у валюті взаєморозрахунків</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7391f4de-2667-4815-a79f-d6640e3e1a3c">
+      <name>СуммаНашДолг</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наш долг</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Наш борг</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма долга организации в валюте взаиморасчетов</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума боргу організації у валюті взаєморозрахунків</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="778a5d2e-1e26-48b3-b9df-52b3b8334ffc">
+      <name>ВалютаВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта взаиморасчетов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Валюта взаєморозрахунків</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Валюта взаиморасчетов с партнером</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Валюта взаєморозрахунків з партнером</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <quickChoice>Use</quickChoice>
+      <createOnInput>DontUse</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="43763f3f-2a64-4e83-b8d9-4b58505a273e">
+    <name>ПФ_MXL_АктСверкиВзаимныхРасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт сверки взаимных расчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Акт звірки взаємних розрахунків</value>
+    </synonym>
+  </templates>
+  <templates uuid="05b9e60d-72b3-48bb-83c3-de8246e1b085">
+    <name>ПФ_MXL_АктСДаннымиКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт с данными контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Акт з даними контрагента</value>
+    </synonym>
+  </templates>
+  <templates uuid="b89f6091-3df5-4dde-a78c-4d6d5145f38b">
+    <name>ПомощникСозданияОтбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник создания отбор</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Помічник створення відбір</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="51f41888-d7fd-4027-b83c-0e32b66f0d81">
+    <name>ДанныеШаблонаСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные шаблона сообщений</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дані шаблону повідомлень</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Document>

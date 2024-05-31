@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f82eb591-8e69-4d56-8312-281c23a2a0a8">
+  <producedTypes>
+    <objectType typeId="b54f858b-ad01-43ff-bf27-458188c16965" valueTypeId="a2b52bba-6349-4a76-9380-ebc1c9a4d86d"/>
+    <managerType typeId="ccc72be0-56ae-4c31-abac-81fb0b3de2a8" valueTypeId="32197a01-2be1-4e25-8fbd-5f893bb1823a"/>
+  </producedTypes>
+  <name>ПараметрыОбеспеченияПотребностей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры обеспечения потребностей</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Параметри забезпечення потреб</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПараметрыОбеспеченияПотребностей.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="c1ee8c14-b7f0-4afd-8f66-7d2231677503">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d19d2987-ed6c-4f07-95d8-73ef21b58f97">
+    <name>Формат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формат магазина (склада)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Формат магазину (складу)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФорматыМагазинов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="31f78cd7-56b6-4f71-a671-49e7dd02f6e5">
+    <name>ТоварнаяКатегория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товарная категория</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Товарна категорія</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТоварныеКатегории</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="720737d0-9f0b-4ea2-a239-3c8d00e3cf39">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6e381c1e-584c-4ab9-af11-2bd14da9f561">
+    <name>СпособОбеспечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ обеспечения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб забезпечення</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОбеспеченияПотребностей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="08704ade-1b4c-4c05-8d8c-874186e76115">
+    <producedTypes>
+      <objectType typeId="c319d9e5-e3ca-447a-b457-8013d5279ecd" valueTypeId="f98b3568-d0af-454f-a8e2-92ea496ef9ee"/>
+      <rowType typeId="2c94fcc1-0578-4f78-ba8a-8fc399b0fc06" valueTypeId="80f7eb4c-33e4-4f56-8bcc-de66ad4463f8"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Товари</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6f0e8a53-0ad7-46c4-a031-1c6dcdecee36">
+      <name>МаксимальноеКоличествоЗапаса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Максимальный запас</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Максимальний запас</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5d8e417d-5181-442e-9aaa-652d9169d22e">
+      <name>МетодОбеспеченияПотребностей</name>
+      <synonym>
+        <key>ru</key>
+        <value>Метод обеспечения</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Метод забезпечення</value>
+      </synonym>
+      <type>
+        <types>EnumRef.МетодыОбеспеченияПотребностей</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="96d3735a-022a-4411-ae7e-9c4599f67bd7">
+      <name>МинимальноеКоличествоЗапаса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Минимальный запас</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Мінімальний запас</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0e4a4b7b-8267-49af-bdb4-34341ed0ea14">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5af378d7-019a-4d0e-9bfc-9f3991f0f4ca">
+      <name>НормаПотребления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Норма потребления</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Норма споживання</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="54b4e7f7-2149-4507-92c0-ee8078118255">
+      <name>СпособОбеспечения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Способ обеспечения потребностей</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Спосіб забезпечення потреб</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СпособыОбеспеченияПотребностей</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a7adbbc7-5e0b-4a66-a1d9-81a5e2f37ec3">
+      <name>СреднедневноеПотребление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Среднедневное потребление</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Середньоденне споживання</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="27d22698-1cab-45f6-b121-18634b16762a">
+      <name>СтраховоеКоличествоЗапаса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Страховой запас</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Страховий запас</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="54ac5ce4-2d4b-499f-9371-f7380a74e9e6">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3fcee82b-9f08-4f6e-9cb3-ff3b30faa74f">
+      <name>ЭлементГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Элемент группа</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Елемент група</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c79bda67-5e81-47f1-9de9-db88da55c720">
+      <name>УпаковкаЗаказа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Упаковка заказа</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Упаковка замовлення</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Номенклатура</name>
+        <changeMode>DontChange</changeMode>
+        <field>DataProcessor.ПараметрыОбеспеченияПотребностей.TabularSection.Товары.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <choiceParameters>
+        <name>ДобавлятьПустуюУпаковку</name>
+        <value xsi:type="core:BooleanValue"/>
+      </choiceParameters>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fb2b3ccb-cab1-4ede-9c1a-de6a4f4c75c0">
+      <name>Склад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Склад</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Склад</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Склады</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c8a4a9f8-fbab-4b20-98d6-aa225b38034d">
+      <name>ОбеспечениеЗаказовПриПоддержанииЗапаса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обеспечение заказов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Забезпечення замовлень</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ОбеспечениеЗаказовПриПоддержанииЗапаса</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8fb8a7b7-f14e-487c-a5fe-87e446d29932">
+      <name>СрокИсполненияЗаказа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Срок исполнения заказа</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Строк виконання замовлення</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="05cff0e6-8a6a-48c2-95c7-1b0ddad266f8">
+      <name>ОбеспечиваемыйПериод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обеспечиваемый период</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Забезпечуваний період</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="dd134137-c671-4444-b4df-b6eff243450b">
+      <name>ИсточникНастройкиТоварныхОграничений</name>
+      <synonym>
+        <key>ru</key>
+        <value>Источник настройки товарных ограничений</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Джерело настройки товарних обмежень</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="2d62f4b0-7a1f-460f-96a5-7ebcbc1494b4">
+      <name>Группировка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Группировка</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Групування</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ГруппировкиТоварныхОграничений</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a00d0ed2-eb2e-4e2d-b9d1-045d4f02ca30">
+      <name>ИсточникНастройкиСпособаОбеспечения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Источник настройки способа обеспечения</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Джерело настройки способу забезпечення</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="764d91cb-1431-4dbb-919c-227a50094c56">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры обеспечения потребностей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри забезпечення потреб</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a104cf5f-27e3-47c4-ab19-fb730127ca17">
+    <name>ФормаВыбораГруппировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группировки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору групування</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d02806a0-e00e-4158-aeb4-34249a0984f5">
+    <name>ФормаПроизвольныеОтборы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установка отбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Встановлення відбору</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="dd4a4bbb-9aaf-45c6-9421-70650932b658">
+    <name>ОтборНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відбір номенклатури</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="e2249614-f812-4d26-a81d-7f8ed22100e0">
+    <name>ПараметрыОбеспеченияПотребностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры обеспечения потребностей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри забезпечення потреб</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Номенклатура</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

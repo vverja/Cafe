@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d41c73ca-319a-4bed-a95e-757b48b24e36">
+  <producedTypes>
+    <selectionType typeId="563faf82-ac97-4547-8afc-0c36fbdb627e" valueTypeId="8ee73c20-7d90-4aa3-ab45-ea48508f3a90"/>
+    <listType typeId="cfb6d5f7-54da-4b28-bb51-6be39a9152b6" valueTypeId="e928e574-8351-4241-8cfc-155e45b0d278"/>
+    <managerType typeId="db4ecb6f-4ab7-40da-bfc9-e2e3046c9a68" valueTypeId="0a103329-e213-4f58-967e-612047718e78"/>
+    <recordSetType typeId="0b8bfc95-fb60-42e5-a051-c609c8968b28" valueTypeId="dc5918b0-c0d6-4ef6-a49d-a9153f3e1e9a"/>
+    <recordKeyType typeId="0713ac21-8255-4b84-87e0-567e3dbe63de" valueTypeId="251a2f44-b140-4b61-bf77-29a9fe421cf3"/>
+    <recordType typeId="a02c949e-c226-47a3-8777-b11937fb7ef6" valueTypeId="fdd52984-aa6d-4620-beaf-eda675bcadd2"/>
+  </producedTypes>
+  <name>ДвиженияНоменклатураНоменклатура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения Номенклатура - Номенклатура</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Рухи Номенклатура - Номенклатура</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="71e2557d-4936-496f-9f0e-d9b988d49271">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество списанного товара.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Кількість списаного товару.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="ddfe55e4-c88b-42cd-9ada-5823dffbd785">
+    <name>КорКоличество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кор. количество</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кор. кількість</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество оприходованного товара.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Кількість оприбуткованого товару.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="614fdfa9-fb4c-4fcc-8757-8f93937a23d5">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вартість</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Стоимость в валюте управленческого учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вартість у валюті управлінського обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="622e086f-9483-4624-a29a-8eb19e64dff2">
+    <name>СтоимостьБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость без НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вартість без ПДВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Стоимость без НДС в валюте управленческого учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вартість без ПДВ у валюті управлінського обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="104c9005-4819-4969-9c16-5ce1fdd89a9d">
+    <name>СтоимостьРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость регл.</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вартість регл.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте регламентированного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума у валюті регламентованого обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="07b773d5-408d-45cc-a8a4-e14107a853e8">
+    <name>ИсточникГФУНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник ГФУ номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Джерело ГФО номенклатури</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.ВидыЗапасов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Источник группы финансового учета номенклатуры.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Джерело групи фінансового обліку номенклатури.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3a047d29-de16-43c9-8011-6d2e0173b061">
+    <name>КорИсточникГФУНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кор. источник ГФУ номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кор. джерело ГФО номенклатури</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.ВидыЗапасов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Источник группы финансового учета номенклатуры.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Джерело групи фінансового обліку номенклатури.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="fd2bad32-5733-4c7d-8526-6d8064c06f7e">
+    <name>ДокументДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ движения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ руху</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВнутреннееПотреблениеТоваров</types>
+      <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ПеремещениеТоваров</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.КорректировкаНазначенияТоваров</types>
+      <types>DocumentRef.ПересортицаТоваров</types>
+      <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.СборкаТоваров</types>
+      <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.РасчетСебестоимостиТоваров</types>
+      <types>DocumentRef.ПрочееОприходованиеТоваров</types>
+      <types>DocumentRef.ПорчаТоваров</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для связи данных расчета себестоимости с первичным документом.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Використовується для зв'язку даних розрахунку собівартості з первинним документом.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="ba66606d-38ab-41da-83c6-52bcb0413fab">
+    <name>КорОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кор. организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кор. організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="2de54e98-d845-4a6c-9650-4c74f5472d08">
+    <name>РасчетСебестоимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет себестоимости</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розрахунок собівартості</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Движение сформировано регламентной операцией закрытия месяца</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Рух сформовано регламентної операцією закриття місяця</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="2f2b8b07-8178-4ad1-bb35-f3bf41d9de12">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственная операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Господарська операція</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ХозяйственныеОперации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид операции, отражаемой в учете.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид операції, відображеної в обліку.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="0b2d41d8-fa5c-49ae-84bf-a7bf78991f21">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, данные по которой отражаются в учете.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація підприємства, дані за якою відображаються в обліку.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="585b335d-fcba-44a4-b469-df294a868a00">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение, к которому относится хозяйственная операция в рамках управленческого учета.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підрозділ, до якого відноситься господарська операція в рамках управлінського обліку.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="6f1aca6e-6990-42da-906d-0392d744a3ef">
+    <name>АналитикаУчетаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку номенклатури</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Аналитика учета списанного товара.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Аналітика обліку списаного товару.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="203cf9e2-6b51-4dc1-9e38-b4a924548509">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад / комиссионер / подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Склад / комісіонер / підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+      <types>CatalogRef.Партнеры</types>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Место хранения с которого произведено списание товара.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Місце зберігання з якого виконане списання товару.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="5dfd08d3-e93e-4027-ae76-c2586b8fcc2b">
+    <name>ТипЗапасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип запасов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тип запасів</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыЗапасов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип запасов списанного товара.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Тип запасів списаного товару.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="e4112445-b671-47d3-a9fc-296f48b2be0c">
+    <name>ВидЗапасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид запасов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид запасів</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЗапасов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид запасов списанного товара.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид запасів списаного товару.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="7260964a-7066-4d8f-b079-8cfd176f8746">
+    <name>КорАналитикаУчетаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кор. аналитика учета номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кор. аналітика обліку номенклатури</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Аналитика учета оприходованного товара.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Аналітика обліку оприбуткованого товару.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="23596435-a300-49f0-8037-0196638b4922">
+    <name>КорСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кор. склад / кор. комиссионер / кор. подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кор. склад / кор. комісіонер / кор. підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+      <types>CatalogRef.Партнеры</types>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Место хранения куда оприходован товар.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Місце зберігання куди оприбуткований товар.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="2a4167e6-d799-4fbc-bb2a-d6449ef81075">
+    <name>КорТипЗапасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кор. тип запасов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кор. тип запасів</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыЗапасов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип запасов оприходованного товара.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Тип запасів оприбуткованого товару.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="7a972814-763a-4413-9d3a-41a2594410c5">
+    <name>КорВидЗапасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кор. вид запасов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кор. вид запасів</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЗапасов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид запасов оприходованного товара.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид запасів оприбуткованого товару.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:AccumulationRegister>

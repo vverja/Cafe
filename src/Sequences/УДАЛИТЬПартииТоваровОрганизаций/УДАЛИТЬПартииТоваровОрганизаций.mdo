@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="179a637f-c4cb-4711-85d9-4089bf8f1400">
+  <producedTypes>
+    <recordType typeId="86ca9937-32ed-4013-bd95-398dbbf146b8" valueTypeId="3c8f2a37-7395-401a-8ae0-4ff670744764"/>
+    <managerType typeId="dded23ec-5c7e-4367-90c2-18bbe63ec714" valueTypeId="60375cf7-5c9e-441e-8e0b-21b922d2d6f8"/>
+    <recordSetType typeId="5a30b142-4ed6-42b3-9595-9e0e7d86c06a" valueTypeId="cce90639-afe0-4c82-a921-79f651f0c704"/>
+  </producedTypes>
+  <name>УДАЛИТЬПартииТоваровОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Партии товаров организаций</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Партії товарів організацій</value>
+  </synonym>
+  <moveBoundaryOnPosting>DontMove</moveBoundaryOnPosting>
+  <documents>Document.РеализацияТоваровУслуг</documents>
+  <documents>Document.ПоступлениеТоваровУслуг</documents>
+  <documents>Document.ПересортицаТоваров</documents>
+  <documents>Document.ПеремещениеТоваров</documents>
+  <documents>Document.ВозвратТоваровОтКлиента</documents>
+  <documents>Document.ОтчетКомиссионера</documents>
+  <documents>Document.ОтчетКомиссионераОСписании</documents>
+  <documents>Document.ВозвратТоваровМеждуОрганизациями</documents>
+  <documents>Document.ВозвратТоваровПоставщику</documents>
+  <documents>Document.ОприходованиеИзлишковТоваров</documents>
+  <documents>Document.ПередачаТоваровМеждуОрганизациями</documents>
+  <documents>Document.ПорчаТоваров</documents>
+  <documents>Document.ПрочееОприходованиеТоваров</documents>
+  <documents>Document.СборкаТоваров</documents>
+  <documents>Document.СписаниеНедостачТоваров</documents>
+  <documents>Document.ВводОстатков</documents>
+  <documents>Document.ВнутреннееПотреблениеТоваров</documents>
+  <documents>Document.ОтчетОРозничныхПродажах</documents>
+  <documents>Document.ТаможеннаяДекларацияИмпорт</documents>
+  <documents>Document.КорректировкаНазначенияТоваров</documents>
+  <documents>Document.КорректировкаОбособленногоУчетаЗапасов</documents>
+  <documents>Document.ВыкупВозвратнойТарыКлиентом</documents>
+  <documents>Document.ОтчетКомитентуОСписании</documents>
+  <documents>Document.ОтчетПоКомиссииМеждуОрганизациями</documents>
+  <documents>Document.КорректировкаНалоговогоНазначенияЗапасов</documents>
+  <registerRecords>AccumulationRegister.ПартииТоваровОрганизаций</registerRecords>
+  <registerRecords>AccumulationRegister.ПартииТоваровПереданныеНаКомиссию</registerRecords>
+  <registerRecords>AccumulationRegister.ТоварыОрганизаций</registerRecords>
+  <registerRecords>AccumulationRegister.ТоварыОрганизацийКПередаче</registerRecords>
+  <registerRecords>AccumulationRegister.ТоварыПереданныеНаКомиссию</registerRecords>
+  <registerRecords>AccumulationRegister.ТоварыКОформлениюОтчетовКомитенту</registerRecords>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="5ac7bf39-fdb8-4cdd-8fdf-0d414ebed4f2">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <registerRecordsMap>AccumulationRegister.ПартииТоваровПереданныеНаКомиссию.Attribute.Номенклатура</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ПартииТоваровОрганизаций.Attribute.Номенклатура</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ТоварыКОформлениюОтчетовКомитенту.Attribute.Номенклатура</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ТоварыОрганизаций.Attribute.Номенклатура</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ТоварыОрганизацийКПередаче.Attribute.Номенклатура</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ТоварыПереданныеНаКомиссию.Attribute.Номенклатура</registerRecordsMap>
+  </dimensions>
+  <dimensions uuid="2e0d92ca-5050-4513-884d-eb06314a3778">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <registerRecordsMap>AccumulationRegister.ПартииТоваровОрганизаций.Attribute.Характеристика</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ПартииТоваровПереданныеНаКомиссию.Attribute.Характеристика</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ТоварыПереданныеНаКомиссию.Attribute.Характеристика</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ТоварыОрганизацийКПередаче.Attribute.Характеристика</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ТоварыОрганизаций.Attribute.Характеристика</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ТоварыКОформлениюОтчетовКомитенту.Attribute.Характеристика</registerRecordsMap>
+  </dimensions>
+</mdclass:Sequence>

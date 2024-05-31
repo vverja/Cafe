@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5875e3c9-13ba-4ff9-b128-debdea8945d3">
+  <producedTypes>
+    <selectionType typeId="664deef7-99b9-43da-a952-f1f8e86399ed" valueTypeId="275b61cb-bef7-4ffe-a305-b9536f64d3e9"/>
+    <listType typeId="2691e9e3-354d-4f15-8d4e-23c6b0298e17" valueTypeId="bc7dfbaf-44a1-4e88-80ae-51cbb34099d1"/>
+    <managerType typeId="c57764f1-4103-4747-8c72-dc59988168bd" valueTypeId="74cfed0e-c223-4a04-9ce7-b0aa1f172eab"/>
+    <recordSetType typeId="8b127bad-8835-4e7c-bcf8-ce60fb3f3d6e" valueTypeId="75a660a1-97a8-4471-89bb-01f083d96e57"/>
+    <recordKeyType typeId="a0da3659-e151-4511-87ce-8d1e6275b4f9" valueTypeId="2ce0450b-ed65-49e3-b156-7b7f2e788f79"/>
+    <recordType typeId="575a99e4-94ae-4336-8bba-fdec2c33d0c7" valueTypeId="86697906-d6db-4fbc-be0e-45ee4c43c2d5"/>
+    <recordManagerType typeId="cf6c46a4-4d44-42f0-a5f7-5541aa9410b0" valueTypeId="ff7eced7-ac49-410c-9e2f-9667c33716dd"/>
+  </producedTypes>
+  <name>СтатусыПлательщиковЕдиногоНалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы плательщиков единого налога</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Статуси платників єдиного податку</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c6eb4349-8b31-4902-b80e-af0214a84920">
+    <name>ПлательщикЕН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик ЕН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платник ЄП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </resources>
+  <resources uuid="95e4dcab-a77b-4f52-a4e0-dc06f11949f8">
+    <name>ГруппаПлательщикаЕдиногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа плательщика единого налога</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Група платника єдиного податку</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ГруппыПлательщиковЕдиногоНалога</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c9fd76f2-5682-4fb9-9aa3-d4273bbb7dbf">
+    <name>ПлательщикНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платник ПДВ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </resources>
+  <dimensions uuid="98c78e65-4dfd-45e6-9712-6e9dc99cf1de">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

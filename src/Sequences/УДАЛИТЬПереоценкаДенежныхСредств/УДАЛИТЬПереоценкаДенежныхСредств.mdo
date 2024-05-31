@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d190fc86-1a45-45e0-b7a4-6813d09ae3eb">
+  <producedTypes>
+    <recordType typeId="f8d544ed-541e-46d1-9c5c-d5891877e238" valueTypeId="549d9062-c9de-4c88-9908-98e25f791ea2"/>
+    <managerType typeId="6896bfe9-334c-4c93-8551-26bb3c5d73bd" valueTypeId="54c05d89-30b1-46fa-98e4-eec3ac8daa85"/>
+    <recordSetType typeId="d5b612be-642e-4764-bdf9-6afbd180630f" valueTypeId="eee01480-98db-4d58-8142-b014504960dd"/>
+  </producedTypes>
+  <name>УДАЛИТЬПереоценкаДенежныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Переоценка денежных средств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Переоцінка грошових коштів</value>
+  </synonym>
+  <documents>Document.ПереоценкаВалютныхСредств</documents>
+  <registerRecords>AccumulationRegister.ДенежныеСредстваБезналичные</registerRecords>
+  <registerRecords>AccumulationRegister.ДенежныеСредстваВКассахККМ</registerRecords>
+  <registerRecords>AccumulationRegister.ДенежныеСредстваНаличные</registerRecords>
+  <registerRecords>AccumulationRegister.ДенежныеСредстваУПодотчетныхЛиц</registerRecords>
+  <dimensions uuid="27f97915-5af0-43c5-92d3-58e2886559f0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <registerRecordsMap>AccumulationRegister.ДенежныеСредстваБезналичные.Dimension.Организация</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ДенежныеСредстваВКассахККМ.Dimension.Организация</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ДенежныеСредстваНаличные.Dimension.Организация</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ДенежныеСредстваУПодотчетныхЛиц.Dimension.Организация</registerRecordsMap>
+  </dimensions>
+</mdclass:Sequence>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b312265-5c7a-48e7-91b9-c53ba392004b">
+  <producedTypes>
+    <selectionType typeId="714fd848-7d56-4af8-8aeb-bfb1893fd7a4" valueTypeId="7587eb7a-5cd0-4bc8-b412-04a6a6c93b43"/>
+    <listType typeId="9cd58f66-1d0c-492d-a33c-2b46b8228f53" valueTypeId="bb9b9e26-48b8-4198-b467-136fb780c896"/>
+    <managerType typeId="d13407ad-2bef-4c32-a63a-1f92510e6120" valueTypeId="069c2107-4384-4dbe-a931-a3f6dd4f1a67"/>
+  </producedTypes>
+  <name>ПередачиВозвратыТоваровМеждуОрганизациями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Передачи и возвраты товаров между организациями</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Передачі та повернення товарів між організаціями</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ПередачиВозвратыТоваровМеждуОрганизациями.Form.ФормаРабочееМесто</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ВозвратТоваровМеждуОрганизациями</registeredDocuments>
+  <registeredDocuments>Document.ПередачаТоваровМеждуОрганизациями</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Передачи и возвраты товаров между организациями</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Передачі та повернення товарів між організаціями</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Передачи и возвраты товаров между организациями</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Передачі та повернення товарів між організаціями</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Передачи товаров и возвраты товаров между организациями</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Передачі товарів та повернення товарів між організаціями</value>
+  </explanation>
+  <columns uuid="de096e99-3da3-4ca4-8783-b9c3cbddf53e">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Операція</value>
+    </synonym>
+    <comment>Хозяйственная операция</comment>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.ХозяйственнаяОперация</references>
+  </columns>
+  <columns uuid="0037f999-45cd-455e-9cec-2e8e913af0bb">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.Организация</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.Организация</references>
+  </columns>
+  <columns uuid="b476d948-7575-4fec-b09a-41970d0d5574">
+    <name>ОрганизацияПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одержувач</value>
+    </synonym>
+    <comment>Организация-получатель</comment>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.ОрганизацияПолучатель</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.ОрганизацияПолучатель</references>
+  </columns>
+  <columns uuid="bf1289b9-6095-4ff1-9dc1-a6cc2a0174fa">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.Подразделение</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="7ac7ad00-d066-4060-9ae7-879f015543ac">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.Валюта</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.Валюта</references>
+  </columns>
+  <columns uuid="d9a5c2ff-eb7f-477b-8721-a5f49032d6f8">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.СуммаДокумента</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="9fdc079b-c94c-4442-a0a2-8fcb59dbb1cd">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Склад</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.Склад</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.Склад</references>
+  </columns>
+  <columns uuid="f6092b6c-33e2-4a18-87af-2a0f5a75ae2d">
+    <name>РасчетыЧерезОтдельногоКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчеты через посредника</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розрахунки через посередника</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.РасчетыЧерезОтдельногоКонтрагента</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.РасчетыЧерезОтдельногоКонтрагента</references>
+  </columns>
+  <columns uuid="c3e67004-243e-4998-ab04-e97aaa03ccf6">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посредник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Посередник</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.Партнер</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.Партнер</references>
+  </columns>
+  <columns uuid="fc107f76-c869-41a6-b407-ec8eedd6ce67">
+    <name>НомерВходящегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ посредника</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ посередника</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.НомерВходящегоДокумента</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.НомерВходящегоДокумента</references>
+  </columns>
+  <columns uuid="789258a0-a266-4815-bc0c-742b82ded1b5">
+    <name>ДатаВходящегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата документа посредника</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата документа посередника</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.ДатаВходящегоДокумента</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.ДатаВходящегоДокумента</references>
+  </columns>
+  <columns uuid="9ed31ea7-b52d-4e30-b69a-d39d9f93c8c2">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.Комментарий</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="1af4e005-5439-459c-95fd-3a58d13ae100">
+    <name>Менеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Менеджер</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.Менеджер</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.Менеджер</references>
+  </columns>
+  <columns uuid="ee490a3d-305a-4af4-84ec-c5475cacd557">
+    <name>ПоТоварамКОформлению</name>
+    <synonym>
+      <key>ru</key>
+      <value>По товарам к оформлению</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>По товарах до оформлення</value>
+    </synonym>
+    <references>Document.ВозвратТоваровМеждуОрганизациями.Attribute.ПоТоварамКОформлению</references>
+    <references>Document.ПередачаТоваровМеждуОрганизациями.Attribute.ПоТоварамКОформлению</references>
+  </columns>
+  <forms uuid="0027e952-b808-4367-937a-6635c50290bf">
+    <name>ФормаРабочееМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оформление передач и возвратов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Оформлення передач і повернень</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

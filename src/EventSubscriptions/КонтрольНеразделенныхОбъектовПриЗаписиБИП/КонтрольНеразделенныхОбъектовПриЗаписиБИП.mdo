@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17848994-c6e7-48fb-a1f1-ce3daddcc2cb">
+  <name>КонтрольНеразделенныхОбъектовПриЗаписиБИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных объектов при записи (БИП)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Контроль неподілених об'єктів при записі (БІП)</value>
+  </synonym>
+  <source>
+    <types>ConstantValueManager.ПодключениеКСервисуИППССервера</types>
+    <types>ConstantValueManager.ДоменРасположенияСерверовИПП</types>
+    <types>ConstantValueManager.ТаймаутПодключенияКСервисуИнтернетПоддержки</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхОбъектовПриЗаписи</handler>
+</mdclass:EventSubscription>

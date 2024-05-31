@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b24dd0a-b5ea-4842-af80-bcadc2ca0e59">
+  <producedTypes>
+    <refType typeId="707272e1-372c-4ba7-af6e-b2feab58f616" valueTypeId="d2585afd-fcc3-435a-bbab-dce8b43ccb28"/>
+    <listType typeId="89b32336-e2be-44b6-a5ba-c8425adbf1c3" valueTypeId="13f3307f-98a4-43cf-866e-f5e311702f14"/>
+    <managerType typeId="f72a492c-f255-48bd-baff-2de9a0f9c507" valueTypeId="28cea0b7-e129-4b97-a24d-754d99e29e37"/>
+  </producedTypes>
+  <name>ВидыОперацийРегистрацияВходящегоНалоговогоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций регистрация входящего налогового документа</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Види операцій реєстрація вхідного податкового документа</value>
+  </synonym>
+  <comment>Виды операций документа регистрация входящего налогового документа</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>QuickChoice</choiceMode>
+  <enumValues uuid="b526e2c1-95b8-4366-822a-c0cc130999fd">
+    <name>НалоговаяНакладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговая накладная</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податкова накладна</value>
+    </synonym>
+    <comment>Налоговая накладная входящая</comment>
+  </enumValues>
+  <enumValues uuid="3b9187f9-6a84-4056-b6cd-1fe4416a36ee">
+    <name>РасчетКорректировкиВозврат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет корректировки (возврат)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розрахунок коригування (повернення)</value>
+    </synonym>
+    <comment>Расчет корректировки стоимости (входящий)</comment>
+  </enumValues>
+  <enumValues uuid="79733da3-9804-4f00-9e24-3ff700a3ffb5">
+    <name>РасчетКорректировкиКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет корректировки (изменение суммы компенсации)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розрахунок коригування (зміна суми компенсації)</value>
+    </synonym>
+    <comment>Расчет корректировки стоимости (входящий)</comment>
+  </enumValues>
+  <enumValues uuid="95601fd9-f506-4855-8192-926be0a03208">
+    <name>РаботыОтНерезидентаПрошлогоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работы от нерезидента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Роботи від нерезидента</value>
+    </synonym>
+    <comment>Работы, полученнные от нерезидента в прошлом периоде</comment>
+  </enumValues>
+  <enumValues uuid="0cb78d14-c6ca-4072-b028-2b7d6151dc80">
+    <name>ИсправлениеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправление ошибки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виправлення помилки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c0771cd7-c909-4735-a804-123af851a3d8">
+    <name>ВосстановлениеНалоговогоКредита</name>
+    <synonym>
+      <key>ru</key>
+      <value>Восстановление налогового кредита</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відновлення податкового кредиту</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="372c1fb3-8070-4305-9704-422ff774cd15">
+    <name>ТоварныйЧек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочее (товарный чек и т. п.)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інше (товарний чек і т.п.)</value>
+    </synonym>
+    <comment>Товарный чек или другой расчетный документ от резидента </comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcba12a6-28da-4ad3-a375-958264c71321">
+  <producedTypes>
+    <selectionType typeId="0a77be2c-86ac-44a1-aefa-a9483270187b" valueTypeId="4a11ee44-2ccd-4935-8e06-e120056fb6ae"/>
+    <listType typeId="11703b5d-477b-481d-a1f4-3f35f5c15ec7" valueTypeId="e699212f-7118-4dd8-848f-935ec01469b0"/>
+    <managerType typeId="fee732c9-3071-4301-93a3-a7b824f2f9e9" valueTypeId="e1966494-7d51-4dd2-b844-2452ec38e42a"/>
+  </producedTypes>
+  <name>ДокументыПродажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы продажи</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Документи продажу</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПродажи.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.РеализацияТоваровУслуг</registeredDocuments>
+  <registeredDocuments>Document.АктВыполненныхРабот</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="0c7fd2ec-40c9-43ed-a961-183e4475f9b0">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума документа</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.СуммаДокумента</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="9ea5450b-c527-41e0-bc93-7eb9005f271d">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Валюта</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Валюта</references>
+  </columns>
+  <columns uuid="10e55261-fd1b-4f25-bbfa-8fbb64c6bc3f">
+    <name>Партнер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Партнер</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Партнер</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Партнер</references>
+  </columns>
+  <columns uuid="1388bfa4-5e1e-469b-adec-38846d206d2b">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Контрагент</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="ef8d8651-bf4d-4434-94ed-5fb35aacb756">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Статус</value>
+    </synonym>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Статус</references>
+  </columns>
+  <columns uuid="6511fb0f-3da1-4fa3-b18f-4f91af1f0fa3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Организация</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Организация</references>
+  </columns>
+  <columns uuid="1e9b2324-833d-48f9-a416-4ac812ec4904">
+    <name>Соглашение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соглашение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Оферта</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Соглашение</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Соглашение</references>
+  </columns>
+  <columns uuid="b2b050d1-cb45-4e74-8f11-754b28ebd6af">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Договір</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Договор</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Договор</references>
+  </columns>
+  <columns uuid="683ec7a6-be22-45e0-920f-952ec6231986">
+    <name>Менеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Менеджер</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Менеджер</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Менеджер</references>
+  </columns>
+  <columns uuid="a81209f7-2c4f-4d03-9eae-4de0832ef826">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Склад</value>
+    </synonym>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Склад</references>
+  </columns>
+  <columns uuid="8c426533-e4f1-44b7-83c8-b2536e0a3b2e">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Подразделение</references>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="b3ab9c14-e426-4346-b2ac-25585b9b18e2">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <references>Document.РеализацияТоваровУслуг.Attribute.Комментарий</references>
+    <references>Document.АктВыполненныхРабот.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="c6a7c184-e73c-4482-b267-66bacafff10f">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Операція</value>
+    </synonym>
+    <references>Document.РеализацияТоваровУслуг.Attribute.ХозяйственнаяОперация</references>
+  </columns>
+  <forms uuid="a0103353-2c8d-48b3-b3dd-f2bc02208148">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0fd0e7c7-34b0-42c0-8303-6d236dbb7a03">
+    <name>ПереоформлениеДокументовПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переоформление документов продажи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Переоформлення документів продажі</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="12bfb518-e705-46f9-8933-d4936163fb5c">
+    <name>ПараметрыОформленияДокументовПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры оформления документов продажи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри оформлення документів продажу</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

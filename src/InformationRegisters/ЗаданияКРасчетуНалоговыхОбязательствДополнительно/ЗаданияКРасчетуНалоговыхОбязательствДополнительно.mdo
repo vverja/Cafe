@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf63ebfc-4a2a-4af8-b399-e2645d79ba81">
+  <producedTypes>
+    <selectionType typeId="4735d3b0-0e4e-4f5f-bca0-dfbb9d408dca" valueTypeId="054094c3-4ffb-4503-9599-37522cc4b7c7"/>
+    <listType typeId="642ea15b-49b5-4af4-81af-3fffb6c1c477" valueTypeId="8dd8c45c-db74-4d19-b58a-670721dbb302"/>
+    <managerType typeId="b9061b30-4e9f-4272-805f-20781f96461c" valueTypeId="2e7cb2a0-9de6-4b2e-a47f-c768d8c5b76a"/>
+    <recordSetType typeId="e1f52ed3-313b-4c97-b04d-93afb5d7a58c" valueTypeId="d1952a26-b64d-426f-b7f0-873852fe2280"/>
+    <recordKeyType typeId="1002981e-a791-48a8-a7cd-a2e5db7e6580" valueTypeId="c25e7f23-b494-497c-89a1-06ad6e7cb1fc"/>
+    <recordType typeId="75fc0669-07c9-4a6b-9a3e-e0c7b0c4ad48" valueTypeId="2d72f4f6-5216-4ea8-85ad-bd93270fdaa2"/>
+    <recordManagerType typeId="d08c99de-fd7a-4b07-9abf-cd5ba7d4b472" valueTypeId="679de32e-fa86-4423-bb3f-9823d576f718"/>
+  </producedTypes>
+  <name>ЗаданияКРасчетуНалоговыхОбязательствДополнительно</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задания к расчету налоговых обязательств дополнительно</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Завдання до розрахунку податкових зобов'язань додатково</value>
+  </synonym>
+  <comment>Технический регистр, содержит в себе данные о датах, после которые необходимо пересчитать офлайновому механизму расчета налоговых обязательств.</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="161be7bd-2d4a-42fc-b19f-160cba216823">
+    <name>День</name>
+    <synonym>
+      <key>ru</key>
+      <value>День</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>День</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </format>
+    <format>
+      <key>uk</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </editFormat>
+    <editFormat>
+      <key>uk</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="530f6075-dc38-4a04-ad1e-495d1587a604">
+    <name>НомерЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер задания</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер завдання</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cbb49e05-5fa4-41a9-b06e-d63281bedddd">
+    <name>АналитикаУчетаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку за партнерами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоПартнерам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eccef9db-c313-469e-b624-629e6bedba7f">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

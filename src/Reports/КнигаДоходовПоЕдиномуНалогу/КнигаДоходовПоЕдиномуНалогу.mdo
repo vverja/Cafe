@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93bf58e8-5483-41bb-9107-6ce726ffcf5d">
+  <producedTypes>
+    <objectType typeId="68b343a8-bfe8-433a-8468-52cddabbe4b6" valueTypeId="ad7d837b-6bd5-4ffa-95c8-3ef0905218e1"/>
+    <managerType typeId="681b2a11-4bdb-4d76-af5e-fe4489578961" valueTypeId="2a603008-3ad5-4ce5-9895-baa940fb2fd8"/>
+  </producedTypes>
+  <name>КнигаДоходовПоЕдиномуНалогу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Книга доходов (единый налог)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Книга доходів (єдиний податок)</value>
+  </synonym>
+  <comment>Книга доходов (единый налог)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.КнигаДоходовПоЕдиномуНалогу.Form.ФормаОтчета</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Открыть отчет Книга доходов (единый налог)</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Відкрити звіт  Книга обліку доходів (єдиний податок)</value>
+  </explanation>
+  <attributes uuid="5344d7ad-327f-4fef-89c9-18a968f5b88c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="757be7a2-d227-400e-be7b-a35837e1888b">
+    <name>ПериодОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Період звіту</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="fd028b90-e447-44fb-8da1-a6d2d8a3db9c">
+    <name>ДатаНачалаНарастающегоИтога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начиная с:</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата начала нарастающего итога</value>
+    </synonym>
+    <type>
+      <types>StandardBeginningDate</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="f55bd448-e84f-46a2-b24d-29cdf246072a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="59a29a3f-c0eb-4597-8321-0104499a1c40">
+    <name>UK_Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="e10fffba-802c-4474-abd5-f783303b67d5">
+    <name>UK_Макет2021</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="9c12e00c-e9db-4b22-bb0c-e6cea78ba9e0">
+    <name>UK_Макет2023</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b4aaf23-2266-4b5e-a96f-8a1d0625347c">
+  <producedTypes>
+    <objectType typeId="420a236e-ad3d-4a2c-ad95-f61830ef457d" valueTypeId="7912b92b-52ac-4625-a066-f8b4ba01d657"/>
+    <refType typeId="3a98489c-6286-469e-9ffa-9fe67803b192" valueTypeId="0db6a90f-0869-4bd4-9a02-42cb1abe6eb0"/>
+    <selectionType typeId="0f5a3674-3ff8-48b9-b9ef-60da1b12da5e" valueTypeId="5d929490-8915-497e-9000-dd1490ea6b65"/>
+    <listType typeId="0f2512f0-043b-4b36-983f-0c20de6ba8dd" valueTypeId="2c03d868-5641-44d3-95b5-8ff502a5d4f2"/>
+    <managerType typeId="debb9467-ee5d-4b01-a17a-02369502d480" valueTypeId="e4292bc7-ee85-4ea0-829d-78f04c0c9cf1"/>
+  </producedTypes>
+  <name>РаспределениеДоходовИРасходовПоНаправлениямДеятельности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распределение доходов и расходов по направлениям деятельности</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Розподіл доходів і витрат за напрямами діяльності</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.РаспределениеДоходовИРасходовПоНаправлениямДеятельности.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_РаспределениеДоходовИРасходовПоНаправлениямДеятельности</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Распределение доходов и расходов </value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>uk</key>
+    <value>Розподіл доходів і витрат </value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Распределение доходов и расходов по направлениям деятельности</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>uk</key>
+    <value>Розподіл доходів і витрат за напрямами діяльності</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Распределения доходов и расходов</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Розподіли доходів і витрат</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Распределения доходов и расходов по направлениям деятельности</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Розподіли доходів і видатків за напрямами діяльності</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Сведения о доходах и расходов предприятия, распределенные по различным направлениям деятельности за период</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Відомості про доходи та витрат підприємства, що розподілені по різних напрямах діяльності за період</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.РаспределениеДоходовИРасходовПоНаправлениямДеятельности.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.РаспределениеДоходовИРасходовПоНаправлениямДеятельности.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <registerRecords>AccumulationRegister.ПрочиеДоходы</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеРасходы</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеАктивыПассивы</registerRecords>
+  <registerRecords>AccumulationRegister.ФинансовыеРезультаты</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="fae82286-273a-416e-9884-c5e7ea03f107">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, для которой производится определение финансового результата.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація, для якої проводиться визначення фінансового результату.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Организации.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="08d35e85-1af7-40f1-ad1f-ca16257f6566">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, ответственный за распределение доходов и расходов.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Користувач, відповідальний за розподіл доходів і витрат.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Пользователи.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="85d5a059-1193-4ba8-8216-accc43e094a0">
+    <name>РаспределениеПоВсемОрганизациям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распределение по всем организациям</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розподіл по всіх організаціях</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак распределения расходов по всем организациям</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака розподілу витрат по всіх організаціях</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="676dd88a-a75e-4bc6-bd05-0c72897daf00">
+    <name>ПредставлениеОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організації</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="987a2c0b-dfa9-4d03-872e-695278e0292e">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="df531092-3eb1-4451-b0bb-75812957ba3d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="be0a3343-134e-42aa-9aff-995d8b0eb008">
+    <producedTypes>
+      <objectType typeId="a0590b72-1530-46e0-97fc-e94a8fd0afda" valueTypeId="f7c6e6f4-9be4-4ba8-8003-1973e72a4033"/>
+      <rowType typeId="fc404e19-938f-4076-8ca6-1fb4eb51ae0a" valueTypeId="55a5b6e8-193a-4e25-b372-241a3dd286bc"/>
+    </producedTypes>
+    <name>Доходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доходы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Доходи</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="206e84e1-c45e-4ac5-8094-a333b2700152">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Організація</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Организация, для которой производится определение финансового результата.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Організація, для якої проводиться визначення фінансового результату.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="67e94529-5f14-4799-9d48-5ad8c8f83203">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Підрозділ</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СтруктураПредприятия</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Подразделение, по которому отражены доходы</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Підрозділ, за яким відображені доходи</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b5f53e28-f11c-4e71-b84b-7b0d8b1feadf">
+      <name>СтатьяДоходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья доходов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Стаття доходів</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.СтатьиДоходов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Статья доходов, которая будет распределена документом.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Стаття доходів, яка буде розподілена документом.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="94a60010-7a2f-4f26-a852-8b8d552c1c08">
+      <name>СпособРаспределения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Способ распределения</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Спосіб розподілу</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СпособыРаспределенияПоНаправлениямДеятельности</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Способ распределения прочих доходов по направлениям деятельности.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Спосіб розподілу інших доходів за напрямами діяльності.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bccd445a-265d-42e3-a4a6-1bcad693e0d2">
+      <name>АналитикаДоходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Аналитика доходов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Аналітика доходів</value>
+      </synonym>
+      <type>
+        <types>Characteristic.СтатьиДоходов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объект отнесения доходов</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Об'єкт віднесення доходів</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <linkByType>
+        <field>Document.РаспределениеДоходовИРасходовПоНаправлениямДеятельности.TabularSection.Доходы.Attribute.СтатьяДоходов</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6a5e9d17-3e1e-4590-92e9-577f35c4fdae">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма дохода к распределению в валюте управленческого учета.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума прибутку до розподілу у валюті управлінського обліку.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="35164bf3-611b-4d17-b902-0327b16b8e89">
+      <name>ТребуетсяСпособРаспределения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Требуется способ распределения</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Потрібен спосіб розподілу</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="77925bb3-8500-4692-9ac1-5cf5044ea8e9">
+    <producedTypes>
+      <objectType typeId="1e467517-964c-4cad-bb74-1a9abfc6e2e0" valueTypeId="0d599962-3deb-4eff-be02-66d9502acbda"/>
+      <rowType typeId="ec1f8f0f-b163-4f05-9b33-3cb65c16c5bf" valueTypeId="754fb703-dc87-4e96-a3f0-ce450ae8dc30"/>
+    </producedTypes>
+    <name>Расходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрати</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Расходы, распределяемые документом по направлениям деятельности.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Витрати, що розподіляються документом по напрямах діяльності.</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b8e2a0f8-53f1-4d51-988c-ccf5b6bdc6d6">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Організація</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Организация, для которой производится определение финансового результата.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Організація, для якої проводиться визначення фінансового результату.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e22d06e8-935f-4c39-af99-e5c6dd7e6a89">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Підрозділ</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СтруктураПредприятия</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Подразделение, по которому отражены расходы.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Підрозділ, за яким відображені витрати.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d5137984-87c9-480c-a709-244782399f11">
+      <name>СтатьяРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья расходов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Стаття витрат</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Статья расходов, которая будет распределена документом.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Стаття витрат, яка буде розподілена документом.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.ВариантРаспределенияРасходов</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ВариантыРаспределенияРасходов.EnumValue.НаНаправленияДеятельности</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fb7538a4-e390-4dd0-9ae7-39864dfa8d6d">
+      <name>СпособРаспределения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Способ распределения</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Спосіб розподілу</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СпособыРаспределенияПоНаправлениямДеятельности</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Способ распределения прочих расходов по направлениям деятельности.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Спосіб розподілу інших витрат за напрямами діяльності.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6a205d1d-b53d-4b06-b293-0573b76b6b1b">
+      <name>АналитикаРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Аналитика расходов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Аналітика витрат</value>
+      </synonym>
+      <type>
+        <types>Characteristic.СтатьиРасходов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объект отнесения расходов</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Об'єкт віднесення витрат</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <linkByType>
+        <field>Document.РаспределениеДоходовИРасходовПоНаправлениямДеятельности.TabularSection.Расходы.Attribute.СтатьяРасходов</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="db996151-3859-4441-82e9-3c66039c0df8">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма расходов к распределению в валюте управленческого учета.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума витрат до розподілу в валюті управлінського обліку.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="087ea379-0f64-46e1-a4df-89956bf634cb">
+      <name>ТребуетсяСпособРаспределения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Требуется способ распределения</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Потрібен спосіб розподілу</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3981f0db-3016-4f3f-a6cd-139a12798ed7">
+      <name>НалоговоеНазначение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Налоговое назначение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Податкове призначення</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НалоговыеНазначенияАктивовИЗатрат</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8a18c350-6ed3-43c9-b0cb-6feca96cf3c8">
+      <name>СуммаРегл</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма регл</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума регл</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Суммовая оценка прочих расходов в валюте регламентированного учета</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сумова оцінка інших витрат у валюті регламентованого обліку</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6151e547-1d20-4c76-afc8-702bd88601d4">
+      <name>СуммаРеглБезНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма регл без НДС</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума регл без ПДВ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Суммовая оценка прочих расходов в валюте регламентированного учета без НДС</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Суммовая оцінка інших витрат у валюті регламентованого обліку без ПДВ</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8c961276-fa83-4b14-966d-a33d49dbb3d0">
+      <name>НДСРегл</name>
+      <synonym>
+        <key>ru</key>
+        <value>НДС (регл.)</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>ПДВ (регл.)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Суммовая оценка НДС прочих расходов в валюте регламентированного учета</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Суммовая оцінка ПДВ інших витрат у валюті регламентованого обліку</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

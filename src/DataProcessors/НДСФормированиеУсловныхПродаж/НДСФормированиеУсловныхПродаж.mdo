@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="67ef96e1-5d47-4427-b6c3-c3364243296a">
+  <producedTypes>
+    <objectType typeId="7aa07343-cd3f-4a99-a63c-9a03d8669280" valueTypeId="15e40386-f752-46f4-82d1-c11609e0877e"/>
+    <managerType typeId="5fd6e980-3133-4dae-88dc-18c123751a6c" valueTypeId="37490757-a2c2-485a-a272-d67bbf0b53eb"/>
+  </producedTypes>
+  <name>НДСФормированиеУсловныхПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование налоговых документов по условным продажам</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Формування податкових документів по умовним продажам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.НДСФормированиеУсловныхПродаж.Form.Форма</defaultForm>
+  <tabularSections uuid="6c1bbac4-c9d0-4491-8bb0-279edaba79f6">
+    <producedTypes>
+      <objectType typeId="ce2e0a4c-edb7-4aeb-bb3c-9216a6f202ea" valueTypeId="77786a19-fc18-4875-8891-8b8af1d1fecb"/>
+      <rowType typeId="883de442-329a-4a7f-a3ef-640b87ea8598" valueTypeId="42693468-2c0f-41ab-b74b-aa1958918771"/>
+    </producedTypes>
+    <name>УсловныеПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условные продажи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Умовні продажі</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="94ca2ae6-d510-407d-bf46-ced2965c86a4">
+      <name>ВидУсловнойПродажи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид условной продажи</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Вид умовного продажу</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВидУсловнойПродажи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b40f487c-2f57-4dba-a4cf-5696af158aa6">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Організація</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Организация предприятия, от имени которой оформляется документ</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Організація підприємства, від імені якої оформляється документ</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>ВыборУправленческойОрганизации</name>
+        <value xsi:type="core:BooleanValue"/>
+      </choiceParameters>
+      <fillFromFillingValue>true</fillFromFillingValue>
+      <fillValue xsi:type="core:ReferenceValue">
+        <value>Catalog.Организации.EmptyRef</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="1b57e8ff-a338-4d94-811c-647966b9d7b6">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+        <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
+        <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
+        <types>DocumentRef.РегистрацияВходящегоНалоговогоДокумента</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Товары</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Товари</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d7132456-cf6b-4ab3-a144-c9de6acb60e0">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Характеристики товаров</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Характеристики товарів</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c1a893b7-dea8-4735-8e67-1ef3ec3c8eea">
+      <name>СтавкаНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка НДС</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Ставка ПДВ</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СтавкиНДС</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fa38c9af-19cc-4600-8daa-f947de7b9a7d">
+      <name>НалоговоеНазначение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Налоговое назначение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Податкове призначення</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НалоговыеНазначенияАктивовИЗатрат</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="39d47c5c-7d82-4ada-ad23-3c9c2ca28d9d">
+      <name>НалоговоеНазначениеПоФакту</name>
+      <synonym>
+        <key>ru</key>
+        <value>Налоговое назначение по факту</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Податкове призначення по факту</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НалоговыеНазначенияАктивовИЗатрат</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ed5360e8-af11-4950-ac73-d788131ea748">
+      <name>ПредполагаемоеКоличество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предполагаемое количество</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Передбачувана кількість</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="be9a8e82-5fd6-4154-aecd-5f905c7e7a04">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Кількість</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2ea78906-787b-4bb8-81aa-58598b639754">
+      <name>ПредполагаемаяСтоимостьРегл</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предполагаемая стоимость</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Передбачувана вартість</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Предполагаемая стоимость товаров без НДС в валюте регламентированного учета</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Передбачувана вартість товарів без ПДВ у валюті регламентованого обліку</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d22c9f3f-d4d0-4c8b-9ef9-f68923b42bc9">
+      <name>СтоимостьРегл</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоимость</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Вартість</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Фактическая стоимость товаров без НДС в валюте регламентированного учета</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Фактична вартість товарів без ПДВ у валюті регламентованого обліку</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4d9e135a-d573-46d0-95e7-6ebe44f98be7">
+      <name>ПредполагаемыйНДСРегл</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предполагаемый НДС</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Передбачуваний ПДВ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a9dca41a-fa52-42f8-8263-96b7ac94c2b8">
+      <name>НДСРегл</name>
+      <synonym>
+        <key>ru</key>
+        <value>НДС</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>ПДВ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="bdfff148-95f6-4058-8e42-e0d2706c6938">
+      <name>НДСРеглРучныеКорректировки</name>
+      <synonym>
+        <key>ru</key>
+        <value>НДС с учетом ручных корректировок</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>ПДВ з урахуванням ручних коригувань</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1cb565d4-7b8b-4a4c-bb4d-c98603481f8d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

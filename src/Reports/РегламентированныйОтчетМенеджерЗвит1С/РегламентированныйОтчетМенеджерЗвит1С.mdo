@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1cc83c6b-5641-4828-89ba-0dd82a734505">
+  <producedTypes>
+    <objectType typeId="c142f3a5-5203-4b0e-aa47-943f52753196" valueTypeId="0942f624-c8f7-4812-aded-528699df76e5"/>
+    <managerType typeId="c9303dae-6c0c-442a-a796-055a42bd4114" valueTypeId="5a46ea85-d0bc-49d7-ba4f-55543169bac1"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетМенеджерЗвит1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Менеджер по работе с системой &quot;FREDO Звіт&quot;</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Менеджер по роботі з системою &quot;FREDO Звіт&quot;</value>
+  </synonym>
+  <defaultForm>Report.РегламентированныйОтчетМенеджерЗвит1С.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <forms uuid="566a8082-bded-48db-b273-16cfd1e19275">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основна форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7e8b5e82-e0eb-481c-80e8-0ef4b18526c4">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+  <forms uuid="b93dd828-bbc6-4707-86be-17b0b47812bf">
+    <name>ФормаВыгрузкиИПроверкиНалоговыхДокументов</name>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c74a5414-d5e2-4401-b0b5-03e72bb93a22">
+    <name>ФормаЗагрузкиВходящихНалоговыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма загрузки входящих налоговых документов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма завантаження вхідних податкових документів</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="06e5bf9d-b6d1-4eca-9200-4e3962a4b70d">
+    <name>ФормаВыгрузкиПервичныхДокументов</name>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="34b09dd6-fb68-400f-ba87-6abb558b9e18">
+    <name>ФормаЗагрузкиПервичныхДокументов</name>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ba1a5d05-6ee5-4711-a725-c0b8e561d5aa">
+    <name>ZvitAPI_dll</name>
+    <synonym>
+      <key>ru</key>
+      <value>ZvitAPI.dll</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ZvitAPI.dll</value>
+    </synonym>
+    <comment>Внешняя компонета реализующая новый механизм работы с FREDO Звіт</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="f2859254-1ac9-4ea9-980d-6ba0dfe73ce3">
+    <name>ВыгрузитьВ1СЗвитИсходящиеНалоговыеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузить в &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вивантажити в &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <group>CommandGroup.Выгрузка</group>
+    <commandParameterType>
+      <types>DocumentRef.НалоговаяНакладная</types>
+      <types>DocumentRef.Приложение2КНалоговойНакладной</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="5775e151-0aa7-496e-ae41-0260aa3c763a">
+    <name>ВыгрузитьВ1СЗвитВходящиеНалоговыеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить запрос и проверить состояние регистрации в &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надіслати запит і перевірити стан реєстрації в &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <group>CommandGroup.Выгрузка</group>
+    <commandParameterType>
+      <types>DocumentRef.РегистрацияВходящегоНалоговогоДокумента</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Отправить запрос и проверить состояние регистрации в &quot;FREDO Звіт&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Надіслати запит і перевірити стан реєстрації в &quot;FREDO Звіт&quot;</value>
+    </toolTip>
+  </commands>
+</mdclass:Report>

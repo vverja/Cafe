@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Заявки</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРасход</dataPath>
+			<field>СуммаРасход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма расход</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сума витрата</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПланирования</dataPath>
+			<field>ДокументПланирования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ планирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Документ планування</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчетКасса</dataPath>
+			<field>БанковскийСчетКасса</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Банковский счет касса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Банківський рахунок каса</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Організація</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПлатежа</dataPath>
+			<field>ДатаПлатежа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата платежа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата платежу</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БанковскийСчетКассаДокумента</dataPath>
+			<field>БанковскийСчетКассаДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Банковский счет касса документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Банківський рахунок каса документа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка КАК ДокументПланирования,
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.БанковскийСчетКасса,
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Сумма,
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.ДатаПлатежа
+ПОМЕСТИТЬ ЗапланированныеПлатежи
+ИЗ
+	Документ.ЗаявкаНаРасходованиеДенежныхСредств.РаспределениеПоСчетам КАК ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам
+ГДЕ
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.ДатаПлатежа &gt;= &amp;НачалоПериода
+	И (&amp;ОтображатьНеутвержденные
+			ИЛИ ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка.Статус В (&amp;СтатусыУтверждения))
+	И ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка.Проведен
+{ГДЕ
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.БанковскийСчетКасса.*,
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка.Организация.* КАК Организация,
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка.Валюта.*}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка КАК ДокументПланирования,
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.БанковскийСчетКасса,
+	СУММА(ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Сумма) КАК Сумма
+ПОМЕСТИТЬ ПредыдущиеПлатежи
+ИЗ
+	Документ.ЗаявкаНаРасходованиеДенежныхСредств.РаспределениеПоСчетам КАК ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрНакопления.ДенежныеСредстваКВыплате.Остатки({(&amp;ПустаяДата)}, {(ЗаявкаНаРасходованиеДенежныхСредств.Организация).* КАК Организация}) КАК ДенежныеСредстваКВыплатеОстатки
+		ПО ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка = ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств
+ГДЕ
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.ДатаПлатежа &lt; &amp;НачалоПериода
+	И (&amp;ОтображатьНеутвержденные
+			ИЛИ ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка.Статус В (&amp;СтатусыУтверждения))
+	И ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка.Проведен
+{ГДЕ
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.БанковскийСчетКасса.*,
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка.Организация.* КАК Организация,
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка.Валюта.*}
+
+СГРУППИРОВАТЬ ПО
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка,
+	ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.БанковскийСчетКасса
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств КАК ДокументПланирования,
+	ВЫБОР
+		КОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.ФормаОплатыЗаявки = ЗНАЧЕНИЕ(Перечисление.ФормыОплаты.Наличная)
+			ТОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.Касса
+		КОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.ФормаОплатыЗаявки = ЗНАЧЕНИЕ(Перечисление.ФормыОплаты.Безналичная)
+			ТОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.БанковскийСчет
+	КОНЕЦ КАК БанковскийСчетКасса,
+	-ДенежныеСредстваКВыплатеОстатки.СуммаОстаток - ЕСТЬNULL(СУММА(ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Сумма), 0) КАК Сумма,
+	ВЫБОР
+		КОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.ЖелательнаяДатаПлатежа &lt; &amp;НачалоПериода
+			ТОГДА &amp;НачалоПериода
+		ИНАЧЕ ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.ЖелательнаяДатаПлатежа
+	КОНЕЦ КАК ДатаПлатежа
+ПОМЕСТИТЬ ОстаткиНераспределенныхЗаявок
+ИЗ
+	РегистрНакопления.ДенежныеСредстваКВыплате.Остатки({(&amp;ПустаяДата)}, {(ЗаявкаНаРасходованиеДенежныхСредств.Организация).* КАК Организация, (ЗаявкаНаРасходованиеДенежныхСредств.Валюта) КАК Валюта}) КАК ДенежныеСредстваКВыплатеОстатки
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаявкаНаРасходованиеДенежныхСредств.РаспределениеПоСчетам КАК ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам
+		ПО (ЗаявкаНаРасходованиеДенежныхСредствРаспределениеПоСчетам.Ссылка = ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств)
+ГДЕ
+	&amp;ОтображатьНераспределенныеВКалендаре
+	И (&amp;ОтображатьНеутвержденные
+			ИЛИ ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.Статус В (&amp;СтатусыУтверждения))
+{ГДЕ
+	ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.Организация.* КАК Организация}
+
+СГРУППИРОВАТЬ ПО
+	ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств,
+	ВЫБОР
+		КОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.ФормаОплатыЗаявки = ЗНАЧЕНИЕ(Перечисление.ФормыОплаты.Наличная)
+			ТОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.Касса
+		КОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.ФормаОплатыЗаявки = ЗНАЧЕНИЕ(Перечисление.ФормыОплаты.Безналичная)
+			ТОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.БанковскийСчет
+	КОНЕЦ,
+	ДенежныеСредстваКВыплатеОстатки.СуммаОстаток,
+	ВЫБОР
+		КОГДА ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.ЖелательнаяДатаПлатежа &lt; &amp;НачалоПериода
+			ТОГДА &amp;НачалоПериода
+		ИНАЧЕ ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств.ЖелательнаяДатаПлатежа
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗапланированныеПлатежи.ДатаПлатежа КАК ДатаПлатежа,
+	ЗапланированныеПлатежи.ДокументПланирования КАК ДокументПланирования,
+	ЗапланированныеПлатежи.БанковскийСчетКасса,
+	ЗапланированныеПлатежи.Сумма КАК СуммаРасход
+ПОМЕСТИТЬ ВсеДанныеЗаявок
+ИЗ
+	ЗапланированныеПлатежи КАК ЗапланированныеПлатежи
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	&amp;НачалоПериода,
+	ПредыдущиеПлатежи.ДокументПланирования,
+	ПредыдущиеПлатежи.БанковскийСчетКасса,
+	ПредыдущиеПлатежи.Сумма
+ИЗ
+	ПредыдущиеПлатежи КАК ПредыдущиеПлатежи
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ОстаткиНераспределенныхЗаявок.ДатаПлатежа,
+	ОстаткиНераспределенныхЗаявок.ДокументПланирования,
+	ОстаткиНераспределенныхЗаявок.БанковскийСчетКасса,
+	ОстаткиНераспределенныхЗаявок.Сумма
+ИЗ
+	ОстаткиНераспределенныхЗаявок КАК ОстаткиНераспределенныхЗаявок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВсеДанныеЗаявок.ДатаПлатежа КАК ДатаПлатежа,
+	ВсеДанныеЗаявок.ДокументПланирования КАК ДокументПланирования,
+	ВсеДанныеЗаявок.БанковскийСчетКасса КАК БанковскийСчетКассаДокумента,
+	СУММА(ВсеДанныеЗаявок.СуммаРасход) КАК СуммаРасход,
+	ВсеДанныеЗаявок.ДокументПланирования.Организация КАК Организация,
+	ВсеДанныеЗаявок.ДокументПланирования.Валюта КАК Валюта
+{ВЫБРАТЬ
+	ДатаПлатежа,
+	ДокументПланирования.*,
+	БанковскийСчетКассаДокумента.*,
+	СуммаРасход,
+	Организация.*,
+	Валюта.*}
+ИЗ
+	ВсеДанныеЗаявок КАК ВсеДанныеЗаявок
+{ГДЕ
+	ВсеДанныеЗаявок.ДатаПлатежа}
+
+СГРУППИРОВАТЬ ПО
+	ВсеДанныеЗаявок.ДатаПлатежа,
+	ВсеДанныеЗаявок.ДокументПланирования,
+	ВсеДанныеЗаявок.БанковскийСчетКасса,
+	ВсеДанныеЗаявок.ДокументПланирования.Организация,
+	ВсеДанныеЗаявок.ДокументПланирования.Валюта</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ОстаткиПоЗаявкам</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Організація</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтроки</dataPath>
+			<field>НомерСтроки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер строки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Номер рядка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяДвиженияДенежныхСредств</dataPath>
+			<field>СтатьяДвиженияДенежныхСредств</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья движения денежных средств</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Стаття руху грошових коштів</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнер</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Партнер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументПланирования</dataPath>
+			<field>ДокументПланирования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ планирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Документ планування</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРаспределения</dataPath>
+			<field>СуммаРаспределения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма распределения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сума розподілу</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Період</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ 
+	ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств КАК ДокументПланирования,
+	ДенежныеСредстваКВыплатеОстатки.АналитикаУчетаПоПартнерам.Партнер КАК Партнер,
+	ДенежныеСредстваКВыплатеОстатки.СтатьяДвиженияДенежныхСредств КАК СтатьяДвиженияДенежныхСредств,
+	-ДенежныеСредстваКВыплатеОстатки.СуммаОстаток КАК СуммаОстаток
+ПОМЕСТИТЬ ТаблицаОстатков
+ИЗ
+	РегистрНакопления.ДенежныеСредстваКВыплате.Остатки({(&amp;ПустаяДата)}, ЗаявкаНаРасходованиеДенежныхСредств В (&amp;Заявки) {(ЗаявкаНаРасходованиеДенежныхСредств.Организация) КАК Организация}) КАК ДенежныеСредстваКВыплатеОстатки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДАТАВРЕМЯ(3999, 1, 1) КАК Период,
+	ТаблицаОстатков.ДокументПланирования КАК ДокументПланирования,
+	ТаблицаОстатков.Партнер КАК Партнер,
+	ТаблицаОстатков.СтатьяДвиженияДенежныхСредств КАК СтатьяДвиженияДенежныхСредств,
+	ТаблицаОстатков.СуммаОстаток КАК СуммаРаспределения,
+	МАКСИМУМ(ЗаявкаНаРасходованиеДенежныхСредствРасшифровкаПлатежа.НомерСтроки) КАК НомерСтроки
+{ВЫБРАТЬ
+	Период,
+	ДокументПланирования,
+	Партнер,
+	СтатьяДвиженияДенежныхСредств,
+	СуммаРаспределения,
+	НомерСтроки}
+ИЗ
+	ТаблицаОстатков КАК ТаблицаОстатков
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаявкаНаРасходованиеДенежныхСредств.РасшифровкаПлатежа КАК ЗаявкаНаРасходованиеДенежныхСредствРасшифровкаПлатежа
+		ПО ТаблицаОстатков.Партнер = ЗаявкаНаРасходованиеДенежныхСредствРасшифровкаПлатежа.Партнер
+			И ТаблицаОстатков.СтатьяДвиженияДенежныхСредств = ЗаявкаНаРасходованиеДенежныхСредствРасшифровкаПлатежа.СтатьяДвиженияДенежныхСредств
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаОстатков.ДокументПланирования,
+	ТаблицаОстатков.СтатьяДвиженияДенежныхСредств,
+	ТаблицаОстатков.Партнер,
+	ТаблицаОстатков.СуммаОстаток
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДенежныеСредстваКВыплатеОстатки.Период,
+	ДенежныеСредстваКВыплатеОстатки.ЗаявкаНаРасходованиеДенежныхСредств,
+	ДенежныеСредстваКВыплатеОстатки.АналитикаУчетаПоПартнерам.Партнер,
+	ДенежныеСредстваКВыплатеОстатки.СтатьяДвиженияДенежныхСредств,
+	ДенежныеСредстваКВыплатеОстатки.СуммаПриход,
+	0
+ИЗ
+	РегистрНакопления.ДенежныеСредстваКВыплате.Обороты(, , День, ЗаявкаНаРасходованиеДенежныхСредств В (&amp;Заявки) {(ЗаявкаНаРасходованиеДенежныхСредств.Организация) КАК Организация}) КАК ДенежныеСредстваКВыплатеОстатки</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>Заявки</sourceDataSet>
+		<destinationDataSet>ОстаткиПоЗаявкам</destinationDataSet>
+		<sourceExpression>ДокументПланирования</sourceExpression>
+		<destinationExpression>ДокументПланирования</destinationExpression>
+		<parameter>Заявки</parameter>
+		<parameterListAllowed>true</parameterListAllowed>
+	</dataSetLink>
+	<totalField>
+		<dataPath>СуммаРасход</dataPath>
+		<expression>Обработки.ПлатежныйКалендарь.РаспределитьСуммуОстаткаПоДатамПлатежей(
+	ГРУППОВАЯОБРАБОТКА("ДокументПланирования КАК ДокументПланирования,
+						БанковскийСчетКассаДокумента КАК БанковскийСчетКасса,
+						ДатаПлатежа КАК ДатаПлатежа,
+						Период КАК Период,
+						Партнер КАК Партнер,
+						СтатьяДвиженияДенежныхСредств КАК СтатьяДвиженияДенежныхСредств,
+						СуммаРаспределения КАК СуммаРаспределения,
+						СуммаРасход КАК СуммаРасход"))</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Початок періоду</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Заявки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Заявки</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Заявки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЗаявкаНаРасходованиеДенежныхСредств</v8:Type>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>ОтображатьНеутвержденные</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отображать неутвержденные</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Відображати незатверджені</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>СтатусыУтверждения</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Статусы утверждения</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Статуси затвердження</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СтатусыЗаявокНаРасходованиеДенежныхСредств</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаявокНаРасходованиеДенежныхСредств.Согласована</value>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаявокНаРасходованиеДенежныхСредств.КОплате</value>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>ПустаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пустая дата</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Порожня дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ОтображатьНераспределенныеВКалендаре</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отображать нераспределенные в календаре</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Відображати нерозподілені в календарі</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Кінець періоду</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Основний</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаРасход</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДокументПланирования</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Период</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НомерСтроки</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДатаПлатежа</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>БанковскийСчетКасса</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ДатаПлатежа</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ДокументПланирования</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>БанковскийСчетКассаДокумента</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>НомерСтроки</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СтатьяДвиженияДенежныхСредств</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Партнер</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Валюта</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДатаПлатежа</dcsset:left>
+						<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.КонецПериода</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

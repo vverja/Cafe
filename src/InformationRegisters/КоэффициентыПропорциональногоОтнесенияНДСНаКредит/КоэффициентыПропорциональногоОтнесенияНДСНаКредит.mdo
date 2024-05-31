@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96326630-3368-4b2e-a449-d9bddf22a8c8">
+  <producedTypes>
+    <selectionType typeId="0fdcf3df-b306-450d-804d-139123aa28dc" valueTypeId="e1e10bfa-dc7f-48f4-aea8-1f7563185b0e"/>
+    <listType typeId="2ff6688a-0ce1-4a10-b7b0-66be826595f5" valueTypeId="9b4492bd-ed53-4993-8a6b-e7992fcff3db"/>
+    <managerType typeId="d7a04e76-20a2-44a3-b0fa-18b065a86a17" valueTypeId="1825a839-56e1-48d5-84e4-845d84262e4c"/>
+    <recordSetType typeId="6f5a1765-f9f5-4549-abaa-d4df4b5fc0f8" valueTypeId="85c4a885-f752-41ac-8a4c-586ea3922640"/>
+    <recordKeyType typeId="fb08c9f8-dac2-4f61-b0ff-2c621fc399bf" valueTypeId="8b0f79ca-ea24-490f-ab5c-76f52b472f14"/>
+    <recordType typeId="7008ff51-5dc2-413e-9393-e09066c7f95c" valueTypeId="1bdffe1c-3f84-4ef0-aace-a39141b9932e"/>
+    <recordManagerType typeId="5ff15b17-c103-4115-9b53-5e290878bd13" valueTypeId="56528014-ad3a-4ba1-bc70-edbf39b753c4"/>
+  </producedTypes>
+  <name>КоэффициентыПропорциональногоОтнесенияНДСНаКредит</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициенты пропорционального отнесения НДС на кредит</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Коефіцієнти пропорційного віднесення ПДВ на кредит</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c8561eb6-c43f-43dd-864e-21271bdf88c4">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коефіцієнт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>13</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8db4fb65-9067-452c-a165-616dc6a69dd3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="97adb272-f532-4f6e-9197-70840f0e5ca6">
+    <name>СпецРежимНалогообложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец режим налогообложения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спец режим оподаткування</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

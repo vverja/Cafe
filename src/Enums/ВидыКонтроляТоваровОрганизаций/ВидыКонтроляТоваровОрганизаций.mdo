@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a53f8bc-d7bc-4427-8c22-514d3932ac12">
+  <producedTypes>
+    <refType typeId="00f71cfa-eb35-489b-aa12-dbde8f474aca" valueTypeId="18a55288-ad8f-4a92-a572-ee9c4091b08f"/>
+    <listType typeId="9f282b39-c7cb-44ea-9a3d-5fa19d5a8459" valueTypeId="374fe6c0-13f1-40de-b42c-343dbd0e22fc"/>
+    <managerType typeId="84d5653b-4a97-48b7-a9f3-a052082d1305" valueTypeId="bddcd101-cd2b-41a5-a4e7-ded70cba3e10"/>
+  </producedTypes>
+  <name>ВидыКонтроляТоваровОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды контроля товаров организаций</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Види контролю товарів організацій</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Описание различных границ контроля остатков</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Опис різних меж контролю залишків</value>
+  </explanation>
+  <enumValues uuid="11771231-955b-44b1-a283-a12bbf0ae468">
+    <name>КонецМесяцаИДатаПоследнегоДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>На конец месяца и оперативный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>На кінець місяця і оперативний</value>
+    </synonym>
+    <comment>Минимум остатка (на конец месяца; оперативный)</comment>
+  </enumValues>
+  <enumValues uuid="e030a6df-9e37-46d2-a5e2-1a6bfbe54ef8">
+    <name>КонецДняКонецМесяцаИДатаПоследнегоДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>На конец дня и оперативный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>На кінець дня і оперативний</value>
+    </synonym>
+    <comment>Минимум остатка (на конец дня; оперативный)</comment>
+  </enumValues>
+</mdclass:Enum>

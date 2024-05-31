@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60dee54e-49a2-402b-a1c2-3ec5bb03ed58">
+  <producedTypes>
+    <objectType typeId="b4662dce-42a8-4418-84cd-3419e176168c" valueTypeId="ea6e4bcd-f7f9-4f05-877f-c14bdff68f87"/>
+    <managerType typeId="cebe7687-ede5-4212-b500-8789f23a27b3" valueTypeId="60c537de-850f-4466-94e6-41f73131289a"/>
+  </producedTypes>
+  <name>ДвиженияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения документа</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Рухи документа</value>
+  </synonym>
+  <comment>Отчет по движениям документа</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДвиженияДокумента.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="d6cd8f1d-bd15-4731-b36a-5f4c05676e41">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, для которого формируется отчет.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Документ, для якого формується звіт.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="abb363ae-37f6-4220-a1c4-80bfaf9ee99a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="091873d7-1006-4cd8-a81b-5659cc87c378">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <commands uuid="9c883d4a-7142-4861-8547-cde4c09b9754">
+    <name>ДвиженияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рухи документа</value>
+    </synonym>
+    <comment>Отчет по движениям документа</comment>
+    <group>FormNavigationPanelSeeAlso</group>
+    <commandParameterType>
+      <types>DocumentRef.УстановкаКоэффициентаПропорциональногоНДС</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+  </commands>
+</mdclass:Report>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bdb55b9-c0de-4089-ad8c-0169811c1ff0">
+  <producedTypes>
+    <selectionType typeId="ad6c2ebf-6419-45ae-ab94-7cba30300be7" valueTypeId="ce6615d2-ed0c-4624-bbf4-8d6f240e667e"/>
+    <listType typeId="0b29feed-1717-4a8c-9cde-00c3c33df83d" valueTypeId="4c9a0554-09ad-4711-a424-2a96d0ca3762"/>
+    <managerType typeId="8ae7ff3c-8995-4efc-ae3f-488280697ad7" valueTypeId="66a00af7-bbd6-4bde-a4ca-5093ee284dcd"/>
+    <recordSetType typeId="63525edc-47eb-4b19-9110-b025afa5a88b" valueTypeId="2543f066-23bf-4f75-833e-2f76b2085dbf"/>
+    <recordKeyType typeId="f3948bb4-8e2d-4ecc-bfef-b9adb22c4223" valueTypeId="e7884590-b4b2-42ce-a147-d9927219482f"/>
+    <recordType typeId="4e20b471-4558-4095-9157-34ef15267f9d" valueTypeId="cf898468-2978-4d32-8ad8-bfe82b4d7a55"/>
+    <recordManagerType typeId="5ede4b16-c5c1-40d7-b298-8291093805f6" valueTypeId="89278926-e541-4cb3-96b6-2b9468b75dd1"/>
+  </producedTypes>
+  <name>НДСНачальныеПериодыРасчетаНалоговогоКредита</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начальные периоды расчета налогового кредита</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Початкові періоди розрахунку податкового кредиту</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8ae54250-4eb1-47ad-a8be-99ce20e7dbc0">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="70342c52-7f74-44d1-8199-65aea9ee8eae">
+    <name>ТребуетПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требует пересчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Потребує перерахунку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="99d87113-5059-4650-9020-119beef85d62">
+    <name>АналитикаУчетаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку за партнерами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоПартнерам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику расчетов с клиентами.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Визначає аналітику розрахунків з клієнтами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="c5d3a57f-3269-4597-b6fc-7c81f369ce9c">
+    <name>ДокументПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ поставки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ поставки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ОтчетКомиссионера</types>
+      <types>DocumentRef.ВозвратТоваровПоставщику</types>
+      <types>DocumentRef.ВводОстатков</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+      <types>DocumentRef.ОтчетКомитенту</types>
+      <types>DocumentRef.ПоступлениеУслугПрочихАктивов</types>
+      <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7be9ed2-c2c9-434b-aa16-0d31ea2c426b">
+  <name>ОбменДаннымиОбменУправлениеТорговлей31Бухгалтерия20ЗарегистрироватьИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными обмен управление торговлей31 бухгалтерия20 зарегистрировать изменение</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Обмін даними обмін управління торговлей31 бухгалтерия20 зареєструвати зміну</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.СтраныМира</types>
+    <types>CatalogObject.КлассификаторБанков</types>
+    <types>CatalogObject.БанковскиеСчетаКонтрагентов</types>
+    <types>CatalogObject.ОтветственныеЛицаОрганизаций</types>
+    <types>CatalogObject.НалоговыеИнспекции</types>
+    <types>CatalogObject.КлассификаторУКТВЭД</types>
+    <types>CatalogObject.БанковскиеСчетаОрганизаций</types>
+    <types>CatalogObject.ОбособленныеПодразделенияОрганизаций</types>
+    <types>ChartOfCharacteristicTypesObject.СтатьиРасходов</types>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.УпаковкиЕдиницыИзмерения</types>
+    <types>CatalogObject.Пользователи</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.НаборыСтатейНалоговыхДеклараций</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.НомераГТД</types>
+    <types>CatalogObject.ВидыЦен</types>
+    <types>CatalogObject.Партнеры</types>
+    <types>CatalogObject.НоменклатураГТД</types>
+    <types>CatalogObject.СоглашенияСКлиентами</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.СтатьиНалоговыхДеклараций</types>
+    <types>CatalogObject.ЭквайринговыеТерминалы</types>
+    <types>CatalogObject.ДоговорыКредитовИДепозитов</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>ChartOfCharacteristicTypesObject.СтатьиДоходов</types>
+    <types>CatalogObject.СделкиСКлиентами</types>
+    <types>CatalogObject.НалоговыеНазначенияАктивовИЗатрат</types>
+    <types>CatalogObject.СоглашенияСПоставщиками</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.КлассификаторКОАТУУ</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияУТУП.ОбменДаннымиОбменУправлениеТорговлей31Бухгалтерия20ПередЗаписью</handler>
+</mdclass:EventSubscription>

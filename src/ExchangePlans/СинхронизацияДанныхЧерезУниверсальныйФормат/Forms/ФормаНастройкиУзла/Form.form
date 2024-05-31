@@ -1,0 +1,3763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Правила отправки данных</value>
+  </title>
+  <title>
+    <key>uk</key>
+    <value>Правила відправлення даних</value>
+  </title>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаОсновные</name>
+    <id>271</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаРежимОтправкиДанных</name>
+      <id>273</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаНСИ</name>
+        <id>275</id>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаРежимОтправкиНСИ</name>
+          <id>277</id>
+          <items xsi:type="form:Decoration">
+            <name>ДекорацияОтступГруппыНСИ</name>
+            <id>279</id>
+            <title>
+              <key>ru</key>
+              <value>Декорация отступ группы НСИ</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Декорація відступ групи НДІ</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ДекорацияОтступГруппыНСИExtendedTooltip</name>
+              <id>281</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДекорацияОтступГруппыНСИКонтекстноеМеню</name>
+              <id>280</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>1</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаНастройкиОтправкиНСИ</name>
+            <id>282</id>
+            <items xsi:type="form:FormField">
+              <name>ПереключательОтправлятьНСИАвтоматически</name>
+              <id>284</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>ПравилаОтправкиСправочников</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <handlers>
+                <event>OnChange</event>
+                <name>ПереключательОтправлятьНСИАвтоматическиПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ПереключательОтправлятьНСИАвтоматическиExtendedTooltip</name>
+                <id>286</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ПереключательОтправлятьНСИАвтоматическиКонтекстноеМеню</name>
+                <id>285</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>RadioButtonField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                <choiceList>
+                  <presentation>
+                    <key>ru</key>
+                    <value>Отправлять всю</value>
+                  </presentation>
+                  <presentation>
+                    <key>uk</key>
+                    <value>Відправляти всю</value>
+                  </presentation>
+                  <value xsi:type="core:StringValue">
+                    <value>АвтоматическаяСинхронизация</value>
+                  </value>
+                </choiceList>
+              </extInfo>
+            </items>
+            <items xsi:type="form:Decoration">
+              <name>ОписаниеОтправлятьНСИАвтоматически</name>
+              <id>287</id>
+              <title>
+                <key>ru</key>
+                <value>Программа будет автоматически отслеживать изменения всей нормативно-справочной информации, и регистрировать ее к отправке.</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Програма буде автоматично відслідковувати зміни всієї нормативно-довідкової інформації, і реєструвати її до відправлення.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ОписаниеОтправлятьНСИАвтоматическиExtendedTooltip</name>
+                <id>289</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ОписаниеОтправлятьНСИАвтоматическиКонтекстноеМеню</name>
+                <id>288</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>3</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorRef">
+                <color>Style.ПоясняющийТекст</color>
+              </textColor>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+                <verticalAlign>Top</verticalAlign>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ПереключательОтправлятьНСИПоНеобходимости</name>
+              <id>290</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>ПравилаОтправкиСправочников</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <handlers>
+                <event>OnChange</event>
+                <name>ПереключательОтправлятьНСИПоНеобходимостиПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ПереключательОтправлятьНСИПоНеобходимостиExtendedTooltip</name>
+                <id>292</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ПереключательОтправлятьНСИПоНеобходимостиКонтекстноеМеню</name>
+                <id>291</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>RadioButtonField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                <choiceList>
+                  <presentation>
+                    <key>ru</key>
+                    <value>Отправлять только используемую в документах</value>
+                  </presentation>
+                  <presentation>
+                    <key>uk</key>
+                    <value>Відправляти тільки використовувану в документах</value>
+                  </presentation>
+                  <value xsi:type="core:StringValue">
+                    <value>СинхронизироватьПоНеобходимости</value>
+                  </value>
+                </choiceList>
+              </extInfo>
+            </items>
+            <items xsi:type="form:Decoration">
+              <name>ОписаниеОтправлятьНСИПоНеобходимости</name>
+              <id>293</id>
+              <title>
+                <key>ru</key>
+                <value>Программа будет автоматически отслеживать изменения, и регистрировать к отправке только используемую в документах нормативно-справочную информацию.</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Програма буде автоматично відслідковувати зміни, і реєструвати до відправлення тільки використовувану в документах нормативно-довідкову інформацію.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ОписаниеОтправлятьНСИПоНеобходимостиExtendedTooltip</name>
+                <id>295</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ОписаниеОтправлятьНСИПоНеобходимостиКонтекстноеМеню</name>
+                <id>294</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>4</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorRef">
+                <color>Style.ПоясняющийТекст</color>
+              </textColor>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+                <verticalAlign>Top</verticalAlign>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ПереключательОтправлятьНСИНикогда</name>
+              <id>296</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>ПравилаОтправкиСправочников</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <handlers>
+                <event>OnChange</event>
+                <name>ПереключательОтправлятьНСИНикогдаПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ПереключательОтправлятьНСИНикогдаExtendedTooltip</name>
+                <id>298</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ПереключательОтправлятьНСИНикогдаКонтекстноеМеню</name>
+                <id>297</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>RadioButtonField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                <choiceList>
+                  <presentation>
+                    <key>ru</key>
+                    <value>Не отправлять</value>
+                  </presentation>
+                  <presentation>
+                    <key>uk</key>
+                    <value>Не відправляти</value>
+                  </presentation>
+                  <value xsi:type="core:StringValue">
+                    <value>НеСинхронизировать</value>
+                  </value>
+                </choiceList>
+              </extInfo>
+            </items>
+            <items xsi:type="form:Decoration">
+              <name>ОписаниеНеОтправлятьНСИ</name>
+              <id>299</id>
+              <title>
+                <key>ru</key>
+                <value>Нормативно-справочная информация отправляться не будет.</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Нормативно-довідкова інформація відправлятися не буде.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ОписаниеНеОтправлятьНСИExtendedTooltip</name>
+                <id>301</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ОписаниеНеОтправлятьНСИКонтекстноеМеню</name>
+                <id>300</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorRef">
+                <color>Style.ПоясняющийТекст</color>
+              </textColor>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Синхронизация нормативно-справочной информации:</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Синхронізація нормативно-довідкової інформації:</value>
+            </title>
+            <toolTip>
+              <key>ru</key>
+              <value>Группа настройки отправки НСИ</value>
+            </toolTip>
+            <toolTip>
+              <key>uk</key>
+              <value>Група налаштування відправки НДІ</value>
+            </toolTip>
+            <width>80</width>
+            <horizontalStretch>false</horizontalStretch>
+            <extendedTooltip>
+              <name>ГруппаНастройкиОтправкиНСИExtendedTooltip</name>
+              <id>283</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>Vertical</group>
+              <behavior>Auto</behavior>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа режим отправки НСИ</value>
+          </title>
+          <title>
+            <key>uk</key>
+            <value>Група режим відправки НДІ</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа режим отправки НСИ</value>
+          </toolTip>
+          <toolTip>
+            <key>uk</key>
+            <value>Група режим відправки НДІ</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаРежимОтправкиНСИExtendedTooltip</name>
+            <id>278</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <behavior>Auto</behavior>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Нормативно-справочная информация</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Нормативно-довідкова інформація</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа НСИ</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Група НДІ</value>
+        </toolTip>
+        <width>80</width>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаНСИExtendedTooltip</name>
+          <id>276</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <behavior>Auto</behavior>
+          <representation>WeakSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаДокументы</name>
+        <id>302</id>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаРежимОтправкиДокументов</name>
+          <id>304</id>
+          <items xsi:type="form:Decoration">
+            <name>ДекорацияОтступГруппыДокументов</name>
+            <id>306</id>
+            <title>
+              <key>ru</key>
+              <value>Декорация отступ группы документов</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Декорація відступ групи документів</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ДекорацияОтступГруппыДокументовExtendedTooltip</name>
+              <id>308</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДекорацияОтступГруппыДокументовКонтекстноеМеню</name>
+              <id>307</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <width>1</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>1</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаНастройкаОтправкиДокументов</name>
+            <id>309</id>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаСинхронизироватьДокументыАвтоматически</name>
+              <id>311</id>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаПереключательИДатаНачала</name>
+                <id>313</id>
+                <items xsi:type="form:FormField">
+                  <name>ПереключательДокументыОтправлятьАвтоматически</name>
+                  <id>315</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>ПравилаОтправкиДокументов</segments>
+                  </dataPath>
+                  <titleLocation>None</titleLocation>
+                  <handlers>
+                    <event>OnChange</event>
+                    <name>ПереключательДокументыОтправлятьАвтоматическиПриИзменении</name>
+                  </handlers>
+                  <extendedTooltip>
+                    <name>ПереключательДокументыОтправлятьАвтоматическиExtendedTooltip</name>
+                    <id>317</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ПереключательДокументыОтправлятьАвтоматическиКонтекстноеМеню</name>
+                    <id>316</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>RadioButtonField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                    <choiceList>
+                      <presentation>
+                        <key>ru</key>
+                        <value>Отправлять все, начиная с даты</value>
+                      </presentation>
+                      <presentation>
+                        <key>uk</key>
+                        <value>Відправляти все, починаючи з дати</value>
+                      </presentation>
+                      <value xsi:type="core:StringValue">
+                        <value>АвтоматическаяСинхронизация</value>
+                      </value>
+                    </choiceList>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>ДатаНачалаВыгрузкиДокументов</name>
+                  <id>318</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Синхронизировать документы начиная с даты</value>
+                  </title>
+                  <title>
+                    <key>uk</key>
+                    <value>Синхронізувати документи починаючи з дати</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>ДатаНачалаВыгрузкиДокументов</segments>
+                  </dataPath>
+                  <titleLocation>None</titleLocation>
+                  <extendedTooltip>
+                    <name>ДатаНачалаВыгрузкиДокументовExtendedTooltip</name>
+                    <id>320</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ДатаНачалаВыгрузкиДокументовКонтекстноеМеню</name>
+                    <id>319</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Группа переключатель и дата начала</value>
+                </title>
+                <title>
+                  <key>uk</key>
+                  <value>Група перемикач і дата початку</value>
+                </title>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Группа переключатель и дата начала</value>
+                </toolTip>
+                <toolTip>
+                  <key>uk</key>
+                  <value>Група перемикач і дата початку</value>
+                </toolTip>
+                <extendedTooltip>
+                  <name>ГруппаПереключательИДатаНачалаExtendedTooltip</name>
+                  <id>314</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <behavior>Auto</behavior>
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>Auto</currentRowUse>
+                </extInfo>
+              </items>
+              <items xsi:type="form:Decoration">
+                <name>ОписаниеОтправлятьДокументыАвтоматически</name>
+                <id>321</id>
+                <title>
+                  <key>ru</key>
+                  <value>Программа будет автоматически отслеживать изменения документов, и регистрировать их к отправке начиная с указанной даты.</value>
+                </title>
+                <title>
+                  <key>uk</key>
+                  <value>Програма буде автоматично відслідковувати зміни документів, та реєструвати їх до відправлення починаючи із зазначеної дати.</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ОписаниеОтправлятьДокументыАвтоматическиExtendedTooltip</name>
+                  <id>323</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ОписаниеОтправлятьДокументыАвтоматическиКонтекстноеМеню</name>
+                  <id>322</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <height>3</height>
+                <autoMaxHeight>true</autoMaxHeight>
+                <verticalStretch>false</verticalStretch>
+                <textColor xsi:type="core:ColorRef">
+                  <color>Style.ПоясняющийТекст</color>
+                </textColor>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа синхронизировать документы автоматически</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Група синхронізувати документи автоматично</value>
+              </title>
+              <toolTip>
+                <key>ru</key>
+                <value>Группа синхронизировать документы автоматически</value>
+              </toolTip>
+              <toolTip>
+                <key>uk</key>
+                <value>Група синхронізувати документи автоматично</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>ГруппаСинхронизироватьДокументыАвтоматическиExtendedTooltip</name>
+                <id>312</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>Vertical</group>
+                <behavior>Auto</behavior>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаСинхронизироватьДокументыВручную</name>
+              <id>324</id>
+              <items xsi:type="form:FormField">
+                <name>ПереключательДокументыОтправлятьВручную</name>
+                <id>326</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>ПравилаОтправкиДокументов</segments>
+                </dataPath>
+                <titleLocation>None</titleLocation>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>ПереключательДокументыОтправлятьВручнуюПриИзменении</name>
+                </handlers>
+                <extendedTooltip>
+                  <name>ПереключательДокументыОтправлятьВручнуюExtendedTooltip</name>
+                  <id>328</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ПереключательДокументыОтправлятьВручнуюКонтекстноеМеню</name>
+                  <id>327</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>RadioButtonField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                  <choiceList>
+                    <presentation>
+                      <key>ru</key>
+                      <value>Ручная синхронизация данных</value>
+                    </presentation>
+                    <presentation>
+                      <key>uk</key>
+                      <value>Ручна синхронізація даних</value>
+                    </presentation>
+                    <value xsi:type="core:StringValue">
+                      <value>ИнтерактивнаяСинхронизация</value>
+                    </value>
+                  </choiceList>
+                </extInfo>
+              </items>
+              <items xsi:type="form:Decoration">
+                <name>ОписаниеОтправлятьДанныеПоЗапросу</name>
+                <id>329</id>
+                <title>
+                  <key>ru</key>
+                  <value>Пользователь самостоятельно регистрирует документы к отправке, при этом контроль актуальности документов в информационной базе &quot;Бухгалтерия предприятия&quot; он также выполняет самостоятельно.</value>
+                </title>
+                <title>
+                  <key>uk</key>
+                  <value>Користувач самостійно реєструє документи до відправки, при цьому контроль актуальності документів в інформаційній базі &quot;Бухгалтерія підприємства&quot; він також виконує самостійно.</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ОписаниеОтправлятьДанныеПоЗапросуExtendedTooltip</name>
+                  <id>331</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ОписаниеОтправлятьДанныеПоЗапросуКонтекстноеМеню</name>
+                  <id>330</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <height>4</height>
+                <autoMaxHeight>true</autoMaxHeight>
+                <textColor xsi:type="core:ColorRef">
+                  <color>Style.ПоясняющийТекст</color>
+                </textColor>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа синхронизировать документы вручную</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Група синхронізувати документи вручну</value>
+              </title>
+              <toolTip>
+                <key>ru</key>
+                <value>Группа синхронизировать документы вручную</value>
+              </toolTip>
+              <toolTip>
+                <key>uk</key>
+                <value>Група синхронізувати документи вручну</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>ГруппаСинхронизироватьДокументыВручнуюExtendedTooltip</name>
+                <id>325</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>Vertical</group>
+                <behavior>Auto</behavior>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаНеСинхронизироватьДокументы</name>
+              <id>332</id>
+              <items xsi:type="form:FormField">
+                <name>ПереключательДокументыНеОтправлять</name>
+                <id>334</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>ПравилаОтправкиДокументов</segments>
+                </dataPath>
+                <titleLocation>None</titleLocation>
+                <handlers>
+                  <event>OnChange</event>
+                  <name>ПереключательДокументыНеОтправлятьПриИзменении</name>
+                </handlers>
+                <extendedTooltip>
+                  <name>ПереключательДокументыНеОтправлятьExtendedTooltip</name>
+                  <id>336</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ПереключательДокументыНеОтправлятьКонтекстноеМеню</name>
+                  <id>335</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>RadioButtonField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                  <choiceList>
+                    <presentation>
+                      <key>ru</key>
+                      <value>Не отправлять</value>
+                    </presentation>
+                    <presentation>
+                      <key>uk</key>
+                      <value>Не відправляти</value>
+                    </presentation>
+                    <value xsi:type="core:StringValue">
+                      <value>НеСинхронизировать</value>
+                    </value>
+                  </choiceList>
+                </extInfo>
+              </items>
+              <items xsi:type="form:Decoration">
+                <name>ОписаниеДокументыНеОтправлять</name>
+                <id>337</id>
+                <title>
+                  <key>ru</key>
+                  <value>Документы отправляться не будут.</value>
+                </title>
+                <title>
+                  <key>uk</key>
+                  <value>Документи відправлятися не будуть.</value>
+                </title>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ОписаниеДокументыНеОтправлятьExtendedTooltip</name>
+                  <id>339</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ОписаниеДокументыНеОтправлятьКонтекстноеМеню</name>
+                  <id>338</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <textColor xsi:type="core:ColorRef">
+                  <color>Style.ПоясняющийТекст</color>
+                </textColor>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа не синхронизировать документы</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Група не синхронізувати документи</value>
+              </title>
+              <toolTip>
+                <key>ru</key>
+                <value>Группа не синхронизировать документы</value>
+              </toolTip>
+              <toolTip>
+                <key>uk</key>
+                <value>Група не синхронізувати документи</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>ГруппаНеСинхронизироватьДокументыExtendedTooltip</name>
+                <id>333</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <group>Vertical</group>
+                <behavior>Auto</behavior>
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа настройка отправки документов</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Група налаштування відправлення документів</value>
+            </title>
+            <toolTip>
+              <key>ru</key>
+              <value>Группа настройка отправки документов</value>
+            </toolTip>
+            <toolTip>
+              <key>uk</key>
+              <value>Група налаштування відправлення документів</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>ГруппаНастройкаОтправкиДокументовExtendedTooltip</name>
+              <id>310</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>Vertical</group>
+              <behavior>Auto</behavior>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа режим отправки документов</value>
+          </title>
+          <title>
+            <key>uk</key>
+            <value>Група режим відправлення документів</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа режим отправки документов</value>
+          </toolTip>
+          <toolTip>
+            <key>uk</key>
+            <value>Група режим відправлення документів</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаРежимОтправкиДокументовExtendedTooltip</name>
+            <id>305</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <behavior>Auto</behavior>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Документы</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Документи</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа документы</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Група документи</value>
+        </toolTip>
+        <verticalStretch>false</verticalStretch>
+        <extendedTooltip>
+          <name>ГруппаДокументыExtendedTooltip</name>
+          <id>303</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <behavior>Auto</behavior>
+          <representation>WeakSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа режим отправки данных</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Група режим відправки даних</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа режим отправки данных</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Група режим відправки даних</value>
+      </toolTip>
+      <horizontalStretch>false</horizontalStretch>
+      <extendedTooltip>
+        <name>ГруппаРежимОтправкиДанныхExtendedTooltip</name>
+        <id>274</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <behavior>Auto</behavior>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <slaveItemsWidth>Equal</slaveItemsWidth>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Основное</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Основне</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа основные</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Група основні</value>
+    </toolTip>
+    <width>90</width>
+    <horizontalStretch>false</horizontalStretch>
+    <extendedTooltip>
+      <name>ГруппаОсновныеExtendedTooltip</name>
+      <id>272</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <behavior>Auto</behavior>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаНастройкаДополнительныхОтборов</name>
+    <id>340</id>
+    <items xsi:type="form:Decoration">
+      <name>ДекорацияОтступОтборПоОрганизации</name>
+      <id>344</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ДекорацияОтступОтборПоОрганизацииРасширеннаяПодсказка</name>
+        <id>346</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ДекорацияОтступОтборПоОрганизацииКонтекстноеМеню</name>
+        <id>345</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <width>1</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <height>1</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаСтраницыОтборПоОрганизациям</name>
+      <id>376</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСтраницаОтборПоОрганизациям</name>
+        <id>378</id>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаВыборУправленческойОрганизации</name>
+          <id>392</id>
+          <items xsi:type="form:FormField">
+            <name>ПереключательОтбораСправочниковБезОтбораБезУпр</name>
+            <id>394</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ПравилоОтбораСправочников</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПереключательОтбораСправочниковБезОтбораБезУпрПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ПереключательОтбораСправочниковБезОтбораБезУпрExtendedTooltip</name>
+              <id>396</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ПереключательОтбораСправочниковБезОтбораБезУпрКонтекстноеМеню</name>
+              <id>395</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>RadioButtonField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>По всем организациям, кроме управленческой</value>
+                </presentation>
+                <presentation>
+                  <key>uk</key>
+                  <value>По всіх організаціях, крім управлінської</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>БезОтбора</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ПереключательОтбораСправочниковБезОтбораСУпр</name>
+            <id>397</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ПравилоОтбораСправочников</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПереключательОтбораСправочниковБезОтбораСУпрПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ПереключательОтбораСправочниковБезОтбораСУпрExtendedTooltip</name>
+              <id>399</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ПереключательОтбораСправочниковБезОтбораСУпрКонтекстноеМеню</name>
+              <id>398</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>RadioButtonField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>По всем организациям, включая управленческую</value>
+                </presentation>
+                <presentation>
+                  <key>uk</key>
+                  <value>По всіх організаціях, включаючи управлінську</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>УпрОрганизация</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа выбор управленческой организации</value>
+          </title>
+          <title>
+            <key>uk</key>
+            <value>Група вибір управлінської організації</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа выбор управленческой организации</value>
+          </toolTip>
+          <toolTip>
+            <key>uk</key>
+            <value>Група вибір управлінської організації</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаВыборУправленческойОрганизацииExtendedTooltip</name>
+            <id>393</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <behavior>Auto</behavior>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаСтраницыВариантВыбораОтбора</name>
+          <id>400</id>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаСтраницаПереключательОтбора</name>
+            <id>402</id>
+            <items xsi:type="form:FormField">
+              <name>ПереключательОтбораСправочниковСОтбором</name>
+              <id>404</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>ПравилоОтбораСправочников</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <handlers>
+                <event>OnChange</event>
+                <name>ПереключательОтбораСправочниковСОтборомПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ПереключательОтбораСправочниковСОтборомExtendedTooltip</name>
+                <id>406</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ПереключательОтбораСправочниковСОтборомКонтекстноеМеню</name>
+                <id>405</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>RadioButtonField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                <choiceList>
+                  <presentation>
+                    <key>ru</key>
+                    <value>С отбором по выбранным организациям:</value>
+                  </presentation>
+                  <presentation>
+                    <key>uk</key>
+                    <value>З відбором за обраними організаціями:</value>
+                  </presentation>
+                  <value xsi:type="core:StringValue">
+                    <value>Отбор</value>
+                  </value>
+                </choiceList>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа страница переключатель отбора</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Група сторінка перемикач відбору</value>
+            </title>
+            <toolTip>
+              <key>ru</key>
+              <value>Группа страница переключатель отбора</value>
+            </toolTip>
+            <toolTip>
+              <key>uk</key>
+              <value>Група сторінка перемикач відбору</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>ГруппаСтраницаПереключательОтбораExtendedTooltip</name>
+              <id>403</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Page</type>
+            <extInfo xsi:type="form:PageGroupExtInfo">
+              <group>Vertical</group>
+              <showTitle>true</showTitle>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаСтраницаФлагОтбора</name>
+            <id>407</id>
+            <items xsi:type="form:FormField">
+              <name>ФлагИспользоватьОтборПоОрганизациям</name>
+              <id>431</id>
+              <title>
+                <key>ru</key>
+                <value>С отбором по выбранным организациям</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>З відбором за обраними організаціями</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>ИспользоватьОтборПоОрганизациям</segments>
+              </dataPath>
+              <titleLocation>Right</titleLocation>
+              <handlers>
+                <event>OnChange</event>
+                <name>ФлагИспользоватьОтборПоОрганизациямПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ФлагИспользоватьОтборПоОрганизациямExtendedTooltip</name>
+                <id>433</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ФлагИспользоватьОтборПоОрганизациямКонтекстноеМеню</name>
+                <id>432</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа страница флаг отбора</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Група сторінка прапор відбору</value>
+            </title>
+            <toolTip>
+              <key>ru</key>
+              <value>Группа страница флаг отбора</value>
+            </toolTip>
+            <toolTip>
+              <key>uk</key>
+              <value>Група сторінка прапор відбору</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>ГруппаСтраницаФлагОтбораExtendedTooltip</name>
+              <id>408</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Page</type>
+            <extInfo xsi:type="form:PageGroupExtInfo">
+              <group>Vertical</group>
+              <showTitle>true</showTitle>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа страницы вариант выбора отбора</value>
+          </title>
+          <title>
+            <key>uk</key>
+            <value>Група сторінки варіант вибору відбору</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа страницы вариант выбора отбора</value>
+          </toolTip>
+          <toolTip>
+            <key>uk</key>
+            <value>Група сторінки варіант вибору відбору</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаСтраницыВариантВыбораОтбораExtendedTooltip</name>
+            <id>401</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Pages</type>
+          <extInfo xsi:type="form:PagesGroupExtInfo">
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ОткрытьСписокВыбранныхОрганизаций</name>
+          <id>416</id>
+          <title>
+            <key>ru</key>
+            <value>Выбрать организации</value>
+          </title>
+          <title>
+            <key>uk</key>
+            <value>Вибрати організації</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ОткрытьСписокВыбранныхОрганизацийExtendedTooltip</name>
+            <id>417</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.ОткрытьСписокВыбранныхОрганизаций</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа страница отбор по организациям</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Група сторінка відбір по організаціям</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа страница отбор по организациям</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Група сторінка відбір по організаціям</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаСтраницаОтборПоОрганизациямExtendedTooltip</name>
+          <id>379</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСтраницаОтборПоОрганизациямПустая</name>
+        <id>426</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияНадписьПустаяОтборПоОрганизациям</name>
+          <id>428</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияНадписьПустаяОтборПоОрганизациямExtendedTooltip</name>
+            <id>430</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияНадписьПустаяОтборПоОрганизациямКонтекстноеМеню</name>
+            <id>429</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа страница отбор по организациям пустая</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Група сторінка відбір по організаціям порожня</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа страница отбор по организациям пустая</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Група сторінка відбір по організаціям порожня</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаСтраницаОтборПоОрганизациямПустаяExtendedTooltip</name>
+          <id>427</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа страницы отбор по организациям</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Група сторінки відбір по організаціям</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа страницы отбор по организациям</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Група сторінки відбір по організаціям</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаСтраницыОтборПоОрганизациямExtendedTooltip</name>
+        <id>377</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Pages</type>
+      <extInfo xsi:type="form:PagesGroupExtInfo">
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаСтраницыОтправлятьВидыЦенНоменклатуры</name>
+      <id>434</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСтраницаОтправлятьВидыЦенНоменклатуры</name>
+        <id>436</id>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаОтправлятьВидыЦенНоменклатуры</name>
+          <id>438</id>
+          <items xsi:type="form:Decoration">
+            <name>ДекорацияДополненияСинхронизацииДанныхОтступ</name>
+            <id>440</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ДекорацияДополненияСинхронизацииДанныхОтступExtendedTooltip</name>
+              <id>442</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДекорацияДополненияСинхронизацииДанныхОтступКонтекстноеМеню</name>
+              <id>441</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаОтправлятьВидыЦенНоменклатурыФлагИКоманда</name>
+            <id>443</id>
+            <items xsi:type="form:FormField">
+              <name>ФлагОтправлятьВидыЦенНоменклатуры</name>
+              <id>445</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>ВыгружатьЦеныНоменклатуры</segments>
+              </dataPath>
+              <titleLocation>Right</titleLocation>
+              <handlers>
+                <event>OnChange</event>
+                <name>ФлагОтправлятьВидыЦенНоменклатурыПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ФлагОтправлятьВидыЦенНоменклатурыExtendedTooltip</name>
+                <id>447</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ФлагОтправлятьВидыЦенНоменклатурыКонтекстноеМеню</name>
+                <id>446</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаСтраницыКомандаВыбратьВидыЦен</name>
+              <id>448</id>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаСтраницаКомандаВыбратьВидыЦен</name>
+                <id>450</id>
+                <items xsi:type="form:Button">
+                  <name>ОткрытьСписокОтправляемыхВидовЦенНоменклатуры</name>
+                  <id>452</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Выбрать виды цен</value>
+                  </title>
+                  <title>
+                    <key>uk</key>
+                    <value>Вибрати види цін</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>ОткрытьСписокОтправляемыхВидовЦенНоменклатурыExtendedTooltip</name>
+                    <id>453</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <type>Hyperlink</type>
+                  <commandName>Form.Command.ОткрытьСписокОтправляемыхВидовЦенНоменклатуры</commandName>
+                  <representation>Auto</representation>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <placementArea>UserCmds</placementArea>
+                  <representationInContextMenu>Auto</representationInContextMenu>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Группа страница команда выбрать виды цен</value>
+                </title>
+                <title>
+                  <key>uk</key>
+                  <value>Група сторінка команда вибрати види цін</value>
+                </title>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Группа страница команда выбрать виды цен</value>
+                </toolTip>
+                <toolTip>
+                  <key>uk</key>
+                  <value>Група сторінка команда вибрати види цін</value>
+                </toolTip>
+                <extendedTooltip>
+                  <name>ГруппаСтраницаКомандаВыбратьВидыЦенExtendedTooltip</name>
+                  <id>451</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>Page</type>
+                <extInfo xsi:type="form:PageGroupExtInfo">
+                  <group>Vertical</group>
+                  <showTitle>true</showTitle>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаСтраницаКомандаВыбратьВидыЦенПустая</name>
+                <id>454</id>
+                <items xsi:type="form:Decoration">
+                  <name>Декорация4</name>
+                  <id>456</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <extendedTooltip>
+                    <name>Декорация4ExtendedTooltip</name>
+                    <id>458</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>Декорация4КонтекстноеМеню</name>
+                    <id>457</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Группа страница команда выбрать виды цен пустая</value>
+                </title>
+                <title>
+                  <key>uk</key>
+                  <value>Група сторінка команда вибрати види цін порожня</value>
+                </title>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Группа страница команда выбрать виды цен пустая</value>
+                </toolTip>
+                <toolTip>
+                  <key>uk</key>
+                  <value>Група сторінка команда вибрати види цін порожня</value>
+                </toolTip>
+                <extendedTooltip>
+                  <name>ГруппаСтраницаКомандаВыбратьВидыЦенПустаяExtendedTooltip</name>
+                  <id>455</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>Page</type>
+                <extInfo xsi:type="form:PageGroupExtInfo">
+                  <group>Vertical</group>
+                  <showTitle>true</showTitle>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа страницы команда выбрать виды цен</value>
+              </title>
+              <title>
+                <key>uk</key>
+                <value>Група сторінки команда вибрати види цін</value>
+              </title>
+              <toolTip>
+                <key>ru</key>
+                <value>Группа страницы команда выбрать виды цен</value>
+              </toolTip>
+              <toolTip>
+                <key>uk</key>
+                <value>Група сторінки команда вибрати види цін</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>ГруппаСтраницыКомандаВыбратьВидыЦенExtendedTooltip</name>
+                <id>449</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>Pages</type>
+              <extInfo xsi:type="form:PagesGroupExtInfo">
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа отправлять виды цен номенклатуры флаг и команда</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Група відправляти види цін номенклатури прапор і команда</value>
+            </title>
+            <toolTip>
+              <key>ru</key>
+              <value>Группа отправлять виды цен номенклатуры флаг и команда</value>
+            </toolTip>
+            <toolTip>
+              <key>uk</key>
+              <value>Група відправляти види цін номенклатури прапор і команда</value>
+            </toolTip>
+            <horizontalStretch>false</horizontalStretch>
+            <extendedTooltip>
+              <name>ГруппаОтправлятьВидыЦенНоменклатурыФлагИКомандаExtendedTooltip</name>
+              <id>444</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>Vertical</group>
+              <behavior>Auto</behavior>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <slaveItemsWidth>LeftWidest</slaveItemsWidth>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа отправлять виды цен номенклатуры</value>
+          </title>
+          <title>
+            <key>uk</key>
+            <value>Група відправляти види цін номенклатури</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа отправлять виды цен номенклатуры</value>
+          </toolTip>
+          <toolTip>
+            <key>uk</key>
+            <value>Група відправляти види цін номенклатури</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаОтправлятьВидыЦенНоменклатурыExtendedTooltip</name>
+            <id>439</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <behavior>Auto</behavior>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа страница полный набор без склада</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Група сторінка повний набір без складу</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа страница полный набор</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Група сторінка повний набір</value>
+        </toolTip>
+        <width>80</width>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаСтраницаОтправлятьВидыЦенНоменклатурыExtendedTooltip</name>
+          <id>437</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСтраницаОтправлятьВидыЦенНоменклатурыПустая</name>
+        <id>459</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияНадписьПустаяОтправлятьВидыЦенНоменклатуры</name>
+          <id>461</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияНадписьПустаяОтправлятьВидыЦенНоменклатурыExtendedTooltip</name>
+            <id>463</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияНадписьПустаяОтправлятьВидыЦенНоменклатурыКонтекстноеМеню</name>
+            <id>462</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа страница отправлять виды цен номенклатуры пустая</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Група сторінка відправляти види цін номенклатури порожня</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа страница отправлять виды цен номенклатуры пустая</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Група сторінка відправляти види цін номенклатури порожня</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаСтраницаОтправлятьВидыЦенНоменклатурыПустаяExtendedTooltip</name>
+          <id>460</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа страницы отправлять виды цен номенклатуры</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Група сторінки відправляти види цін номенклатури</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа страницы отправлять виды цен номенклатуры</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Група сторінки відправляти види цін номенклатури</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаСтраницыОтправлятьВидыЦенНоменклатурыExtendedTooltip</name>
+        <id>435</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Pages</type>
+      <extInfo xsi:type="form:PagesGroupExtInfo">
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Отправлять данные</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Відправляти дані</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа настройка дополнительных отборов</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Група настройка додаткових відборів</value>
+    </toolTip>
+    <width>90</width>
+    <horizontalStretch>true</horizontalStretch>
+    <extendedTooltip>
+      <name>ГруппаНастройкаДополнительныхОтборовExtendedTooltip</name>
+      <id>341</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <behavior>Auto</behavior>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаПрочееГор</name>
+    <id>354</id>
+    <items xsi:type="form:Decoration">
+      <name>ДекорацияОтступВыгружатьАналитикуПоСкладам</name>
+      <id>356</id>
+      <title>
+        <key>ru</key>
+        <value>Декорация отступ выгружать аналитику по складам</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Декорація відступ вивантажувати аналітику по складах</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ДекорацияОтступВыгружатьАналитикуПоСкладамРасширеннаяПодсказка</name>
+        <id>358</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ДекорацияОтступВыгружатьАналитикуПоСкладамКонтекстноеМеню</name>
+        <id>357</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <width>1</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <height>1</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаПрочееВерт</name>
+      <id>359</id>
+      <items xsi:type="form:FormField">
+        <name>ВыгружатьАналитикуПоСкладам</name>
+        <id>361</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ВыгружатьАналитикуПоСкладам</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <extendedTooltip>
+          <name>ВыгружатьАналитикуПоСкладамРасширеннаяПодсказка</name>
+          <id>363</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ВыгружатьАналитикуПоСкладамКонтекстноеМеню</name>
+          <id>362</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаДатаЗапретаРедактированияДанных</name>
+        <id>364</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКартинкаИнформацияДатыЗапрета</name>
+          <id>366</id>
+          <title>
+            <key>ru</key>
+            <value>Декорация картинка информация даты запрета</value>
+          </title>
+          <title>
+            <key>uk</key>
+            <value>Декорація картинка інформація дати заборони</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКартинкаИнформацияДатыЗапретаExtendedTooltip</name>
+            <id>368</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКартинкаИнформацияДатыЗапретаКонтекстноеМеню</name>
+            <id>367</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>2</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <verticalStretch>false</verticalStretch>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.ИнформацияПоНедоступнымПолям</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Группа1</name>
+          <id>369</id>
+          <items xsi:type="form:Decoration">
+            <name>ДекорацияНадписьИнформацияДатыЗапрета</name>
+            <id>371</id>
+            <title>
+              <key>ru</key>
+              <value>Ограничить изменение данных можно с помощью установки даты запрета редактирования.</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Обмежити зміну даних можна за допомогою встановлення дати заборони редагування.</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ДекорацияНадписьИнформацияДатыЗапретаExtendedTooltip</name>
+              <id>373</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДекорацияНадписьИнформацияДатыЗапретаКонтекстноеМеню</name>
+              <id>372</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <textColor xsi:type="core:ColorRef">
+              <color>Style.FormTextColor</color>
+            </textColor>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Button">
+            <name>УстановитьДатуЗапретаИзменений</name>
+            <id>374</id>
+            <title>
+              <key>ru</key>
+              <value>Установить дату запрета изменения данных</value>
+            </title>
+            <title>
+              <key>uk</key>
+              <value>Встановити дату заборони зміни даних</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>УстановитьДатуЗапретаИзмененийExtendedTooltip</name>
+              <id>375</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.ДатыЗапретаИзменения.Command.ДатыЗапретаИзмененияДанных</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Группа1ExtendedTooltip</name>
+            <id>370</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <behavior>Auto</behavior>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа дата запрета редактирования данных</value>
+        </title>
+        <title>
+          <key>uk</key>
+          <value>Група дата заборони редагування даних</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа дата запрета редактирования данных</value>
+        </toolTip>
+        <toolTip>
+          <key>uk</key>
+          <value>Група дата заборони редагування даних</value>
+        </toolTip>
+        <width>90</width>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаДатаЗапретаРедактированияДанныхExtendedTooltip</name>
+          <id>365</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Прочее</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Інше</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа прочее верт</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Група інше верт</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаПрочееВертРасширеннаяПодсказка</name>
+        <id>360</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <behavior>Auto</behavior>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Прочее</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Інше</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа прочее</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Група інше</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>ГруппаПрочееГорРасширеннаяПодсказка</name>
+      <id>355</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <behavior>Auto</behavior>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <commandBarLocation>Top</commandBarLocation>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>КомандаОК</name>
+      <id>1</id>
+      <title>
+        <key>ru</key>
+        <value>Записать и закрыть</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Записати і закрити</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>КомандаОКExtendedTooltip</name>
+        <id>270</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.КомандаОК</commandName>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>ChoiceProcessing</event>
+    <name>ОбработкаВыбора</name>
+  </handlers>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>ПередЗакрытием</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>ИспользоватьОтборПоОрганизациям</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать отбор по организациям</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Використовувати відбір по організаціях</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>Организации</name>
+    <title>
+      <key>ru</key>
+      <value>Организации</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Організації</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+    <columns>
+      <name>Организация</name>
+      <title>
+        <key>ru</key>
+        <value>Организация</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Організація</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>CatalogRef.Организации</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>ПравилаОтправкиСправочников</name>
+    <title>
+      <key>ru</key>
+      <value>Правила отправки справочников</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Правила надсилання довідників</value>
+    </title>
+    <id>15</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>РежимВыгрузкиПриНеобходимости</name>
+    <title>
+      <key>ru</key>
+      <value>Режим выгрузки при необходимости</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Режим вивантаження при необхідності</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>EnumRef.РежимыВыгрузкиОбъектовОбмена</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>ПравилоОтбораСправочников</name>
+    <title>
+      <key>ru</key>
+      <value>Правило отбора справочников</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Правило відбору довідників</value>
+    </title>
+    <id>10</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>РежимВыгрузкиСправочников</name>
+    <title>
+      <key>ru</key>
+      <value>Режим выгрузки справочников</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Режим вивантаження довідників</value>
+    </title>
+    <id>12</id>
+    <valueType>
+      <types>EnumRef.РежимыВыгрузкиОбъектовОбмена</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НастройкаОтборовНаУзле</name>
+    <title>
+      <key>ru</key>
+      <value>Настройка отборов на узле</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Настройка відборів на вузлі</value>
+    </title>
+    <id>1</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ДатаНачалаВыгрузкиДокументов</name>
+    <title>
+      <key>ru</key>
+      <value>Дата начала выгрузки документов</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Дата початку вивантаження документів</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>ВыгружатьУправленческуюОрганизацию</name>
+    <title>
+      <key>ru</key>
+      <value>Выгружать управленческую организацию</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Вивантажувати управлінську організацію</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПравилаОтправкиДокументов</name>
+    <title>
+      <key>ru</key>
+      <value>Правила отправки документов</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Правила надсилання документів</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>УправленческаяОрганизация</name>
+    <title>
+      <key>ru</key>
+      <value>Управленческая организация</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Управлінська організація</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>CatalogRef.Организации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВерсияКорреспондента</name>
+    <title>
+      <key>ru</key>
+      <value>Версия корреспондента</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Версія кореспондента</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВыгружатьАналитикуПоСкладам</name>
+    <title>
+      <key>ru</key>
+      <value>Выгружать аналитику по складам</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Вивантажувати аналітику по складах</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СкладПоУмолчанию</name>
+    <title>
+      <key>ru</key>
+      <value>Склад по умолчанию</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Склад по умовчанню</value>
+    </title>
+    <id>14</id>
+    <valueType>
+      <types>CatalogRef.Склады</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВерсияФорматаОбмена</name>
+    <title>
+      <key>ru</key>
+      <value>Версия формата обмена</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Версія формату обміну</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИдентификаторНастройки</name>
+    <title>
+      <key>ru</key>
+      <value>Идентификатор настройки</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Ідентифікатор настройки</value>
+    </title>
+    <id>16</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВидыЦенНоменклатуры</name>
+    <title>
+      <key>ru</key>
+      <value>Виды цен номенклатуры</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Види цін номенклатури</value>
+    </title>
+    <id>17</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+    <columns>
+      <name>ВидЦенНоменклатуры</name>
+      <title>
+        <key>ru</key>
+        <value>Вид цен номенклатуры</value>
+      </title>
+      <title>
+        <key>uk</key>
+        <value>Вид цін номенклатури</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>CatalogRef.ВидыЦен</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>ВыгружатьЦеныНоменклатуры</name>
+    <title>
+      <key>ru</key>
+      <value>Выгружать цены номенклатуры</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Вивантажувати ціни номенклатури</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>КомандаОК</name>
+    <title>
+      <key>ru</key>
+      <value>ОК</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>ОК</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Команда ОК</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Команда ОК</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Write</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>КомандаОК</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьСписокВыбранныхОрганизаций</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть список выбранных организаций</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Відкрити список обраних організацій</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть список выбранных организаций</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Відкрити список обраних організацій</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьСписокВыбранныхОрганизаций</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьСписокОтправляемыхВидовЦенНоменклатуры</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть список отправляемых видов цен номенклатуры</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Відкрити список видів цін номенклатури, що відправляються</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть список отправляемых видов цен номенклатуры</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Відкрити список видів цін номенклатури, що відправляються</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьСписокОтправляемыхВидовЦенНоменклатуры</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

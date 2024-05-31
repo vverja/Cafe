@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad866025-61d7-4621-a95c-3e3f85768ec2">
+  <producedTypes>
+    <objectType typeId="f63f6406-10c0-4285-b0a0-d71fe7511899" valueTypeId="6f36310a-0e23-4a04-a0dd-422d6e670015"/>
+    <managerType typeId="0875419f-8e6c-4c57-9bfc-be683b2df5a6" valueTypeId="87ae9390-05bc-42cf-8c1e-c499ff63fff1"/>
+  </producedTypes>
+  <name>УправлениеНовостями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление настройками и обновлением для новостей</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Управління настройками та оновленнями для новин</value>
+  </synonym>
+  <defaultForm>DataProcessor.УправлениеНовостями.Form.ФормаНастроекНовостей</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <tabularSections uuid="b52ce8bd-77a3-4faf-8539-9cd3e28369fe">
+    <producedTypes>
+      <objectType typeId="5de2285d-75af-475e-ac0d-fe8df049ec68" valueTypeId="77f129d8-f651-491a-ba50-63223ac422c5"/>
+      <rowType typeId="21089148-d942-45f7-95a1-e2d83e54e4b4" valueTypeId="4cc09f10-a3ed-470a-b86a-15806d77a8e3"/>
+    </producedTypes>
+    <name>ЛентыНовостей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ленты новостей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стрічки новин</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="808fca5b-a7b4-4187-983f-de0cc9e87189">
+      <name>Пометка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Позначка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак того, что лента новостей выбрана для обработки</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Ознака того, що стрічка новин обрана для обробки</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:BooleanValue">
+        <value>true</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d944f46b-e631-40bd-a064-1aa483bd3926">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Найменування</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Наименование ленты новостей</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Найменування стрічки новин</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="aee1c881-5bc4-44ba-9831-3b2ce21f6fb9">
+      <name>Протокол</name>
+      <synonym>
+        <key>ru</key>
+        <value>Протокол</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Протокол</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Протокол соединения с сервером Новостного центра (http, https) (часть URL ленты новостей)</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Протокол з'єднання з сервером Новин центру (http, https) (частина URL стрічки новин)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2867aafa-70d7-4798-8de3-f646e65161a1">
+      <name>Сайт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сайт</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сайт</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сайт Новостного центра (часть URL ленты новостей)</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сайт Новинного центру (частина URL стрічки новин)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="9c83b618-c5e9-413b-982c-3dc756b82837">
+      <name>ИмяФайла</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя файла</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Ім'я файлу</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Имя файла Новостного центра (часть URL ленты новостей)</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Ім'я файлу Новинного центру (частина URL стрічки новин)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="1e78ac11-3b36-462c-85bd-ba7e43f1d804">
+      <name>ИмяВременногоФайла</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя временного файла</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Ім'я тимчасового файлу</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Имя временного файла, в который будут сохранены загруженные через интернет новости</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Ім'я тимчасового файла, в який буде збережено завантажені через інтернет новини</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="793882ea-abdd-4cd8-af76-3df84da1c26d">
+      <name>ВариантЛогинаПароля</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вариант логина / пароля</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Варіант логіна / пароля</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВариантЛогинаПароляДляЛентыНовостей</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Необходимо выбрать один из вариантов логина / пароля для доступа к ленте новостей</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Необхідно вибрати один з варіантів логіна / пароля для доступу до стрічки новин</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillFromFillingValue>true</fillFromFillingValue>
+      <fillValue xsi:type="core:ReferenceValue">
+        <value>Enum.ВариантЛогинаПароляДляЛентыНовостей.EmptyRef</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b93332d8-5501-4aa7-93a1-a3bb311fb268">
+      <name>Логин</name>
+      <synonym>
+        <key>ru</key>
+        <value>Логин</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Логін</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Введите логин для доступа к ленте новостей</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Введіть логін для доступу до стрічки новин</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="78686256-ea6a-40ba-88fb-9c80bc3d1ddc">
+      <name>Пароль</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пароль</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Пароль</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <passwordMode>true</passwordMode>
+      <toolTip>
+        <key>ru</key>
+        <value>Введите пароль для доступа к ленте новостей</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Введіть пароль для доступу до стрічки новин</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b63acd64-75db-4ad2-81ea-0f2efd330fb2">
+      <name>ОбязательныйКанал</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обязательный канал</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Обов'язковий канал</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак того, что канал нельзя отключить</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Ознака того, що канал не можна відключити</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:BooleanValue"/>
+    </attributes>
+    <attributes uuid="873a9a0c-286e-49cb-a8bc-e4f87376c696">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Посилання</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЛентыНовостей</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Ссылка на справочник лент новостей</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Посилання на довідник стрічок новин</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:ReferenceValue">
+        <value>Catalog.ЛентыНовостей.EmptyRef</value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="59e0fa67-913a-49e0-9360-f6af7a7e5ee2">
+    <name>ФормаНастроекНовостей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек новостей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма настройок новин</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="64580bd9-215d-49d7-bb4c-3eeb53b1e0f0">
+    <name>ФормаСостоянияОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стан операції</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="91e2295a-25c3-421b-a3ae-d48254dd87d6">
+    <name>ФормаЭкспортаЖурналаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экспорт журнала регистрации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Експорт журналу реєстрації</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="26e64860-1b9d-4201-9e1b-a03d3d1a3a06">
+    <name>КомандаФормаНастроекНовостей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управление настройками и обновлением для новостей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Управління настройками та оновленнями для новин</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.НастройкиНовостей</picture>
+    </picture>
+  </commands>
+</mdclass:DataProcessor>

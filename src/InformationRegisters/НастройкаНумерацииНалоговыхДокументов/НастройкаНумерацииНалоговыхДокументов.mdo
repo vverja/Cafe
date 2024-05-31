@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf70cb68-0598-4e1b-9154-837d0f9f1d9e">
+  <producedTypes>
+    <selectionType typeId="7aeefdc3-15b0-4185-8236-cdf424dff478" valueTypeId="275f7756-0499-498b-9722-11aff187637c"/>
+    <listType typeId="b0564d42-5aa6-4866-9517-fd731eec1472" valueTypeId="72838067-25ee-4785-8b8b-095e5b0e738d"/>
+    <managerType typeId="d6afa3ca-7595-41f3-bb30-b934479662b9" valueTypeId="f04856b9-142b-4ca1-8236-bc673b9066e4"/>
+    <recordSetType typeId="6da2911b-c9c9-45e2-838b-a4f876818a80" valueTypeId="2cc35fc7-9852-4354-a60e-2e4c673a0359"/>
+    <recordKeyType typeId="24b9c8fc-e10b-4bdf-8d5b-6cd754cfe958" valueTypeId="6b6025e9-cd13-478c-84e1-3b14488b5ab8"/>
+    <recordType typeId="7dc4e43a-b326-4e7a-a2f2-c3ac4d49a6ea" valueTypeId="60fc56ca-3edc-4ac3-bce6-4e4633729d51"/>
+    <recordManagerType typeId="089d4deb-c329-410d-997b-34e95c32e89f" valueTypeId="85607f1b-72e6-4948-9980-aabe0644f0cc"/>
+  </producedTypes>
+  <name>НастройкаНумерацииНалоговыхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка нумерации налоговых документов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Настройка нумерації податкових документів</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкаНумерацииНалоговыхДокументов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НастройкаНумерацииНалоговыхДокументов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="d5abb99d-b748-460e-bfe9-b7a4dec4ce31">
+    <name>ВестиМесячнуюНумерациюНалоговыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вести помесячную нумерацию налоговых документов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вести помісячну нумерацію податкових документів</value>
+    </synonym>
+    <comment>Возможность вести нумерацию Налоговых накладных и Приложений 2 с № 1 каждый месяц</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="65813a1c-417c-4b4f-a173-13833a63c303">
+    <name>ВестиНумерациюНалоговыхДокументовБезУчетаОбособленныхПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вести нумерацию налоговых документов без учета обособленных подразделений (филиалов)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вести нумерацію податкових документів без врахування відокремлених підрозділів (філій)</value>
+    </synonym>
+    <comment>Возможность вести нумерацию налоговых документов без учета обособленных подразделений, в случае, когда обособленные подразделения указаны в документах</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="34e37b80-6090-4cc6-9cba-2a1eac386c15">
+    <name>ВестиРаздельнуюНумерациюНалоговыхДокументовПоНеНДСОперациям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вести раздельную нумерацию технологических налоговых документов по операциям - не объектам обложения НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вести окрему нумерацію технологічних податкових документів за операціями - не об'єктами оподаткування ПДВ</value>
+    </synonym>
+    <comment>Технологические налоговые документы &quot;Не НДС&quot; не будут занимать номера обычных налоговых</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="500c142e-cc6a-460f-a110-80d3fd885130">
+    <name>ВестиДневнуюНумерациюНалоговыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вести ежедневную нумерацию налоговых документов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вести щоденну нумерацію податкових документів</value>
+    </synonym>
+    <comment>Возможность вести нумерацию Налоговых накладных и Приложений 2 с № 1 каждый день</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9011f103-9ac9-4a0a-a819-9f119e9d78b2">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="0fc45df4-15cf-488a-b6d2-10725b7feeae">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fa660377-e2b9-42af-a94e-b22790ae492a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

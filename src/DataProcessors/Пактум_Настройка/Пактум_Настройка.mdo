@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63627e94-be95-465c-b50a-276d0a73cac5">
+  <producedTypes>
+    <objectType typeId="4b57a9e1-f3a0-42a4-82af-badae61c20c3" valueTypeId="3bd86dfa-4c37-4c57-a710-3d51139fdb69"/>
+    <managerType typeId="5d2de94e-9f24-4e39-af0a-e1a9f76ed5a1" valueTypeId="09b513d8-b079-4508-bc35-a6bf11ca6617"/>
+  </producedTypes>
+  <name>Пактум_Настройка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пактум настройка</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Пактум настройка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Пактум_Настройка.Form.Форма</defaultForm>
+  <attributes uuid="0c81781b-1728-4187-825c-24b981ac261d">
+    <name>фИспользоватьПрокси</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать прокси-сервер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовувати проксі-сервер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="be73d0b2-76d8-42ba-914d-2d7dfdad5597">
+    <name>АдресПрокси</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес/порт</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Адреса/порт</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b7ea36f2-e0fc-4d4d-a177-2568155ce4cb">
+    <name>ПортПрокси</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт прокси</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Порт проксі</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7ee8a44f-dff8-4b81-b089-d4a8beefe29e">
+    <name>фИспользоватьЛогинПарольПрокси</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать авторизованный вход</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовувати авторизований вхід</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e5f62cc6-a1a6-4453-b991-8ef82420b6a8">
+    <name>ЛогинПрокси</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логин</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Логін</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c4e4bb33-b8c9-4a5c-95ee-a251b49f50ef">
+    <name>ПарольПрокси</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d89e825d-5ea3-4883-8fae-2dca01391666">
+    <name>КоличествоПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество попыток</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість спроб</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8196bd1e-7bdf-4e58-98bb-98635639e676">
+    <name>ПаузаМеждуПопытками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пауза между попытками (секунд)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Пауза між спробами (секунд)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9edc95b7-6822-49e4-9cc8-1671180548cc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="40573a55-39c6-4e43-a805-e1b4fc23462a">
+    <name>Пактум_Настройка_Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка сервиса &quot;Пактум.Контрагент&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Настройка сервісу &quot;Пактум.Контрагент&quot;</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

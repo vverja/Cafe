@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d644fc2c-be9c-430d-831a-800075422958">
+  <producedTypes>
+    <objectType typeId="253c24b0-9570-4dd9-bdce-6930c417c140" valueTypeId="886b271d-f86b-402e-bddd-f39e9bc805cf"/>
+    <managerType typeId="c58088f5-21af-404c-8223-c1fe66252923" valueTypeId="96135bd2-68ba-427b-8895-1168216a87d9"/>
+  </producedTypes>
+  <name>ТестированиеВыгрузкаДвиженийПоРегистрам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование: выгрузка движений по регистрам</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Тестування: вивантаження рухів по регістрах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТестированиеВыгрузкаДвиженийПоРегистрам.Form.Форма</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>Предназначена для выгрузки движений в файлы с целью дальнейшей сверки при тестировании</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Призначена для вивантаження рухів у файли з метою подальшої звірки при тестуванні</value>
+  </explanation>
+  <attributes uuid="190c5809-ac5f-40e7-9a11-02c1a0070d92">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начать с</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Почати з</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=MM.yyyy</value>
+    </format>
+    <format>
+      <key>uk</key>
+      <value>ДФ=MM.yyyy</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=MM.yyyy</value>
+    </editFormat>
+    <editFormat>
+      <key>uk</key>
+      <value>ДФ=MM.yyyy</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="e6bff3ec-3440-4ff8-a764-4c9a39fa0755">
+    <name>ПутьККаталогуВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Каталог вивантаження</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="ffa0b3fa-dcfe-45b3-8e8c-30ee769bf50a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

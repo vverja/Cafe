@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f513823-4a87-4e4a-817c-0a451885e3df">
+  <producedTypes>
+    <selectionType typeId="b3002d0a-e660-44ed-9e75-7a5072ebd5aa" valueTypeId="46735d59-a01d-4ca4-9c8f-1aff51384f64"/>
+    <listType typeId="dd79ccb2-49bc-4002-afc2-98512bd43159" valueTypeId="f8da3daa-70ba-4f95-80e8-e6ad02dce4a7"/>
+    <managerType typeId="413c57b8-ea65-4530-b8f3-b37778289ba1" valueTypeId="4ce4d535-2447-4796-a953-40dcc3744c77"/>
+  </producedTypes>
+  <name>ОтчетыПоКомиссииМеждуОрганизациями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты по комиссии между организациями</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіти з комісії між організаціями</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ОтчетыПоКомиссииМеждуОрганизациями.Form.ФормаСпискаДокументов</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ОтчетПоКомиссииМеждуОрганизациямиОСписании</registeredDocuments>
+  <registeredDocuments>Document.ОтчетПоКомиссииМеждуОрганизациями</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Отчеты по комиссии между организациями</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Звіти з комісії між організаціями</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Отчеты по комиссии между организациями</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Звіти з комісії між організаціями</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Отчеты по комиссии между организациями</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Звіти з комісії між організаціями</value>
+  </explanation>
+  <columns uuid="43edee6f-21c0-49f7-99c3-177bd6d5cb67">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комитент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Комітент</value>
+    </synonym>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациями.Attribute.Организация</references>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациямиОСписании.Attribute.Организация</references>
+  </columns>
+  <columns uuid="c6d1b098-c6fd-440c-8d8d-68fe0f6eb534">
+    <name>Комиссионер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссионер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Комісіонер</value>
+    </synonym>
+    <comment>Организация-комиссионер</comment>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациями.Attribute.Комиссионер</references>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациямиОСписании.Attribute.Комиссионер</references>
+  </columns>
+  <columns uuid="20bb18b6-1f4d-4291-8b6b-9567e060da2a">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациями.Attribute.Валюта</references>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациямиОСписании.Attribute.Валюта</references>
+  </columns>
+  <columns uuid="9fcd68a4-59b1-4320-9c67-af583a7a53bb">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациями.Attribute.СуммаДокумента</references>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациямиОСписании.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="4b97bd58-0e3d-4b35-a7e9-763dfbb0805f">
+    <name>РасчетыЧерезОтдельногоКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчеты через посредника</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розрахунки через посередника</value>
+    </synonym>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациями.Attribute.РасчетыЧерезОтдельногоКонтрагента</references>
+    <references>Document.ОтчетПоКомиссииМеждуОрганизациямиОСписании.Attribute.РасчетыЧерезОтдельногоКонтрагента</references>
+  </columns>
+  <forms uuid="6082d622-7924-4737-a5fb-52e7500c341d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2abf7d4f-8ad5-47fb-a18a-25087552be6d">
+    <name>ФормаСпискаДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка документов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку документів</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

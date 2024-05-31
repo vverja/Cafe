@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f2455ce-60e8-4035-9e75-834ae3183cb8">
+  <producedTypes>
+    <refType typeId="b0cd0157-399c-4f1e-be52-9b299bbd60f5" valueTypeId="8861cb30-267e-4ca8-9fc1-74fa06d05cad"/>
+    <listType typeId="8e921d92-cf9e-4351-94ad-509ec143f180" valueTypeId="c889263a-2ee1-4afb-9d0e-921fd00952ce"/>
+    <managerType typeId="7ab200a9-21fa-489d-9c3b-1625eec981c7" valueTypeId="adbaaf88-22af-40a2-830d-e92a3e760eb8"/>
+  </producedTypes>
+  <name>ВидыДвиженийДенежныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды движений денежных средств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Види рухів грошових коштів</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <choiceMode>BothWays</choiceMode>
+  <defaultChoiceForm>Enum.ВидыДвиженийДенежныхСредств.Form.ФормаВыбора</defaultChoiceForm>
+  <enumValues uuid="7c0b82f1-799a-4898-b317-2d65612eccfd">
+    <name>ВыплатаДивидендов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату дивидендов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату дивідендів</value>
+    </synonym>
+    <comment>Витрачання на сплату дивідендів</comment>
+  </enumValues>
+  <enumValues uuid="3b475152-4762-4261-8dc1-7e0c54f2a427">
+    <name>ВыплатаПроцентовПоДолговымОбязательствам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату процентов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату відсотків</value>
+    </synonym>
+    <comment>Витрачання на сплату відсотків							</comment>
+  </enumValues>
+  <enumValues uuid="c300ea4d-9480-497b-bcb6-5619e29cde66">
+    <name>ВыручкаОтПродажиНеоборотныхАктивовКромеФинансовых</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от реализации необоротных активов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від реалізації необоротних активів</value>
+    </synonym>
+    <comment>Надходження від реалізації необоротних активів</comment>
+  </enumValues>
+  <enumValues uuid="5ccb5645-5ed9-47a1-a467-d45f201d213a">
+    <name>НалогНаПрибыль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату обязательств по налогу на прибыль</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату зобов'язань з податку на прибуток</value>
+    </synonym>
+    <comment>Витрачання на оплату зобов'язань з податку на прибуток</comment>
+  </enumValues>
+  <enumValues uuid="500119ad-73e5-40d0-93af-6d06fa6e67e1">
+    <name>ОплатаТоваровУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату товаров (работ, услуг)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату товарів (робіт, послуг)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cb1a1a80-b9f9-4444-9c2c-9897e60cdf5d">
+    <name>ОплатаТруда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату труда</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату праці</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="11bbae26-5f86-42bc-840f-afc613835f99">
+    <name>ПлатежиСобственникамВСвязиСВыкупомАкций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на выкуп собственных акций</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на викуп власних акцій</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="08293188-6b6b-47c7-8d90-43f6dc6d2acd">
+    <name>ПогашениеКредитовИЗаймов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на погашение займов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на погашення позик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="940e016c-b8c4-411c-935a-a709e4a3b162">
+    <name>ПоступлениеОтДивидендов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от полученных дивидендов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від отриманих дивідендів</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="80bede4c-c8e0-4490-b504-b1d1cb98bc52">
+    <name>ПоступленияОтЗаймовИКредитовПолученных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от получения займов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від отримання позик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0e9d6f76-0326-404b-bf1c-f4f9289000c2">
+    <name>ПоступленияОтПродажиФинансовыхИнвестиций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от реализации финансовых инвестиций</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від реалізації фінансових інвестицій</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2c4f1373-cc59-4f3b-9e17-1428ebdce34a">
+    <name>ПоступленияОтПогашенияЗаймов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от погашения займов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від погашення позик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="86cd42c1-0edf-4678-aee2-d2f69e7ba46b">
+    <name>ВыручкаОтРеализацииТоваровУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от реализации продукции (товаров, работ, услуг)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від реалізації продукції (товарів, робіт, послуг)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="75e85220-6967-4d28-b830-e7a995a2c1c4">
+    <name>ПоступленияОтПродажиДоли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от продажи доли в дочернем предприятии</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від продажу частки в дочірньому підприємстві</value>
+    </synonym>
+    <comment>Надходження від продажу частки в дочірньому підприємстві</comment>
+  </enumValues>
+  <enumValues uuid="6685aee2-d07c-41f1-8f4e-0f58da40b446">
+    <name>ПриобретениеДоли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на приобретение доли в дочернем предприятии</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на придбання частки в дочірньому підприємстві</value>
+    </synonym>
+    <comment>Витрачання на придбання частки в дочірньому підприємстві</comment>
+  </enumValues>
+  <enumValues uuid="a5d6fe84-629d-4d61-8886-95db57ba9b6c">
+    <name>ПредоставлениеЗаймов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на предоставление займов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на надання позик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9223101f-7d7d-4ba9-8bca-865d37c9fa47">
+    <name>ПриобретениеНеоборотныхАктивов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на приобретение необоротных активов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на придбання необоротних активів</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9889c84a-8d2e-490c-a4b4-bde33d7557e3">
+    <name>ПрочиеПоступленияПоИнвестиционнойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие поступления от инвестиционной деятельности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інші надходження від інвестиційної діяльності</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e4b2f89b-6d30-40b8-8c32-fca1dd8a8156">
+    <name>ПрочиеПоступленияПоОперационнойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие поступления от операционной деятельности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інші надходження від операційної діяльності</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8c54013e-c2a9-4b8b-a66c-950c831fda98">
+    <name>ПрочиеПоступленияПоФинансовойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие поступления от финансовой деятельности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інші надходження від фінансової діяльності</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="005c3b0b-28f3-4688-8102-2079fb8343e5">
+    <name>ПрочиеРасходыПоИнвестиционнойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие платежи инвестиционой деятельности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інші платежі інвестиційної діяльності</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ef6bff70-fd58-4347-880a-d40c6e549e0f">
+    <name>ПрочиеРасходыПоОперационнойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие расходы операционной деятельности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інші витрати операційної діяльності</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="167592fa-f5af-471d-85aa-d5b437e74aca">
+    <name>ПрочиеРасходыПоФинансовойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие платежи финансовой деятельности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інші платежі фінансової діяльності</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="56696d37-8506-48d3-a9da-d02d56406e5b">
+    <name>ВыкупСобственныхАкций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на выкуп собственных акций</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на викуп власних акцій</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cde2265e-e371-41a8-8b26-0b2c2bb466c4">
+    <name>ВыплатаПроцентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на выплату процентов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на виплату відсотків</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="25309e8b-aeb1-4a78-8ce3-bdb8cc3aea40">
+    <name>ВыплатаНеконтролируемымДолям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на выплаты неконтроллируемым долям в дочерних предприятиях</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на виплати неконтрольованих часток у дочірніх підприємствах</value>
+    </synonym>
+    <comment>Витрачання на виплати неконтрольованим часткам у дочірніх підприємствах</comment>
+  </enumValues>
+  <enumValues uuid="f3f413ee-f0dc-4e9c-adc9-6ef2f600c4c1">
+    <name>ЗаймыПредоставленные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход финансовых учреждений на предоставление займов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата фінансових установ на надання позик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="15f820b5-71bb-4635-99f4-0b244742daea">
+    <name>ОплатаПоСтраховымКонтрактам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы на оплату обязательств по страховым контрактам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрати на оплату зобов'язань за страховими контрактами</value>
+    </synonym>
+    <comment>Витрачання на оплату зобов'язаннь за страховими контрактами</comment>
+  </enumValues>
+  <enumValues uuid="4966bc90-f409-4f29-a721-87fdb0c0a158">
+    <name>ПогашениеОбязательствПоФинансовойАренде</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату задолженности по финансовой аренде</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату заборгованості за фінансовою орендою</value>
+    </synonym>
+    <comment>Витрачання на сплату заборгованості з фінансової оренди</comment>
+  </enumValues>
+  <enumValues uuid="2c85cb19-b583-4b98-adab-e280c3b02e17">
+    <name>ПолученныеПроценты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от полученных процентов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від отриманих відсотків</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="16268f7d-9356-4e08-ad55-d172430fcf37">
+    <name>ПоступленияОтПогашенияЗаймовФинучреждениями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления финансовых организаций от погашения займов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження фінансових організацій від погашення позик</value>
+    </synonym>
+    <comment>Надходження фінансових установ від повернення позик</comment>
+  </enumValues>
+  <enumValues uuid="731c6b36-726d-4407-be37-db9621f3d614">
+    <name>ПриобретениеДочернихОрганизаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на приобретение дочернего предприятия и другой хозяйственной единицы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на придбання дочірнього підприємства та іншої господарської одиниці</value>
+    </synonym>
+    <comment>Витрачання на придбання дочірнього підприємства та іншої господарської одиниці</comment>
+  </enumValues>
+  <enumValues uuid="f831b18a-9055-4e68-b9a4-7bba54e4fb3b">
+    <name>ПриобретениеФинансовыхИнвестиций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на приобретение финансовых инвестиций</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на придбання фінансових інвестицій</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="daeef775-9f27-4fc9-9653-18450be16522">
+    <name>РасчетыПоНалогамИСборамПрочие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату обязательств по другим налогам и сборам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату зобов'язань з інших податків і зборів</value>
+    </synonym>
+    <comment>Витрачання на оплату зобов'язань з інших податків і зборів</comment>
+  </enumValues>
+  <enumValues uuid="dfe61e30-6a76-4ad5-95ce-44f98a10e2c3">
+    <name>ВозвратНалоговСборов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от возарата налогов и сборов, кроме НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від повернення податків і зборів, крім ПДВ</value>
+    </synonym>
+    <comment>Повернення податків і зборів</comment>
+  </enumValues>
+  <enumValues uuid="c102b11c-86d7-48a7-aa24-188b8fcb3572">
+    <name>ВозвратНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от возврата НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від повернення ПДВ</value>
+    </synonym>
+    <comment>Повернення податків і зборів</comment>
+  </enumValues>
+  <enumValues uuid="6d96a308-e461-40fd-9e7d-aaec39c1ca70">
+    <name>ЦелевоеФинансирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от целевого финансирования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від цільового фінансування</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cbfcd9d0-c2e3-4f2d-ba51-2988c2703941">
+    <name>ПоступлениеСубсидийДотаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступление от получения субсидий, дотаций</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від отримання субсидій, дотацій</value>
+    </synonym>
+    <comment>Надходження від отримання субсидій, дотацій</comment>
+  </enumValues>
+  <enumValues uuid="5441a758-9028-4fea-b2c8-508944363382">
+    <name>АвансыПокупателейЗаказчиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступление авансов от покупателей и заказчиков</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження авансів від покупців і замовників</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7f72b0b4-33e2-44aa-b67b-7e85fcbc7b9a">
+    <name>ВозвратАвансовПоставщиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от возврата авансов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від повернення авансів</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3bc96367-3a85-4545-a2d7-83640c7555be">
+    <name>ПроцентыПоДепозитам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления процентов по остаткам ДС на текущих счетах</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження відсотків за залишками грошових коштів на поточних рахунках</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c3fa04fd-fd47-4657-8efd-2000fa3ed490">
+    <name>ПоступлениеНеустоекШтрафовПени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступление от должников неустойки (штрафов, пени)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від боржників неустойки (штрафів, пені)</value>
+    </synonym>
+    <comment>Надходження від боржників неустойки (штрафів, пені)</comment>
+  </enumValues>
+  <enumValues uuid="925b3081-994d-4ab3-baf0-238015aafa1a">
+    <name>ПоступленияОтОперационнойАренды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от операционной аренды</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від операційної оренди</value>
+    </synonym>
+    <comment>Надходження від операційної оренди</comment>
+  </enumValues>
+  <enumValues uuid="8c80aa6f-6a80-4dec-9af0-811753197ea1">
+    <name>ПоступлениеРоялти</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от получения роялти, авторских вознаграждений</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від отримання роялті, авторських винагород</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ca4170b5-8b83-413d-a615-d54f4ec221e5">
+    <name>ПоступлениеСтраховыхПремий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступление от страховых премий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від страхових премій</value>
+    </synonym>
+    <comment>Надходження від страхових премій</comment>
+  </enumValues>
+  <enumValues uuid="2914e670-079a-4f48-986e-f886efe438cc">
+    <name>ОплатаСоцОбеспечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход от оплаты отчислений на социальные мероприятия</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата від оплати відрахувань на соціальні заходи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bee41f5a-a70b-424c-b9ec-12c4a999736e">
+    <name>ОплатаДругихНалоговСборов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату обязательств по налогам и сборам, кроме налога на прибыль и НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату зобов'язань з податків і зборів, крім податку на прибуток та ПДВ</value>
+    </synonym>
+    <comment>  Зобов’язань із податків і зборів</comment>
+  </enumValues>
+  <enumValues uuid="4c99d9ec-dd11-4e1d-a290-5527aee2ebc9">
+    <name>ОплатаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату обязательств по НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату зобов'язань з ПДВ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="effc58fa-8087-4259-8efe-e647bfed4521">
+    <name>ОплатаАвансовПоставщикам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату авансов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату авансів</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ad05669a-5a28-45f7-bf3d-84057e91a61b">
+    <name>ВозвратАвансовПокупателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату возврата авансов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату повернення авансів</value>
+    </synonym>
+    <comment>Витрачання на оплату повернення авансів</comment>
+  </enumValues>
+  <enumValues uuid="7d30919f-c0bf-43f5-a59c-e6690b4d56e8">
+    <name>ОплатаЦелевыхВзносов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход на оплату целевых взносов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Витрата на оплату цільових внесків</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2d8002cd-68e7-46b3-8efd-c1101d2c3855">
+    <name>ПоступлениеДеривативы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступление от деривативов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від деривативів</value>
+    </synonym>
+    <comment>Надходження від деривативів</comment>
+  </enumValues>
+  <enumValues uuid="e999be94-230a-499e-9fc9-bbdd9780d571">
+    <name>ПоступлениеВозвратЗаймов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от возврата займов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від повернення позик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d45d052c-30cf-4e0e-b20c-710f7847b4b6">
+    <name>ВыбытиеДочернегоПредприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от выбытия дочернего предприятия и другой хозяйственной единицы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від вибуття дочірнього підприємства або іншої господарської одиниці</value>
+    </synonym>
+    <comment>Надходження від вибуття дочірнього підприємства та іншої господарської одиниці</comment>
+  </enumValues>
+  <enumValues uuid="0468da22-6530-4f84-98f4-1faf81ba3f18">
+    <name>ОплатыДеривативы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виплаты за деривативами</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виплати за деривативами</value>
+    </synonym>
+    <comment>Виплати за деривативами</comment>
+  </enumValues>
+  <enumValues uuid="641a7999-a71b-457e-870d-e5ff807d6351">
+    <name>ПоступленияСобственныйКапитал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступления от собственного капитала</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження від власного капіталу</value>
+    </synonym>
+    <comment>Надходження від власного капіталу</comment>
+  </enumValues>
+  <forms uuid="1bb13e12-12ee-4f9a-bf58-cb973b2fd3bd">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Enum>

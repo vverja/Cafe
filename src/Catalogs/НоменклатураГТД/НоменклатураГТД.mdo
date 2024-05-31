@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f022052b-1ce3-4f61-a761-ce57c5770d97">
+  <producedTypes>
+    <objectType typeId="a611dba2-4c11-49e0-aa38-f9e3d8fbd227" valueTypeId="fceb96db-1f2b-4785-b626-5be23f310550"/>
+    <refType typeId="525ba5b9-ec96-4c18-9d87-8865047014a9" valueTypeId="ee6616be-525a-4b09-96ee-06397dc64918"/>
+    <selectionType typeId="a3ff4056-35af-484b-9ccb-89124baa5f88" valueTypeId="338fa648-0262-4e82-8400-7088e7fb0001"/>
+    <listType typeId="e6104e56-b8da-4531-ae80-5195b337b65a" valueTypeId="632b2fb1-785d-41fe-b9df-2dff4aab4a57"/>
+    <managerType typeId="afb13f2c-cc08-4c0e-bbb6-f447f249eb34" valueTypeId="e6286af5-e308-476a-8cdf-c0cb3b446163"/>
+  </producedTypes>
+  <name>НоменклатураГТД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Код номенклатуры для НН и номер ГТД</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Код номенклатури для ПН та номер ВМД</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НоменклатураГТД.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура, которой принадлежит данный код УКТВЭД и номер ГТД</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Номенклатура, якій належить даний код УКТЗЕД та номер ВМД</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Номенклатура.EmptyRef</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипНоменклатуры</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.Товар</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.МногооборотнаяТара</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.Услуга</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.Работа</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Код для НН и номер ГТД</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>uk</key>
+    <value>Код для ПН та номер ВМД</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Код номенклатуры для НН и номер ГТД</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>uk</key>
+    <value>Код номенклатури для ПН та номер ВМД</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Коды для НН и номера ГТД</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Коди для ПН та номери ВМД</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Коды номенклатуры для НН и номера ГТД</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Коди номенклатури для ПН та номери ВМД</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Список дополнительных свойств товаров: код УКТВЭД или ДКПП, номер грузовой таможенной декларации (для импортных). Является опциональным разрезом учета. Используется при заполнении документов.</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Список додаткових властивостей товарів: код УКТЗЕД або ДКПП, номер вантажної митної декларації (для імпортних). Є опціональним розрізом обліку. Використовується при заповненні документів.</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Номенклатура</owners>
+  <descriptionLength>70</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <codeSeries>WithinOwnerSubordination</codeSeries>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НоменклатураГТД.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.НоменклатураГТД.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.НоменклатураГТД.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="b87f3be6-8366-416b-bfee-5b75ed46f5a1">
+    <name>КодУКТВЭД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код для НН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код для ПН</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторУКТВЭД</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>В налоговой накладной код УКТВЭД или ДКПП необходимо указывать для любых товаров</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>В податковій накладній код УКТЗЕД або ДКПП необхідно вказувати для будь-яких товарів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e30d8482-0ff9-45d4-b3a7-54424d6fb0eb">
+    <name>НомерГТД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ГТД</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер ВМД</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НомераГТД</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ab05bb2e-04ca-4bc4-8233-750f7267c13c">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="cbc7d517-08df-4d2c-8547-a179d7879574">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма елементу</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b2a071a7-ed83-4cc0-ba55-c8cdafb04c5c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5e49dbec-898f-4b33-a5b2-d790eb4aca96">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="53ecdeca-ddca-40d9-8602-4590c0db1223">
+    <name>РазблокированиеРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разблокирование реквизитов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розблокування реквізитів</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="0baa4ac9-49d0-468c-88d8-aab1a54f8e83">
+    <name>ПоискИИсправлениеНекорректныхНаименований</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поиск и исправление некорректных наименований</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Пошук та виправлення некоректних найменувань</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.НоменклатураГТД</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Поиск и замена некорректно заполненых наименований. Команда применяется к выделенным элементам справочника  (Ctrl+A - выделить все)</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Пошук і заміна некоректно заповнених найменувань. Команда застосовується до виділених елементів довідника (Ctrl+A (виділити все)</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ПроверкаКоличестваТоваров</picture>
+    </picture>
+  </commands>
+</mdclass:Catalog>

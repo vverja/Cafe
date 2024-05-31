@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7324fd4-8c28-49d3-8058-1bc74a365fca">
+  <producedTypes>
+    <selectionType typeId="fdf8d5e7-f5c0-4a0e-84e1-63b33564cd6e" valueTypeId="b0631d23-f117-4e08-ab09-2cb162ebe4cd"/>
+    <listType typeId="cd6da229-13cc-4c11-8fe4-516020107cd1" valueTypeId="736f5641-6636-42ae-8c53-69021a97218e"/>
+    <managerType typeId="e7f88fd5-dfda-4507-85f2-5214a7fc1281" valueTypeId="793f3a6d-f1cb-4c74-8570-df33cd6252f5"/>
+    <recordSetType typeId="665fe7d9-0dba-4b8e-b37b-f93b7e21102a" valueTypeId="a7e830fe-38ad-4e14-a9b4-fb5f3883821b"/>
+    <recordKeyType typeId="938385d3-452d-4c9b-8372-9103a976a4a5" valueTypeId="833911de-6971-480f-901a-db729d2b00a1"/>
+    <recordType typeId="ce089203-c017-46d4-a270-45f649a4a994" valueTypeId="a6c0276a-9393-4a42-82b3-6e6fedb04633"/>
+    <recordManagerType typeId="d4ccbc40-7ccd-494a-b3a6-22b7b3125c4c" valueTypeId="52fe4a1f-4144-4ff5-a5c2-9df5d777781b"/>
+  </producedTypes>
+  <name>УДАЛИТЬТребуетсяРаспределениеДопРасходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Требуется распределение доп. расходов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Потрібно розподіл дод. витрат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="aae14e07-ffc6-4036-845e-5791d27ecb1b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

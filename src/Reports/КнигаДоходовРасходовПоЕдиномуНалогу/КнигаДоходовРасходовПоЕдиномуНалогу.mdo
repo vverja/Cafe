@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05ac52d3-1d60-4ffe-80b5-ba91c2d56d9c">
+  <producedTypes>
+    <objectType typeId="383e3cfb-18e8-4e33-9615-5dd95142573d" valueTypeId="cb303434-d45c-4793-9c0a-2f91524ea0df"/>
+    <managerType typeId="88900bc1-1dac-4d42-bf71-c1d9d1f76b2d" valueTypeId="ba6ffd06-a95a-4a84-954d-de6a270afe66"/>
+  </producedTypes>
+  <name>КнигаДоходовРасходовПоЕдиномуНалогу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типовая форма учета доходов и расходов ФОП (единый налог с НДС)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Типова форма обліку доходів і витрат ФОП (єдиний податок з ПДВ)</value>
+  </synonym>
+  <comment>Типовая форма учета доходов и расходов ФОП (единый налог с НДС)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.КнигаДоходовРасходовПоЕдиномуНалогу.Form.ФормаОтчета</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Открыть отчет Типовая форма учета доходов и расходов ФОП (единый налог с НДС)</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Відкрити звіт Типова форма обліку доходів і витрат ФОП (єдиний податок з ПДВ)</value>
+  </explanation>
+  <attributes uuid="11f1d39d-b3c9-4330-91a6-dda5d18da8e1">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="1fb716b2-b3c5-43ec-ba9c-5fd9b735286f">
+    <name>ПериодОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Період звіту</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="01bbffd0-5e42-484c-b1b7-61f5eb2f2c46">
+    <name>ДатаНачалаНарастающегоИтога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начиная с:</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата начала нарастающего итога</value>
+    </synonym>
+    <type>
+      <types>StandardBeginningDate</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="3bb22ee2-36be-4cc6-9952-cec6dc3ff191">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c7d0f1bc-4a0d-4c21-bb5f-ddbfc01852da">
+    <name>UK_Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="2df15753-6c89-4c8b-bdbb-5ad542761148">
+    <name>UK_Макет2021</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="eb100b5e-966c-44be-be36-9dd6e63b1205">
+    <name>UK_Макет2023</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

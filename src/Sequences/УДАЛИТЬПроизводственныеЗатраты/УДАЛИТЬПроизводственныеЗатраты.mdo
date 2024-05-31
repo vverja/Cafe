@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bd3838d-a87d-47c2-a54d-cf8bd9559d29">
+  <producedTypes>
+    <recordType typeId="df869f07-ba8c-40ae-8d06-bf47e45e1e9b" valueTypeId="ef32e198-0805-4bd9-848e-6d5077337e4c"/>
+    <managerType typeId="7dbd4214-be84-4527-8318-6e22e65e1c2f" valueTypeId="b5691801-a22b-42ae-bd19-5a8a1c363ef6"/>
+    <recordSetType typeId="08d7a1ca-95f7-4ce3-9fdf-ec073ecf89d0" valueTypeId="8642737d-6f29-4c82-b000-58debe64494c"/>
+  </producedTypes>
+  <name>УДАЛИТЬПроизводственныеЗатраты</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Производственные затраты</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Виробничі витрати</value>
+  </synonym>
+  <moveBoundaryOnPosting>DontMove</moveBoundaryOnPosting>
+  <documents>Document.ВнутреннееПотреблениеТоваров</documents>
+  <documents>Document.ПоступлениеУслугПрочихАктивов</documents>
+  <documents>Document.ПоступлениеТоваровУслуг</documents>
+  <documents>Document.РеализацияТоваровУслуг</documents>
+  <documents>Document.АктВыполненныхРабот</documents>
+  <documents>Document.ОтчетОРозничныхПродажах</documents>
+  <documents>Document.ПередачаТоваровМеждуОрганизациями</documents>
+  <documents>Document.ПрочееОприходованиеТоваров</documents>
+  <registerRecords>AccumulationRegister.МатериалыИРаботыВПроизводстве</registerRecords>
+  <registerRecords>AccumulationRegister.ПартииПроизводственныхЗатрат</registerRecords>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="a0273e28-81aa-4733-9012-3c5179199270">
+    <name>АналитикаУчетаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку номенклатури</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаНоменклатуры</types>
+    </type>
+    <registerRecordsMap>AccumulationRegister.МатериалыИРаботыВПроизводстве.Dimension.УДАЛИТЬАналитикаУчетаНоменклатуры</registerRecordsMap>
+    <registerRecordsMap>AccumulationRegister.ПартииПроизводственныхЗатрат.Dimension.АналитикаУчетаНоменклатуры</registerRecordsMap>
+  </dimensions>
+</mdclass:Sequence>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1281e53c-c902-4282-b4a9-e71e16f41d2b">
+  <producedTypes>
+    <selectionType typeId="d1104d64-d9b8-42a4-94d1-132c6e8f8969" valueTypeId="e407ad44-bb0d-40f8-b8ee-64cf9f3778b8"/>
+    <listType typeId="30bcf541-cd5e-4fec-a746-577d857121f1" valueTypeId="1d7a6118-73e9-44fe-941e-412e8a67ec1f"/>
+    <managerType typeId="932a741a-fdfc-485e-bd83-c808a93e272d" valueTypeId="06afbbcb-3636-4f69-ace6-550c75ae6f1d"/>
+    <recordSetType typeId="0c3aa8b0-3ad0-470f-b307-20ae0e5ea797" valueTypeId="8ffd1e7e-5357-48f4-939c-1b74ea614995"/>
+    <recordKeyType typeId="16d4ab3f-d12b-4452-8b8b-c72ce6603742" valueTypeId="c7f3c062-6d76-486f-9b36-8c88dfa71502"/>
+    <recordType typeId="e683cfc2-f9b5-4aae-afc1-ad627ef2d450" valueTypeId="5afc39a3-557d-40b7-ba2f-4db69e8b972b"/>
+  </producedTypes>
+  <name>НДСРасчетНалоговыхОбязательств</name>
+  <synonym>
+    <key>ru</key>
+    <value>НДС: Расчет налоговых обязательств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>ПДВ: Розрахунок податкових зобов'язань</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="ec990398-c1a8-4afa-8533-138dc0f11ea9">
+    <name>СуммаПоставкиТребующаяРегистрацииНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма поставки требующая регистрации НН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума поставки, що потребує реєстрації ПН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="79c9d262-67d0-4774-8d41-96ea9d61cafc">
+    <name>СуммаПоставкиНеТребующаяРегистрацииНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма поставки не требующая регистрации НН</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума поставки, що не потребує реєстрації ПН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="968f113d-6196-4f75-8e9c-a92f02433fbe">
+    <name>АналитикаУчетаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку за партнерами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоПартнерам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику расчетов с клиентами.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Визначає аналітику розрахунків з клієнтами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c44b966f-2fee-4093-93e5-67a1288b9453">
+    <name>ОбъектРасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект расчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Об'єкт розрахунків</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ОтчетКомиссионера</types>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+      <types>DocumentRef.ЗаявкаНаВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ОтчетКомитенту</types>
+      <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациямиОСписании</types>
+      <types>DocumentRef.ВыкупВозвратнойТарыКлиентом</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.ОтчетКомиссионераОСписании</types>
+      <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.ЗаказКлиента</types>
+      <types>EnumRef.СтавкиНДС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ (заказа клиента или реализация), в рамках которого отражаются расчеты.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Документ (замовлення клієнта або реалізація), в рамках якого відображаються розрахунки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="187eb3c7-ce69-4bcf-80b9-f761f8fcf278">
+    <name>ВидПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид поставки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид постачання</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПоставки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f7772fe5-9db6-47b0-b54d-7cfd65809b2d">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта взаиморасчетов с партнером.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Валюта взаєморозрахунків з партнером.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6e502f3b-40ca-4127-964d-532568951518">
+    <name>ДокументПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ поставки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ поставки</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДокументПоставкиИсходящийНДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a5252766-39af-40f3-ac1f-72f1f4283905">
+    <name>МоментОпределенияБазыНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Момент определения базы НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Момент визначення бази ПДВ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.МоментыОпределенияНалоговойБазы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

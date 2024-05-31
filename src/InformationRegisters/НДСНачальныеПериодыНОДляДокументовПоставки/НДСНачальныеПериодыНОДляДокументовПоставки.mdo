@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37054583-3153-45b7-811b-556d73e68c05">
+  <producedTypes>
+    <selectionType typeId="31e62023-c765-4780-a01e-7656c7f4f23c" valueTypeId="dd060534-537b-4009-a94b-af34fd0da1a1"/>
+    <listType typeId="d25025fd-c68a-4dbf-ab90-55d675848773" valueTypeId="7dde2142-fe37-42ac-8f17-05b6f54ccce0"/>
+    <managerType typeId="b3b5682b-2236-4359-b0dc-2ef126293491" valueTypeId="d7ef36ad-a31c-46d2-8d03-f164ba86b44b"/>
+    <recordSetType typeId="62881a8b-1f7d-40bb-8d24-4c14a778b490" valueTypeId="2f35226a-5e16-4f61-a718-820b181332df"/>
+    <recordKeyType typeId="321671e5-0c9a-4f8f-93aa-9a7f69cb22e6" valueTypeId="9d0e383c-09c8-4feb-a07d-378f70b67518"/>
+    <recordType typeId="d9a1eb8d-2da8-40fa-8cd8-7cd65ed92555" valueTypeId="ce7d2c93-6f2a-4078-b403-06cf0e8706da"/>
+    <recordManagerType typeId="c16feb5b-e2c0-4460-807d-b2d3bf0615dd" valueTypeId="338022c7-99ac-44eb-ba47-5c625f66ac1b"/>
+  </producedTypes>
+  <name>НДСНачальныеПериодыНОДляДокументовПоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начальные периоды налоговых обязательств в разрезе документов поставки</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Початкові періоди податкових зобов'язань у розрізі документів поставки</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2b32b99a-35c2-4587-a996-4035ad8942b0">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="793c63be-ad8f-42de-acb0-95828280cce5">
+    <name>АналитикаУчетаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку за партнерами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоПартнерам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику расчетов с клиентами.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Визначає аналітику розрахунків з клієнтами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="e3dcfaf5-4252-485f-a5ff-7f946effec28">
+    <name>ДокументПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ поставки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ поставки</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДокументПоставкиИсходящийНДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

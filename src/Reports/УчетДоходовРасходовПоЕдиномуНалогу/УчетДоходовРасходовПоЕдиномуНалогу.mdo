@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00ddad36-4d2d-4c58-aee3-1e61a90f6093">
+  <producedTypes>
+    <objectType typeId="99fff728-8e1d-4bc0-b059-a4c98f9f9905" valueTypeId="a66bb3df-d008-494e-85dd-8fcbb4f07c9b"/>
+    <managerType typeId="6bbfde51-4b8c-4644-a89b-02bd9f9c4b2a" valueTypeId="aa8322f9-0809-42dd-8553-8f0458cc1b48"/>
+  </producedTypes>
+  <name>УчетДоходовРасходовПоЕдиномуНалогу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типовая форма доходов и расходов ФОП (ЕН с НДС за 2022 г.)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Типова форма доходів і витрат ФОП (ЄП з ПДВ за 2022 р.)</value>
+  </synonym>
+  <comment>Типовая форма доходов и расходов ФОП (ЕН с НДС за 2022 г.)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.УчетДоходовРасходовПоЕдиномуНалогу.Form.ФормаОтчета</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Открыть типоeую форму доходов и расходов ФОП (ЕН с НДС за 2022 г.)</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Відкрити типову форму доходів і витрат ФОП (ЄП з ПДВ за 2022 р.)</value>
+  </explanation>
+  <attributes uuid="41ee4104-4faf-4265-930f-1427da47e87f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="61069dc0-90a8-4b8b-9357-f1f11cb9f3c9">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початок періоду</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bd7ec1bd-f422-4e85-bcaf-d701f744a9f3">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кінець періоду</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="af1eabd0-9e85-4c75-ac9b-fbb3b7f8f9eb">
+    <name>ДатаНачалаНарастающегоИтога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начиная с</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Починаючи з</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0be49da6-b6f1-4d5e-8b1e-c4482b4a9114">
+    <name>ВключатьОбособленныеПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включая обособленные подразделения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Включаючи відокремлені підрозділи</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="418a959f-70eb-4cb8-a6d8-abc1852a29dd">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5e074e00-0402-4c66-9aea-0df7ab6736b2">
+    <name>UK_Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>UK_Макет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>UK_Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

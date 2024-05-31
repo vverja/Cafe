@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5682a585-7b93-4304-814c-346fc140cb10">
+  <producedTypes>
+    <selectionType typeId="81108b06-bc2e-4fdd-897f-b944ae15341a" valueTypeId="ab4edbd6-6b18-4e62-92b3-eb59f96983fa"/>
+    <listType typeId="dfa9104b-5267-4bba-b760-992606133dbe" valueTypeId="f1c51929-426e-4b80-8187-97fc3a933080"/>
+    <managerType typeId="8e17bb1f-0f3b-4be1-9ee7-b7bc951f7453" valueTypeId="cefb567d-e9d5-4ab4-b03c-4fe40e2f26ba"/>
+  </producedTypes>
+  <name>Платежи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал платежей</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Журнал платежів</value>
+  </synonym>
+  <defaultForm>DocumentJournal.Платежи.Form.ФормаСписка</defaultForm>
+  <registeredDocuments>Document.ПриходныйКассовыйОрдер</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеБезналичныхДенежныхСредств</registeredDocuments>
+  <registeredDocuments>Document.РасходныйКассовыйОрдер</registeredDocuments>
+  <registeredDocuments>Document.СписаниеБезналичныхДенежныхСредств</registeredDocuments>
+  <registeredDocuments>Document.ОперацияПоПлатежнойКарте</registeredDocuments>
+  <registeredDocuments>Document.ОтчетБанкаПоОперациямЭквайринга</registeredDocuments>
+  <registeredDocuments>Document.ЛистКассовойКниги</registeredDocuments>
+  <registeredDocuments>Document.ОтражениеРасхожденийПриИнкассацииДенежныхСредств</registeredDocuments>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Журнал платежей</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Журнал платежів</value>
+  </listPresentation>
+  <columns uuid="68b4775d-e118-4731-a88f-0ab79a9cdb03">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <references>Document.ОперацияПоПлатежнойКарте.Attribute.Организация</references>
+    <references>Document.ПоступлениеБезналичныхДенежныхСредств.Attribute.Организация</references>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.Организация</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Организация</references>
+    <references>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Организация</references>
+    <references>Document.ОтчетБанкаПоОперациямЭквайринга.Attribute.Организация</references>
+    <references>Document.ЛистКассовойКниги.Attribute.Организация</references>
+    <references>Document.ОтражениеРасхожденийПриИнкассацииДенежныхСредств.Attribute.Организация</references>
+  </columns>
+  <columns uuid="17ea0fb5-0f74-48cc-a40d-26fd014d4323">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <references>Document.ПоступлениеБезналичныхДенежныхСредств.Attribute.Подразделение</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Подразделение</references>
+    <references>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Подразделение</references>
+    <references>Document.ОтчетБанкаПоОперациямЭквайринга.Attribute.Подразделение</references>
+    <references>Document.ОтражениеРасхожденийПриИнкассацииДенежныхСредств.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="cf06f7b5-94b3-47c0-9a4f-b436a50308ad">
+    <name>СуммаПоступления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма поступления</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума надходження</value>
+    </synonym>
+    <references>Document.ПоступлениеБезналичныхДенежныхСредств.Attribute.СуммаДокумента</references>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.СуммаДокумента</references>
+    <references>Document.ОтчетБанкаПоОперациямЭквайринга.Attribute.СуммаПокупок</references>
+    <references>Document.ЛистКассовойКниги.Attribute.СуммаПоступления</references>
+  </columns>
+  <columns uuid="5f264235-4f8e-4651-84ff-d32dc294ce31">
+    <name>СуммаСписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма списания</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума списання</value>
+    </synonym>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.СуммаДокумента</references>
+    <references>Document.СписаниеБезналичныхДенежныхСредств.Attribute.СуммаДокумента</references>
+    <references>Document.ОтчетБанкаПоОперациямЭквайринга.Attribute.СуммаВозвратов</references>
+    <references>Document.ЛистКассовойКниги.Attribute.СуммаВыдачи</references>
+  </columns>
+  <columns uuid="20a3ba6d-ff97-44de-b4de-7511248fcf35">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ОперацияПоПлатежнойКарте.Attribute.Валюта</references>
+    <references>Document.ПоступлениеБезналичныхДенежныхСредств.Attribute.Валюта</references>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.Валюта</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Валюта</references>
+    <references>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Валюта</references>
+    <references>Document.ОтчетБанкаПоОперациямЭквайринга.Attribute.Валюта</references>
+    <references>Document.ОтражениеРасхожденийПриИнкассацииДенежныхСредств.Attribute.Валюта</references>
+  </columns>
+  <columns uuid="727d08f8-e31c-4c2f-baf4-4bdba776ed49">
+    <name>ПолучательПлательщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель плательщик</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одержувач платник</value>
+    </synonym>
+    <references>Document.ОперацияПоПлатежнойКарте.Attribute.Контрагент</references>
+    <references>Document.ПоступлениеБезналичныхДенежныхСредств.Attribute.Контрагент</references>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.Контрагент</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Контрагент</references>
+    <references>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Контрагент</references>
+    <references>Document.ОтчетБанкаПоОперациямЭквайринга.Attribute.Эквайер</references>
+  </columns>
+  <columns uuid="cc350de4-6062-4b6e-b2b0-d7c71faa52cc">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Операція</value>
+    </synonym>
+    <references>Document.ОперацияПоПлатежнойКарте.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ПоступлениеБезналичныхДенежныхСредств.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.СписаниеБезналичныхДенежныхСредств.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ОтражениеРасхожденийПриИнкассацииДенежныхСредств.Attribute.ХозяйственнаяОперация</references>
+  </columns>
+  <columns uuid="37608f16-c0e2-47e7-9f0b-7f6cdca0c3d0">
+    <name>БанковскийСчетКасса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет касса</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Банківський рахунок каса</value>
+    </synonym>
+    <references>Document.ПоступлениеБезналичныхДенежныхСредств.Attribute.БанковскийСчет</references>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.Касса</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Касса</references>
+    <references>Document.СписаниеБезналичныхДенежныхСредств.Attribute.БанковскийСчет</references>
+    <references>Document.ОтражениеРасхожденийПриИнкассацииДенежныхСредств.Attribute.ХозяйственнаяОперация</references>
+  </columns>
+  <forms uuid="3012784b-fd24-4838-a4b0-4fa2004de7a8">
+    <name>ФормаВыбораИзСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора из списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору зі списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5f0f871a-f0fc-4d72-a68b-3df2fb79a5bc">
+    <name>ФормаСписка</name>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="d4721095-d318-4f88-a12f-ca0767896026">
+    <name>ЖурналПлатежей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Журнал платежей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Журнал платежів</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DocumentJournal>

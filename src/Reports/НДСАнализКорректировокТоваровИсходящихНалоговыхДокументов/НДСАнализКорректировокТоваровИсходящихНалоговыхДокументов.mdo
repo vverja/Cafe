@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2547e987-8fbb-4d19-8950-86c9f593237a">
+  <producedTypes>
+    <objectType typeId="33118e29-7dce-414e-b1f7-c81f48685f56" valueTypeId="ca9e9d72-793a-4067-b14a-ff5e30801e89"/>
+    <managerType typeId="b212dc4c-20b7-4c39-b23f-64089070f5d8" valueTypeId="719fa87e-70c4-442d-8166-77169a50d9f8"/>
+  </producedTypes>
+  <name>НДСАнализКорректировокТоваровИсходящихНалоговыхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ корректировок товаров исходящих налоговых документов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Аналіз коригувань товарів вихідних податкових документів</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаНДС</defaultForm>
+  <mainDataCompositionSchema>Report.НДСАнализКорректировокТоваровИсходящихНалоговыхДокументов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <templates uuid="fc15b250-8483-4cd2-9d36-aa590507bb40">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основна схема компонування даних</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="ac13d25f-d14a-4c48-82b4-eeb4cddee28b">
+    <name>АнализКорректировок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ корректировок</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналіз коригувань</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>DocumentRef.НалоговаяНакладная</types>
+      <types>DocumentRef.Приложение2КНалоговойНакладной</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

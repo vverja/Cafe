@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5af520f7-0ad7-4713-92a6-b0bc6db9f096">
+  <producedTypes>
+    <objectType typeId="2788ae31-ea25-4aa6-9e11-baa8cbaee68f" valueTypeId="849e1737-9a99-4e9c-bf98-d302ba9cb49b"/>
+    <refType typeId="c6ce1caa-6c3e-46a4-96b3-7933c9c484df" valueTypeId="0fee0898-0f95-4d0c-905b-ac431ff42a1e"/>
+    <selectionType typeId="7b308aa8-ca7e-49df-8812-55121cba383e" valueTypeId="b8530802-29e5-4847-8a82-c932f9abc652"/>
+    <listType typeId="2221230c-8380-44a8-91e7-37e147fc9705" valueTypeId="551984ed-c178-4a26-89e9-aa268f2103c1"/>
+    <managerType typeId="0f0d8652-3b15-4012-9ea2-6804d32570b1" valueTypeId="13efbe81-a065-4d5d-b706-f7070fa1b331"/>
+  </producedTypes>
+  <name>УДАЛИТЬВыпискаПоРасчетномуСчету</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Выписка по банковскому счету</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Виписка з банківського рахунку</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УДАЛИТЬВыпискаПоРасчетномуСчету.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_УдалитьВыпискаПоРасчетномуСчету</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>(не используется) Выписка по банковскому счету</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>uk</key>
+    <value>(не використовується) Виписка з банківського рахунку</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Выписки по банковским счетам (не используется)</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Виписки з банківських рахунків (не використовується)</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Список банковских выписок по банковским счетам</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Список банківських виписок по банківських рахунках</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <registerRecords>AccumulationRegister.ДвиженияДенежныхСредств</registerRecords>
+  <registerRecords>AccumulationRegister.УДАЛИТЬДенежныеСредстваКСписаниюБезналичные</registerRecords>
+  <registerRecords>AccumulationRegister.ДенежныеСредстваБезналичные</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияДенежныеСредстваКонтрагент</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияДенежныеСредстваДоходыРасходы</registerRecords>
+  <registerRecords>AccumulationRegister.УДАЛИТЬДенежныеСредстваКПоступлениюБезналичные</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="3fff38dc-1d6e-48ea-a18c-f551a488517c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, от имени которой оформляется документ.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація підприємства, від імені якої оформляється документ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Организации.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d181b20d-fb1c-43ee-b4cb-cb78f08571f1">
+    <name>БанковскийСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Банківський рахунок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанковскиеСчетаОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет организации, по которому отражаются операции</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Банківський рахунок організації, за яким відображаються операції</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.БанковскиеСчетаОрганизаций.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cf02c33b-1ae3-4086-9260-742947d138a1">
+    <name>СуммаПоступленияВсего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма поступления</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума надходження</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Общая сумма поступления денежных средств на банковский счет</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Загальна сума надходження грошових коштів на банківський рахунок</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="073fac6a-8430-4279-9eee-2ea10b9caa96">
+    <name>СуммаСписанияВсего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма списания</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума списання</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Общая сумма списания денежных средств с банковского счета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Загальна сума списання грошових коштів з банківського рахунку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="f4e54be5-939e-4d2a-9ebc-ea36bb3a08b9">
+    <producedTypes>
+      <objectType typeId="a7fb9178-166d-47ea-b208-791fcf01e78b" valueTypeId="b68100d4-6aa4-412e-9cc5-bd73c7c4a56f"/>
+      <rowType typeId="6bbee030-bec5-4f39-a05f-36bfdcbf0a57" valueTypeId="85b4a0ba-a83e-42ca-a112-b0616ab4a707"/>
+    </producedTypes>
+    <name>ВходящиеПлатежи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входящие платежи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вхідні платежі</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Поступления безналичных денежных средств на банковский счет.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Надходження безготівкових коштів на банківський рахунок.</value>
+    </toolTip>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f72fa474-83c3-405a-89ae-338a2cdc886d">
+      <name>ПлатежныйДокумент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Платежный документ</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Платіжний документ</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РасходныйКассовыйОрдер</types>
+        <types>DocumentRef.СписаниеБезналичныхДенежныхСредств</types>
+        <types>DocumentRef.ОтчетБанкаПоОперациямЭквайринга</types>
+        <types>DocumentRef.ПоступлениеБезналичныхДенежныхСредств</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Первичный документ, которым оформлено поступление денежных средств на банковский счет</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Первинний документ, яким оформлено надходження грошових коштів на банківський рахунок</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.БанковскийСчет</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.УДАЛИТЬВыпискаПоРасчетномуСчету.Attribute.БанковскийСчет</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Отбор.Организация</name>
+        <field>Document.УДАЛИТЬВыпискаПоРасчетномуСчету.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="46cec061-5839-417c-9a0d-381a4c270d10">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма поступления денежных средств на банковский счет</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума надходження грошових коштів на банківський рахунок</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="2c00486d-cc11-485b-879c-4a2ec6134a31">
+    <producedTypes>
+      <objectType typeId="e5c088b7-f6e5-4419-b97a-7702186550a7" valueTypeId="b1b92225-812a-4634-b84d-31c0f2cefe63"/>
+      <rowType typeId="f34ace56-8f01-4949-a938-e558b0dadf23" valueTypeId="b2aada64-8791-4b52-94a6-f971f73189fd"/>
+    </producedTypes>
+    <name>ИсходящиеПлатежи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходящие платежи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вихідні платежі</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Списания безналичных денежных средств с банковского счета.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Списання безготівкових коштів з банківського рахунку.</value>
+    </toolTip>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="32c28ebe-79db-4ac2-ba17-607374bd5117">
+      <name>ПлатежныйДокумент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Платежный документ</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Платіжний документ</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+        <types>DocumentRef.СписаниеБезналичныхДенежныхСредств</types>
+        <types>DocumentRef.ОтчетБанкаПоОперациямЭквайринга</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Первичный документ, которым оформлено списание денежных средств с банковского счета</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Первинний документ, яким оформлено списання грошових коштів з банківського рахунку</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.БанковскийСчет</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.УДАЛИТЬВыпискаПоРасчетномуСчету.Attribute.БанковскийСчет</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Отбор.Организация</name>
+        <field>Document.УДАЛИТЬВыпискаПоРасчетномуСчету.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fccf0d23-65df-470a-9fe4-46884fdff9bb">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма списания денежных средств с банковского счета</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума списання грошових коштів з банківського рахунку</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

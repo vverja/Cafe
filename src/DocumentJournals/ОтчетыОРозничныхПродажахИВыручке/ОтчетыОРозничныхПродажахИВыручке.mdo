@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cc09105-9079-42db-86c4-968c20e6f16c">
+  <producedTypes>
+    <selectionType typeId="c94d3bc7-c978-4c55-bdf8-6d9d1a520602" valueTypeId="64088af0-f201-4ac5-a1c4-d96c52aaf361"/>
+    <listType typeId="5cd87a18-3eea-455c-922a-b75d4fad1729" valueTypeId="1086975e-1e2b-4748-9749-4de4357b45af"/>
+    <managerType typeId="831e12a5-2133-492f-8a48-5a6c457d4b54" valueTypeId="8fdb0a44-494a-436d-b1c4-0901c95e77e9"/>
+  </producedTypes>
+  <name>ОтчетыОРозничныхПродажахИВыручке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты о розничных продажах и выручке</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіти про роздрібні продажі і виторг</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ОтчетыОРозничныхПродажахИВыручке.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ОтчетОРозничнойВыручке</registeredDocuments>
+  <registeredDocuments>Document.ОтчетОРозничныхПродажах</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="f4c8a0bb-3774-4eff-81e6-4104a6816d3b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <references>Document.ОтчетОРозничнойВыручке.Attribute.Организация</references>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.Организация</references>
+  </columns>
+  <columns uuid="dbab5f4e-a6d3-4375-b429-aff2dbea2c02">
+    <name>КассаККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса ККМ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Каса ККМ</value>
+    </synonym>
+    <references>Document.ОтчетОРозничнойВыручке.Attribute.КассаККМ</references>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.КассаККМ</references>
+  </columns>
+  <columns uuid="52c8ee07-9fa9-4f2f-b3ff-8171aa455c72">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <references>Document.ОтчетОРозничнойВыручке.Attribute.Подразделение</references>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="2f5b6c42-17a9-4d64-87ff-aaa736b7ce91">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Склад</value>
+    </synonym>
+    <references>Document.ОтчетОРозничнойВыручке.Attribute.Склад</references>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.Склад</references>
+  </columns>
+  <columns uuid="09941d0b-6255-4eb2-961e-7eb20503aae6">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума документа</value>
+    </synonym>
+    <references>Document.ОтчетОРозничнойВыручке.Attribute.СуммаДокумента</references>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="872dcbbc-9c39-4553-8259-79b142e44466">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ОтчетОРозничнойВыручке.Attribute.Валюта</references>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.Валюта</references>
+  </columns>
+  <columns uuid="694be846-4819-4ce5-8a3f-b451ca1c0fee">
+    <name>КассоваяСмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассовая смена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Касова зміна</value>
+    </synonym>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.КассоваяСмена</references>
+  </columns>
+  <forms uuid="975389e4-e8e4-409c-ba05-cb5211f21f87">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

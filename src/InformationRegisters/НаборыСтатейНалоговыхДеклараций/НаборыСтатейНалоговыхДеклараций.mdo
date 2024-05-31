@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68794893-603b-4715-b370-7057ad7ccadc">
+  <producedTypes>
+    <selectionType typeId="911e1a90-afa5-4c0d-b1d7-7f255a6a3637" valueTypeId="37642899-875e-42b2-88d8-34a2f51c8f47"/>
+    <listType typeId="797258f8-9c66-42a9-b8e3-fe3a0e77272f" valueTypeId="077ea6d1-ba79-4a79-a1fa-bccec60a1537"/>
+    <managerType typeId="b155e517-12c6-49d8-859c-138fd6eef8d2" valueTypeId="01a4b890-5264-4afd-9eb0-e1d181452635"/>
+    <recordSetType typeId="512a0444-5419-4f10-91bf-8c3d813c5be1" valueTypeId="26de1525-9220-4362-90e6-843957b816b7"/>
+    <recordKeyType typeId="26835565-f49d-4503-bd2d-ef77621f9f67" valueTypeId="8ec3b14e-c6ec-4374-a0e7-031543ae0148"/>
+    <recordType typeId="aaa0db45-45c6-41aa-9b9a-862892a1b9e0" valueTypeId="c7c375cc-7250-43fe-a58a-e22b7583e3ad"/>
+    <recordManagerType typeId="7b6a63de-8b11-45b2-bf6c-6e6c98f8bd65" valueTypeId="de2901b1-2a89-4629-b9fe-b17ff6efe4dc"/>
+  </producedTypes>
+  <name>НаборыСтатейНалоговыхДеклараций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связи наборов и статей налоговых деклараций</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Зв'язки наборів і статей податкових декларацій</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dimensions uuid="5dd68743-21a2-491b-9b41-cbf3a8f68490">
+    <name>Набор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Набір</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НаборыСтатейНалоговыхДеклараций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8d60daab-b38f-43b7-8ded-ea8b4494ef5f">
+    <name>Статья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="fc842edd-cbb0-448a-b3db-07c48a97afa3">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

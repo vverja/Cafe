@@ -1,0 +1,2941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8502b653-32a8-4d01-a12e-5fe4cede91ef">
+  <producedTypes>
+    <objectType typeId="47e22c58-9af5-430b-8cd8-3cf899770d0e" valueTypeId="53627e40-51db-4701-b92c-e22d4777102c"/>
+    <refType typeId="3889faa0-03fe-48f9-a20a-b370f59d7e94" valueTypeId="a5470599-9520-4971-9899-e0b56338fc5b"/>
+    <selectionType typeId="8eef0614-54c0-4a5f-9ef6-9affdf3a7b2c" valueTypeId="34360dfa-44c0-41a2-a7ad-ffdee718161c"/>
+    <listType typeId="063748f8-cf00-4116-9fa8-acaa565ea871" valueTypeId="05167da6-ecad-4e57-837e-3ad22e066152"/>
+    <managerType typeId="b695bb26-1b76-4d0a-b5c9-3a92f97e6688" valueTypeId="dc24f606-d717-45b6-90c1-ccd95c5b5278"/>
+  </producedTypes>
+  <name>СписаниеБезналичныхДенежныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списание безналичных денежных средств</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Списання безготівкових коштів</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СписаниеБезналичныхДенежныхСредств.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_СписаниеБезналичныхДенежныхСредств</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_СписаниеБезналичныхДенежныхСредств</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>Document.СписаниеБезналичныхДенежныхСредств.TabularSection.ДополнительныеРеквизиты</characteristicValues>
+    <objectField>Document.СписаниеБезналичныхДенежныхСредств.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</objectField>
+    <typeField>Document.СписаниеБезналичныхДенежныхСредств.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</typeField>
+    <valueField>Document.СписаниеБезналичныхДенежныхСредств.TabularSection.ДополнительныеРеквизиты.Attribute.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <basedOn>Document.ЗаказПоставщику</basedOn>
+  <basedOn>Document.ЗаявкаНаРасходованиеДенежныхСредств</basedOn>
+  <basedOn>Document.АвансовыйОтчет</basedOn>
+  <basedOn>Document.РаспоряжениеНаПеремещениеДенежныхСредств</basedOn>
+  <basedOn>Catalog.ДоговорыКредитовИДепозитов</basedOn>
+  <basedOn>Document.ПоступлениеТоваровУслуг</basedOn>
+  <basedOn>Document.ПоступлениеУслугПрочихАктивов</basedOn>
+  <basedOn>Document.ОтчетКомитенту</basedOn>
+  <basedOn>Document.ОтчетКомиссионера</basedOn>
+  <basedOn>Catalog.ДоговорыКонтрагентов</basedOn>
+  <basedOn>Document.ВозвратТоваровОтКлиента</basedOn>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Списание безналичных ДС</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>uk</key>
+    <value>Списання безготівкових ГК</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Списание безналичных денежных средств</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>uk</key>
+    <value>Списання безготівкових коштів</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Списания безналичных ДС</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Списання безготівкових ГК</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Списания безналичных денежных средств</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Списання безготівкових коштів</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Данные о списании безналичных денежных средств с расчетных счетов организации предприятия</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Дані про списання безготівкових коштів з розрахункових рахунків організації підприємства</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.СписаниеБезналичныхДенежныхСредств.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.СписаниеБезналичныхДенежныхСредств.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.СписаниеБезналичныхДенежныхСредств.Form.ФормаВыбора</defaultChoiceForm>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <sequenceFilling>AutoFillOff</sequenceFilling>
+  <registerRecords>AccumulationRegister.ДенежныеСредстваУПодотчетныхЛиц</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеДоходы</registerRecords>
+  <registerRecords>AccumulationRegister.НДСРасчетНалоговыхОбязательств</registerRecords>
+  <registerRecords>AccumulationRegister.РасчетыСКлиентами</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияДенежныхСредств</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеРасходы</registerRecords>
+  <registerRecords>InformationRegister.СуммыДокументовВВалютеРегл</registerRecords>
+  <registerRecords>AccumulationRegister.УДАЛИТЬДенежныеСредстваКСписаниюБезналичные</registerRecords>
+  <registerRecords>AccumulationRegister.СебестоимостьТоваров</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияНоменклатураДоходыРасходы</registerRecords>
+  <registerRecords>AccumulationRegister.НДСРасчетНалоговогоКредита</registerRecords>
+  <registerRecords>AccumulationRegister.ПартииПрочихРасходов</registerRecords>
+  <registerRecords>AccumulationRegister.ПрочиеАктивыПассивы</registerRecords>
+  <registerRecords>AccumulationRegister.ДенежныеСредстваБезналичные</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияДенежныеСредстваКонтрагент</registerRecords>
+  <registerRecords>AccumulationRegister.КнигаДоходовРасходовПоЕдиномуНалогу</registerRecords>
+  <registerRecords>AccumulationRegister.ПартииРасходовНаСебестоимостьТоваров</registerRecords>
+  <registerRecords>AccumulationRegister.ДенежныеСредстваВПути</registerRecords>
+  <registerRecords>AccumulationRegister.ЛимитыРасходаДенежныхСредств</registerRecords>
+  <registerRecords>AccumulationRegister.РасчетыСПоставщиками</registerRecords>
+  <registerRecords>AccumulationRegister.ДенежныеСредстваКВыплате</registerRecords>
+  <registerRecords>AccumulationRegister.Закупки</registerRecords>
+  <registerRecords>AccumulationRegister.РасчетыСКлиентамиПоДокументам</registerRecords>
+  <registerRecords>AccumulationRegister.РасчетыСПоставщикамиПоДокументам</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияДенежныеСредстваДоходыРасходы</registerRecords>
+  <registerRecords>AccumulationRegister.УДАЛИТЬДенежныеСредстваКПоступлениюБезналичные</registerRecords>
+  <registerRecords>AccumulationRegister.ДвиженияКонтрагентКонтрагент</registerRecords>
+  <registerRecords>AccumulationRegister.РасчетыПоДоговорамКредитовИДепозитов</registerRecords>
+  <registerRecords>AccumulationRegister.УДАЛИТЬДвиженияДенежныеСредстваПрочиеАктивыПассивы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="88d9c074-a4fa-4573-92e5-a163e3cc8e95">
+    <name>ДатаВходящегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата входящего документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата вхідного документа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата первичного документа, полученного из банка.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата первинного документа, отриманого з банку.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bb281f00-5b13-425f-b07c-c76e2de4696f">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одержувач</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Поставщик (регл.), которому производится оплата или клиент (регл.), которому возвращаются денежные средства</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Постачальник (регл.), яким чином здійснюється оплата або клієнт (регл.), якому повертаються грошові кошти</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Контрагенты.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="33b3a78f-615a-429c-a654-13e81060637f">
+    <name>НазначениеПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение платежа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Призначення платежу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>210</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Назначение платежа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Призначення платежу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="890c5175-2be8-4784-bd5e-d9e95a4dfd7d">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Операція</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ХозяйственныеОперации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид операции перечисления безналичных денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид операції перерахування безготівкових коштів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ХозяйственныеОперации.EnumValue.ОплатаПоставщику</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9c3003ba-7d9d-430d-9fd2-d1b0469263c7">
+    <name>НомерВходящегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер входящего документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер вхідного документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер первичного документа, полученного из банка.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Номер первинного документа, отриманого з банку.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6fdd82aa-fa1b-4780-9b56-4603d9cd447f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, от имени которой оформляется документ.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація підприємства, від імені якої оформляється документ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Организации.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="338a64ed-3f41-405f-852e-fab105d4dc21">
+    <name>ОчередностьПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очередность платежа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Черговість платежу</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Очередность перечисления платежа (используется для печатной формы)</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Черговість перерахування платежу (використовується для друкованої форми)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a05ff4be-cbda-4d1c-a3f6-92e394a8fccf">
+    <name>БанковскийСчетПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет получатель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Банківський рахунок одержувач</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанковскиеСчетаОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет организации, на который перечисляются денежные средства</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Банківський рахунок організації, на який перераховуються грошові кошти</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.ВалютаДенежныхСредств</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Валюта</field>
+    </choiceParameterLinks>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.БанковскиеСчетаОрганизаций.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bae616f3-a21e-43af-a069-fbbd7b21f783">
+    <name>КассаПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса получатель</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Каса одержувач</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кассы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.ВалютаДенежныхСредств</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Валюта</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f4845d0b-12d8-4ca9-a53d-e87c0601e538">
+    <name>ПодотчетноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подотчетное лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підзвітна особа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подотчетное лицо предприятия, которому перечисляются денежные средства в подотчет.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підзвітна особа підприємства, якій перераховуються грошові кошти в підзвіт.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ФизическиеЛица.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd15c091-bd29-4240-9b9b-92e2ef41be4f">
+    <name>ЗаявкаНаРасходованиеДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на расходование денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Заявка на витрачання грошових коштів</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаРасходованиеДенежныхСредств</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заявка на расходование денежных средств по которой перечисляются безналичные денежные средства.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Заявка на витрачання грошових коштів по якій перераховуються безготівкові грошові кошти.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Статус</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СтатусыЗаявокНаРасходованиеДенежныхСредств.EnumValue.КОплате</value>
+      </value>
+    </choiceParameters>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Document.ЗаявкаНаРасходованиеДенежныхСредств.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5f1c2fb7-9fb6-4feb-8949-d844a992daa7">
+    <name>РаспоряжениеНаПеремещениеДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распоряжение на перемещение денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розпорядження на переміщення грошових коштів</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РаспоряжениеНаПеремещениеДенежныхСредств</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Распоряжение на перемещение денежных средств по которой списываются безналичные денежные средства.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Розпорядження на переміщення грошових коштів за яким списуються безготівкові грошові кошти.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.ХозяйственнаяОперация</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.ХозяйственнаяОперация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.Статус</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СтатусыРаспоряженийНаПеремещениеДенежныхСредств.EnumValue.КОплате</value>
+      </value>
+    </choiceParameters>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Document.РаспоряжениеНаПеремещениеДенежныхСредств.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="53a68b8f-04c8-4c51-ae3c-8a87a6e44363">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума документа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма документа.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума документа.</value>
+    </toolTip>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="05b9213a-80f1-4c49-ae35-e682a9670332">
+    <name>УдалитьАвансовыйОтчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Авансовый отчет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Авансовий звіт</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.АвансовыйОтчет</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Авансовый отчет, которым отражен перерасход денежных средств у подотчетного лица, перечисляемый подотчетнику.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Авансовий звіт, яким відображено перевитрата грошових коштів у підзвітної особи, що перераховується підзвітнику.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Валюта</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Валюта</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.ПодотчетноеЛицо</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.ПодотчетноеЛицо</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.Подразделение</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Подразделение</field>
+    </choiceParameterLinks>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Document.АвансовыйОтчет.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8e3b251e-3d4c-453a-bfc8-b1afbc0239fa">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для указания валюты, в которой оформлен документ.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Використовується для зазначення валюти, в якій оформлений документ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Валюты.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b5d4710b-334f-4532-942d-5beb3786f32c">
+    <name>БанковскийСчетКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет получателя</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок одержувача</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанковскиеСчетаКонтрагентов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет контрагента или организации, на который перечисляются денежные средства</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Банківський рахунок контрагента чи організації, на який перераховуються грошові кошти</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.БанковскиеСчетаКонтрагентов.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="557746f1-6744-42bd-aea5-ddbd988f4043">
+    <name>БанковскийСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Банківський рахунок</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БанковскиеСчетаОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет организации, по которому оформляется операция</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Банківський рахунок організації, за яким оформлюється операція</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.БанковскиеСчетаОрганизаций.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fc183afb-ffe4-45e7-b0b0-ca56fa10ea26">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный текст</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Довільний текст</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="41cd1893-66c7-4a01-ae90-3b94cd4cfffa">
+    <name>НеКонтролироватьЗаполнениеЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не контролировать заполнение заявки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Не контролювати заповнення заявки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При проведении документа не контролировать заполнение заявки на расходование денежных средств.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>При проведенні документа не контролювати заповнення заявки на витрачання грошових коштів.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="500b5b55-56bf-452c-9d53-fa0a2da0cccb">
+    <name>ВидПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид платежа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид платежу</value>
+    </synonym>
+    <comment>Электронно, почтой, телеграфом</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид платежа (используется для печатной формы)</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид платежу (використовується для друкованої форми)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef6e10e3-90ac-48a0-a8e6-ad43f4e4255a">
+    <name>ТипПлатежногоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип платежного документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тип платіжного документа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыПлатежныхДокументов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип платежного документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Тип платіжного документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипыПлатежныхДокументов.EnumValue.ПлатежноеПоручение</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3a17f029-28a9-492a-b509-cc28225e1af8">
+    <name>СтатьяДвиженияДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья ДДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття РГК</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиДвиженияДенежныхСредств</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья движения денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Стаття руху грошових коштів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.ХозяйственнаяОперация</name>
+      <changeMode>DontChange</changeMode>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.ХозяйственнаяОперация</field>
+    </choiceParameterLinks>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="45512dab-8eeb-467f-af6b-d0441e665c6b">
+    <name>ВалютаКонвертации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конвертация в валюту</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Конвертація у валюту</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта получаемых денежных средств после конвертации</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Валюта одержуваних грошових коштів після конвертації</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Валюты.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2a2f26db-4abd-4c4d-abb5-151db1fbfe74">
+    <name>КурсКонвертации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс конвертации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Курс конвертації</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Курс, по которому планируется провести конвертацию валюты</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Курс, за яким планується провести конвертацію валюти</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5192b7e6-e0c2-4510-93ab-12d04b2197d8">
+    <name>СуммаПослеКонвертации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма после конвертации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума після конвертації</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма документа.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума документа.</value>
+    </toolTip>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7a0f1703-7859-4b6e-863b-2c1c81e581a0">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение, к которому относится списание денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підрозділ, до якого належить списання грошових коштів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СтруктураПредприятия.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a680ac5-06f0-4d93-b122-664fe6f0b0f0">
+    <name>НомерВедомостиНаВыплатуЗарплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ведомости на выплату зарплаты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер відомості на виплату зарплати</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0592058-de86-4c5d-8949-9acb8d694e3c">
+    <name>ДатаВедомостиНаВыплатуЗарплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ведомости на выплату зарплаты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата відомості на виплату зарплати</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6efcb7c7-2271-4465-86d9-e3cdb9c63190">
+    <name>СтатьяАктивовПассивов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья активов и пассивов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття активів і пасивів</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.СтатьиАктивовПассивов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="68d4a744-72eb-4e6d-a11f-fc0462c632c0">
+    <name>АналитикаАктивовПассивов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика активов и пассивов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика активів і пасивів</value>
+    </synonym>
+    <type>
+      <types>Characteristic.СтатьиАктивовПассивов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.СтатьяАктивовПассивов</field>
+    </choiceParameterLinks>
+    <linkByType>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.СтатьяАктивовПассивов</field>
+    </linkByType>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="49bcc1d1-533a-4249-a54b-b7821f2444ae">
+    <name>ОплатаПоЗаявкам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплата по заявкам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Оплата за заявками</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1b936ac5-c799-4710-954f-daedd451a47b">
+    <name>ПроводкиПоРаботникам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводки по работникам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проводки по працівниках</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак детализации расчетов по работникам на 70 счете</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака деталізації розрахунків по працівниках на рахунку 70</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="579b3859-afee-4d21-9a84-eee2623b1f8a">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ-підстава</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ЗаказПоставщику</types>
+      <types>DocumentRef.РаспоряжениеНаПеремещениеДенежныхСредств</types>
+      <types>DocumentRef.АвансовыйОтчет</types>
+      <types>DocumentRef.ПоступлениеУслугПрочихАктивов</types>
+      <types>DocumentRef.ЗаявкаНаРасходованиеДенежныхСредств</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, на основании которого введено списание безналичных денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Документ, на підставі якого введено списання безготівкових коштів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8b40c3d0-1712-4ad2-a058-15db2db4e8ca">
+    <name>ПроведеноБанком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведено банком</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проведено банком</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Наличие подтвеждения банка о списании денежных средств</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Наявність подтвеждения банку про списання грошових коштів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="761350dd-c34a-4e3b-bc28-9fb926e00940">
+    <name>ДатаПроведенияБанком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата проведения банком</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата проведення банком</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата списания денежных средств с расчетного счета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата списання коштів з розрахункового рахунку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0ed6f40b-a471-432a-9087-d884e2c8084a">
+    <name>ДатаВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата вивантаження</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата выгрузки платежа при обмене с банками</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата вивантаження платежу при обміні з банками</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="16c4aa94-79eb-4036-85b5-10347433806a">
+    <name>ДатаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата загрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата завантаження</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата загрузки платежа при обмене с банками</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата завантаження платежу при обміні з банками</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d5f4a2e1-c815-49b6-9630-bce660536416">
+    <name>ОшибкиЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибки загрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Помилки завантаження</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание ошибок проверки заполнения документа после загрузки из банка</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Опис помилок перевірки заповнення документа після завантаження з банку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="614b296f-5bde-4737-9ec6-792d9f299586">
+    <name>ФорматированноеНазначениеПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форматированное назначение платежа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форматоване призначення платежу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Форматированное назначение платежа для целей поиска документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Форматоване призначення платежу для цілей пошуку документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0e0c9730-86fa-4af2-b5ec-92883b45ebd3">
+    <name>ДанныеВыписки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные выписки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дані виписки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фрагмент выписки с секцией платежного документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Фрагмент виписки з секцією платіжного документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="473ca31b-84f9-4f0f-80d4-373d399498b4">
+    <name>ИмяКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я контрагента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя контрагента в банковской выписке</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ім'я контрагента в банківській виписці</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b20e6fbd-d442-490e-9164-e47032ee92f0">
+    <name>ДатаАвансовогоОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата авансового отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата авансового звіту</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, до которой денежные средства выданы подотчетному лицу</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Дата, до якої грошові кошти видані підзвітній особі</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="47f74ca3-6290-49ce-89bc-1773dcdfc8c4">
+    <name>СчетУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Счет регл. учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Рахунок регл. обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="317abb76-c121-44a3-9cb4-f4752d3a6119">
+    <name>Субконто1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто1</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто1</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение субконто 1</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Значення субконто 1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>1</linkItem>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.СчетУчета</field>
+    </linkByType>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="61d3bc24-6982-40b5-b4e2-72cf4450faa0">
+    <name>Субконто2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто2</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто2</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение субконто 2</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Значення субконто 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>2</linkItem>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.СчетУчета</field>
+    </linkByType>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="30156aaa-0df1-43f8-916e-597fef05cfcb">
+    <name>Субконто3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто3</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто3</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение субконто 3</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Значення субконто 3</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>3</linkItem>
+      <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.СчетУчета</field>
+    </linkByType>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="adb5c26f-dedc-4c1b-ace5-325f8d1fccb2">
+    <name>НомерПоручения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер ПД</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9596285b-0158-40d4-8f48-a02d5fbf2bb0">
+    <name>СтатьяДекларацииПоЕдиномуНалогу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ст. декл. по ед. налогу</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ст. декл. по єд. податку</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>ВидНалоговойДекларации</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыНалоговыхДеклараций.EnumValue.ЕдиныйНалог</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a394b97d-c636-47fe-afcf-b6f46b82edff">
+    <name>СуммаПоЕдиномуНалогу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма по ед. налогу</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума з єд. податку</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="1e2c2a60-233d-4a87-8df4-fe8b0de195a6">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3feff211-866c-43e4-b479-892d2d813490">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f1a4b88e-410e-43d9-8cef-2f533945ac6c">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="69838749-42a8-4b2e-a145-53cf3f59526c">
+    <name>ФормаВводаПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма введення періоду</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f3047a21-1536-4ae6-9d76-62982e5546c4">
+    <name>ФормаПомощникаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание списаний безналичных денежных средств </value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Створення списань безготівкових коштів </value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5f93914d-920c-44af-aee5-e482d23263f8">
+    <name>РеквизитыПлатежейВБюджет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты платежей в бюджет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Реквізити платежів до бюджету</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="ab2b4e73-8dc2-4506-995b-60a7baebb5de">
+    <producedTypes>
+      <objectType typeId="81ae32ee-1cfc-4d41-99ed-ea10050f18fb" valueTypeId="a4e52483-72b4-4884-92e8-8600085780e2"/>
+      <rowType typeId="78218293-7d14-4bc9-93f2-ee05e033843f" valueTypeId="597ef2c5-ec3e-4408-a8b5-710f9328db3c"/>
+    </producedTypes>
+    <name>РасшифровкаПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка платежа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розшифровка платежу</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0acfbc88-8d23-4e3f-b87b-2ca47f9051f3">
+      <name>Партнер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Партнер</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Партнер</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Партнеры</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Поставщик (упр.), которому производится оплата или клиент (упр.), которому возвращаются денежные средства</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Постачальник (упр.), яким чином здійснюється оплата або клієнт (упр.), якому повертаються грошові кошти</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Контрагент</name>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Контрагент</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="be2b553f-b7c2-48a6-b074-56bb93d63ab0">
+      <name>СтатьяДвиженияДенежныхСредств</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья движения денежных средств</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Стаття руху грошових коштів</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СтатьиДвиженияДенежныхСредств</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Статья движения денежных средств</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Стаття руху грошових коштів</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.ХозяйственнаяОперация</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.ХозяйственнаяОперация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="33733ea5-d5bc-4c1d-862d-35aa81ce1976">
+      <name>Заказ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект расчетов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Об'єкт розрахунків</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+        <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+        <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
+        <types>DocumentRef.ОтчетКомиссионера</types>
+        <types>DocumentRef.ЗаказПоставщику</types>
+        <types>DocumentRef.ВозвратТоваровПоставщику</types>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+        <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+        <types>DocumentRef.ЗаявкаНаВозвратТоваровОтКлиента</types>
+        <types>DocumentRef.ОтчетКомитенту</types>
+        <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+        <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациямиОСписании</types>
+        <types>DocumentRef.ОтчетКомитентуОСписании</types>
+        <types>DocumentRef.ВыкупВозвратнойТарыКлиентом</types>
+        <types>DocumentRef.ПоступлениеУслугПрочихАктивов</types>
+        <types>DocumentRef.АктВыполненныхРабот</types>
+        <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+        <types>DocumentRef.ВыкупВозвратнойТарыУПоставщика</types>
+        <types>DocumentRef.ЗаказКлиента</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Документ расчетов с партнером</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Документ розрахунків з партнером</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Контрагент</name>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Контрагент</field>
+      </choiceParameterLinks>
+      <choiceParameterLinks>
+        <name>Отбор.Организация</name>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b655e4cd-b107-4302-80bb-aa840b57b8b9">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма платежа</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума платежу</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7806634d-1762-4dd1-893a-b087ffbd8ae8">
+      <name>ВалютаВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта взаиморасчетов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Валюта взаєморозрахунків</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>в валюте взаиморасчетов с партнером</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>у валюті взаєморозрахунків з партнером</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5bcc560d-ab8e-4d6d-a189-ac005d744454">
+      <name>СуммаВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма взаиморасчетов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума взаєморозрахунків</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма платежа</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума платежу</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ccedf6df-fb46-4283-a8a5-523dbf58f018">
+      <name>СтатьяРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья расходов/активов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Стаття витрат/активів</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.СтатьиРасходов</types>
+        <types>ChartOfCharacteristicTypesRef.СтатьиАктивовПассивов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Статья расходов или прочих активов, по которой отражается прочее списание денежных средств.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Стаття витрат або інших активів, за якою відображається інше списання грошових коштів.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.ХозяйственнаяОперация</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ХозяйственныеОперации.EnumValue.ПрочиеРасходы</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ede8b9a2-bebf-4253-be54-706b95a2ad91">
+      <name>АналитикаРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Аналитика расходов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Аналітика витрат</value>
+      </synonym>
+      <type>
+        <types>Characteristic.СтатьиРасходов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объект аналитики прочих расходов.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Об'єкт аналітики інших витрат.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <changeMode>DontChange</changeMode>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.TabularSection.РасшифровкаПлатежа.Attribute.СтатьяРасходов</field>
+      </choiceParameterLinks>
+      <linkByType>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.TabularSection.РасшифровкаПлатежа.Attribute.СтатьяРасходов</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ecbaf617-b1cc-4b0e-ac1c-ba335b3db9fa">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Підрозділ</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СтруктураПредприятия</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Подразделение, являющееся источником прочего расхода.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Підрозділ, що є джерелом іншого витрат.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e97ce97c-2ea2-459f-bea7-2313b47e439d">
+      <name>ПериодВозникновенияРасхода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период возникновения</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Період виникнення</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Период (дата) возникновения расхода.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Період (дата) виникнення витрат.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="85e7e754-ee85-4e29-87c4-61c69217514d">
+      <name>ДоговорКредитаДепозита</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор кредита (депозита)</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Договір кредиту (депозиту)</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДоговорыКредитовИДепозитов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c3bf0fca-b662-4fb3-b2da-5b560803e9ad">
+      <name>ЗаявкаНаРасходованиеДенежныхСредств</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заявка на расходование денежных средств</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Заявка на витрачання грошових коштів</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаявкаНаРасходованиеДенежныхСредств</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Заявка на расходование денежных средств, по которой перечисляются безналичные денежные средства.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Заявка на витрачання грошових коштів, по якій перераховуються безготівкові грошові кошти.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aab13375-ea85-4edc-82e4-6c193cfde30c">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Коментар</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="51cf9697-815b-41aa-b841-30038092d43e">
+      <name>ДоговорЛизинга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор лизинга</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Договір лізингу</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7e59a021-5c51-4c93-a7c5-51d133930831">
+      <name>ТипПлатежаПоЛизингу</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип платежа</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Тип платежу</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Определяет, какой платеж в рамках договора лизинга совершается.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Визначає, який платіж у рамках договору лізингу відбувається.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d0744cc4-7877-4f74-aa22-fafd5794def4">
+      <name>ИдентификаторСтроки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор строки</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Ідентифікатор рядка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Уникальный идентификатор строки документа</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Унікальний ідентифікатор рядка документа</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="2a8b7b11-71d3-459e-ba3b-c9a49f46bf8f">
+      <name>АналитикаАктивовПассивов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Аналитика активов/пассивов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Аналітика активів/пасивів</value>
+      </synonym>
+      <type>
+        <types>Characteristic.СтатьиАктивовПассивов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Аналитика активов/пассивов.</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Аналітика активів/пасивів.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.TabularSection.РасшифровкаПлатежа.Attribute.СтатьяРасходов</field>
+      </choiceParameterLinks>
+      <linkByType>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.TabularSection.РасшифровкаПлатежа.Attribute.СтатьяРасходов</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0084fc62-a4fb-40c6-a315-b23cf9520cb2">
+      <name>СчетУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Рахунок</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Счет регл. учета</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Рахунок регл. обліку</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1470a3a7-f4eb-4f8a-b741-81e336ba6ec1">
+      <name>Субконто1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто1</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Субконто1</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение субконто 1</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Значення субконто 1</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>1</linkItem>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.СчетУчета</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="77be4494-da41-4a15-90ed-14592fe8c0a6">
+      <name>Субконто2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто2</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Субконто2</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение субконто 1</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Значення субконто 1</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>2</linkItem>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.СчетУчета</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e1612aad-a679-4228-97ca-65a5cdfd22e1">
+      <name>Субконто3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Субконто3</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Субконто3</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение субконто 1</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Значення субконто 1</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <linkByType>
+        <linkItem>3</linkItem>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.Attribute.СчетУчета</field>
+      </linkByType>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="173a7a3d-ba58-49c0-92ce-5abb404aa5b4">
+      <name>ДоговорЗаймаСотруднику</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор займа сотруднику</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Договір позики співробітнику</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Договор, в рамках которого представляется займ сотруднику</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Договір, в рамках якого видається позика працівнику</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0112df34-035b-474e-ae2a-221a6e045857">
+      <name>ТипСуммыКредитаДепозита</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип суммы</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Тип суми</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ТипыСуммГрафикаКредитовИДепозитов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Тип погашаемой суммы</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Тип суми, яка погашається</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4fc84047-1956-4dba-b50e-706e6f2ffe82">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Організація</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="68f5334d-e77f-4ca7-b1c6-7515ebd310f6">
+      <name>ДоговорСЗаказчиком</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор с заказчиком</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Договір з замовником</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8b4b9198-efaa-4ada-83b6-3d3aa356b99a">
+      <name>СтатьяКалькуляции</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья калькуляции</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Стаття калькуляції</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="318c95b7-467d-440a-9029-fdac8b0554db">
+    <producedTypes>
+      <objectType typeId="6f3f3deb-c98b-4182-a8ed-7e41ccdbf30b" valueTypeId="b19d2f15-91df-4605-a850-5631870034d6"/>
+      <rowType typeId="f777d053-ce67-48f8-872f-dee02d0fabb1" valueTypeId="47d8c136-203c-4b9f-bff3-3eb9b2b3307c"/>
+    </producedTypes>
+    <name>ВедомостиНаВыплатуЗарплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомости на выплату зарплаты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відомості на виплату зарплати</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Список ведомостей на выплату зарплаты</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Список відомостей на виплату зарплати</value>
+    </toolTip>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b4182da9-f12a-4ddd-8237-b57d6bcf33b7">
+      <name>Ведомость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ведомость</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Відомість</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Ведомость на выплату зарплаты</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Відомість на виплату зарплати</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.Проведен</name>
+        <value xsi:type="core:BooleanValue">
+          <value>true</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aa6c10be-c970-487a-b43e-bb308a4012fc">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма по ведомости</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Сума за відомістю</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="888a8935-029c-45a7-903c-1c43e343cb80">
+      <name>ФизическоеЛицо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Физическое лицо</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Фізична особа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Указанному сотруднику будет произведена выплата зарплаты</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Зазначеному співробітнику буде проведена виплата зарплати</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="80d7b96c-5aa0-4466-82f2-bba7284d11f6">
+    <producedTypes>
+      <objectType typeId="0c2c83c7-ee0d-4a65-9fe3-98965737ffe0" valueTypeId="bdf839a2-8086-4a27-a14b-2fd513aeb2b6"/>
+      <rowType typeId="40d53bcc-8d68-4ee9-9dbe-4ff32834a508" valueTypeId="da9b076b-0134-46f1-b1c8-062ca85d97eb"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Додаткові реквізити</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Набор реквизитов, состав которого определяется компанией.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Набір реквізитів, склад якого визначається компанією.</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="c2b82213-63c2-4719-a0b4-a69f44956d5e">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Властивість</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Додатковий реквізит</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="902cd796-ec96-4184-994a-cb8b1c11324e">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Значення</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Значення додаткового реквізиту</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.СписаниеБезналичныхДенежныхСредств.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f0386684-aa32-4d9f-bed5-93dc10abcc62">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Текстовий рядок</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Повний текст строкового додаткового реквізиту</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="323bfcf8-6e58-4e52-983a-3729e8c2f1cf">
+    <name>ПФ_MXL_UK_ПлатежноеПоручение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежное поручение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платіжне доручення</value>
+    </synonym>
+  </templates>
+  <templates uuid="ddec7cfa-a563-488f-af07-fdb7e14dfe1c">
+    <name>ДанныеШаблонаСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные шаблона сообщений</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дані шаблону повідомлень</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="8eabdc75-fa17-4e27-ad64-6ec56ae78a36">
+    <name>ПФ_MXL_РеквизитыПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты платежа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Реквізити платежу</value>
+    </synonym>
+  </templates>
+  <templates uuid="227827c3-5362-4a83-b2a1-ef37c5006d85">
+    <name>ПФ_MXL_UK_ПлатежноеПоручениеВИностраннойВалюте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежное поручение в иностранной валюте</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платіжне доручення в іноземній валюті</value>
+    </synonym>
+  </templates>
+  <templates uuid="ce2b6682-7a53-4990-aede-6bdddbd013ce">
+    <name>ПФ_MXL_UK_ПлатежноеПоручение_2020</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежное поручение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платіжне доручення</value>
+    </synonym>
+  </templates>
+  <commands uuid="9eeb44c9-37df-427d-8f44-e7210f7b6c31">
+    <name>СоздатьНаОснованииВедомостейНаВыплатуЗарплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списание безналичных денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Списання безготівкових коштів</value>
+    </synonym>
+    <group>FormCommandBarCreateBasedOn</group>
+    <commandParameterType/>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

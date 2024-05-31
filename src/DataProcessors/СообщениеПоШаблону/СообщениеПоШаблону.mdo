@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57c1e9e1-bf63-4ebb-9f34-d15874405f8c">
+  <producedTypes>
+    <objectType typeId="54d6e937-b478-4a03-a44b-3f6d4d7d5d21" valueTypeId="739e943f-06e5-407f-bd4a-c4d18d029ef9"/>
+    <managerType typeId="84db633d-2b3a-4fb5-b7c9-424ad0cdb7e7" valueTypeId="23bc5d8d-b264-411e-9e21-d94999a2e27e"/>
+  </producedTypes>
+  <name>СообщениеПоШаблону</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сообщение по шаблону</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Повідомлення за шаблоном</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СообщениеПоШаблону.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="6e6fca73-5856-4c21-aa17-fd60961bcd2e">
+    <name>ШаблонСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон сообщения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Шаблон повідомлення</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныСообщений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Шаблон, на основании которого формируется SMS.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Шаблон, на основі якого формується SMS.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fb2f5f16-4ae3-4c25-b90a-4b20ce9bab7b">
+    <name>ИсходныйТекстСообщенияПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходный текст сообщения письма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вихідний текст повідомлення листа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исходный текст, на основании которого будет сформировано письмо.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вихідний текст, на підставі якого буде сформовано лист.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="894b94e0-a269-4568-8245-61d4afddeadf">
+    <name>ТекстСообщенияПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения письма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Текст повідомлення листа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сформированный текст письма.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сформований текст листа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4ebc943b-843d-4a81-81e5-d043a87079f6">
+    <name>ТекстСообщенияSMS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения SMS</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Текст повідомлення SMS</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сформированный текст сообщения SMS.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сформований текст повідомлення SMS.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="271181ed-acee-4e28-8f05-d74798c5d5c3">
+    <name>ИсходныйТекстСообщенияSMS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходный текст сообщения SMS</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вихідний текст повідомлення SMS</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исходный текст, на основании которого будет сформировано сообщение SMS.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вихідний текст, на підставі якого буде сформовано повідомлення SMS.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0878b41c-c86c-4ee6-8320-96bf42d26bba">
+    <name>ПредназначенДляЭлектронныхПисем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предназначен для электронных писем</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Призначений для електронних листів</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что выбранный шаблон предназначен для создания письма.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака того, що вибраний шаблон призначений для створення листа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0c11c126-5f83-4512-a167-671229baa1d2">
+    <name>ПредназначенДляSMS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предназначен для SMS</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Призначений для SMS</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что выбранный шаблон предназначен для создания сообщения SMS.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака того, що вибраний шаблон призначений для створення повідомлення SMS.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7ce6875b-a3f4-48b6-8007-2cb8af0e0013">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Обліковий запис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Учетная записть, с которой будет отправлено письмо.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Обліковий запис, з якого буде відправлено лист.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a82e9c2b-2eb4-42a4-b412-a27eda605009">
+    <name>ОтправительПредставление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправитель представление</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відправник подання</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текстовое описание отправителя</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Текстовий опис відправника</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0513cc82-78f0-4e50-a7e9-3d7d85a221aa">
+    <name>ИсходныйТекстТемыПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходный текст темы письма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вихідний текст теми листа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исходный текст, на основании которого будет сформирована тема письма.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вихідний текст, на підставі якого буде сформована тема листа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="93fae319-58e9-4425-90b3-75835b2f9515">
+    <name>ТемаПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тема письма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тема листа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сформированная тема письма.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сформована тема листа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ddcf5e1f-df08-40d8-b14d-4c013bd77e78">
+    <name>Предмет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Предмет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МаркетинговыеМероприятия</types>
+      <types>CatalogRef.ПретензииКлиентов</types>
+      <types>CatalogRef.СделкиСКлиентами</types>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предмет формируемого сообщения SMS или электронного письма.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Предмет формованого SMS повідомлення або електронного листа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ea3d1782-3748-4b72-bc81-2ee8ee7d3a05">
+    <name>ТипТекстаПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип текста письма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тип тексту листа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыРедактированияЭлектронныхПисем</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обычный текст или в формате HTML.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Звичайний текст або в форматі HTML.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="70145be9-e10c-4666-80e8-cfcc6472313f">
+    <name>ИсходныйТекстСообщенияПисьмаНТМL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходный текст сообщения письма НТМL</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вихідний текст повідомлення листи НТМL</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исходный текст в формате HTML, на основании которого будет сформировано письмо.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вихідний текст у форматі HTML, на підставі якого буде сформовано лист.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0848baa1-77cf-414e-80c9-a049a861a106">
+    <name>ТекстСообщенияПисьмаHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения письма HTML</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Текст повідомлення листа HTML</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сформированный текст письма в формате HTML.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сформований текст листа у форматі HTML.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d6be1c2e-a1af-4484-b6b6-3ab0f88aa357">
+    <name>ШаблонПоВнешнейОбработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон по внешней обработке</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Шаблон по зовнішній обробці</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что шаблон сообщения формируется по внешней обработке.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака того, що шаблон повідомлення формується по зовнішній обробці.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="10b56514-f9f1-4d85-8004-0f26524d0982">
+    <name>ВнешняяОбработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешняя обработка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зовнішня обробка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДополнительныеОтчетыИОбработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Внешняя обработка, по которой формируется шаблон.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Зовнішня обробка, за якою формується шаблон.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="1d2757f0-e3b2-4d6c-b164-3e10ef24c294">
+    <name>УпаковатьВАрхив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Упаковать в архив</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Запакувати в архів</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что вложения - печатные формы должны быть упакованы в архив при отправке.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака того, що вкладення - друковані форми повинні бути упаковані в архів при відправленні.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f795db7e-eb10-45f0-85bf-9265b6538e7c">
+    <name>ОтправлятьВТранслите</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлять в транслите</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відправляти в трансліті</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что сообщение будет преобразовано из кириллических символов в латинские.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака того, що повідомлення буде перетворено з кириличних символів на латинські.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="07f1f75c-da04-4732-a7b8-f2312239cc95">
+    <name>НаименованиеШаблона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование шаблона</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Найменування шаблона</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование шаблона, по которому создается сообщение</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Найменування шаблону, за яким створюється повідомлення</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="43ab18fe-f5ff-40aa-823e-e0802062fe80">
+    <producedTypes>
+      <objectType typeId="d4c440e0-663f-4590-be27-23c790e37770" valueTypeId="097e35c7-bcf6-436d-a5ba-39d87fc2f2e2"/>
+      <rowType typeId="06f4426c-a3ec-4c60-99e6-145ba436b82b" valueTypeId="dab22f88-4994-4b8b-9372-8a28bffc9b38"/>
+    </producedTypes>
+    <name>АдресатыПочта</name>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="40732b3c-66a5-4e9d-a771-4958e513f5be">
+      <name>АдресатПредставление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адресат представление</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Адресат представлення</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d7a0058a-1e1e-44e2-a362-569a86a793f3">
+      <name>Пояснение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пояснение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Пояснення</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b81a663b-0165-4166-9cbe-b6056ecfb5bd">
+      <name>ПолучательВыбран</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получатель выбран</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Одержувач вибрано</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9c97a197-6fcd-4523-8e7e-137e6d0857ef">
+      <name>Группа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Группа</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Група</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="2859810b-359a-47f5-9ebc-1cb0442a20d6">
+      <name>Контакт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контакт</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Контакт</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+        <types>CatalogRef.Партнеры</types>
+        <types>CatalogRef.КонтактныеЛицаПартнеров</types>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="01ba7c1a-d5c0-4af4-a045-81699e9f9587">
+      <name>Адрес</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Адреса</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="65527233-b2be-4379-a8f9-afd4f4b04753">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Представлення</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="128b015f-6d03-4d20-8c14-df120d7dea97">
+    <producedTypes>
+      <objectType typeId="3987c1ac-0f49-4dc3-a219-6ede37cac6e4" valueTypeId="d77e3ba0-1d2a-4562-8892-449a1e902729"/>
+      <rowType typeId="af51220a-8c22-46ea-98f5-8c07a06d2e1e" valueTypeId="666cc315-148c-4186-b25d-0601fa851275"/>
+    </producedTypes>
+    <name>АдресатыSMS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адресаты SMS</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Адресати SMS</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="13c357b9-ea5a-49b9-bdc8-925b57771fbc">
+      <name>ПолучательВыбран</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получатель выбран</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Одержувач вибрано</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d5261d51-9bc5-4f80-b7ae-6b262363531d">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Представлення</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="af7bc328-f371-493f-93cb-049a9412cc8c">
+      <name>Контакт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контакт</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Контакт</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+        <types>CatalogRef.Партнеры</types>
+        <types>CatalogRef.КонтактныеЛицаПартнеров</types>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e9ce4937-8911-4caf-b7f3-cfa49be2b3bd">
+      <name>Пояснение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пояснение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Пояснення</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="64123f1f-4d94-4b85-aa3d-0580b7cbfc80">
+      <name>Телефон</name>
+      <synonym>
+        <key>ru</key>
+        <value>Телефон</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Телефон</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="78ae9346-9bff-4087-9010-a572ee150145">
+      <name>НомерДляОтправки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер для отправки</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Номер для відправки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Преобразованный в формат +xxxxxxxxxxxx номер из поля &quot;Телефон&quot;</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Перетворений у формат +xxxxxxxxxxxx номер з поля &quot;Телефон&quot;</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="9116c763-1e1f-4030-8ca2-ba3fdfa2bdc8">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="bf0ca645-4a7f-4808-adb9-874e3b785177">
+    <name>СоздатьПисьмоПоШаблону</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо по шаблону</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Лист за шаблоном</value>
+    </synonym>
+    <group>FormCommandBarCreateBasedOn</group>
+    <commandParameterType>
+      <types>DocumentRef.АктОРасхожденияхПослеПеремещения</types>
+      <types>DocumentRef.РасходныйКассовыйОрдер</types>
+      <types>DocumentRef.АктОРасхожденияхПослеОтгрузки</types>
+      <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+      <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+      <types>CatalogRef.МаркетинговыеМероприятия</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ОтчетКомиссионера</types>
+      <types>DocumentRef.ЗаказПоставщику</types>
+      <types>DocumentRef.ВозвратТоваровПоставщику</types>
+      <types>DocumentRef.СписаниеБезналичныхДенежныхСредств</types>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+      <types>CatalogRef.СоглашенияСПоставщиками</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+      <types>DocumentRef.ЗаявкаНаВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ОтчетКомитенту</types>
+      <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+      <types>DocumentRef.КорректировкаРеализации</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>CatalogRef.СоглашенияСКлиентами</types>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.Партнеры</types>
+      <types>DocumentRef.АвансовыйОтчет</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациямиОСписании</types>
+      <types>DocumentRef.ОтчетКомитентуОСписании</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.КоммерческоеПредложениеКлиенту</types>
+      <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.СверкаВзаиморасчетов</types>
+      <types>DocumentRef.УдалитьАктОРасхожденияхПриПоступленииТоваров</types>
+      <types>DocumentRef.ОтчетКомиссионераОСписании</types>
+      <types>CatalogRef.КонтактныеЛицаПартнеров</types>
+      <types>DocumentRef.ВзаимозачетЗадолженности</types>
+      <types>DocumentRef.СчетНаОплатуКлиенту</types>
+      <types>DocumentRef.ЗаказКлиента</types>
+      <types>CatalogRef.ШаблоныСообщений</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="2dc7677a-95ce-49d6-8c6f-475a624cf4a1">
+    <name>СоздатьСообщениеSMSПоШаблону</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение SMS по шаблону</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Повідомлення SMS за шаблоном</value>
+    </synonym>
+    <group>FormCommandBarCreateBasedOn</group>
+    <commandParameterType>
+      <types>DocumentRef.АктОРасхожденияхПослеПеремещения</types>
+      <types>DocumentRef.РасходныйКассовыйОрдер</types>
+      <types>DocumentRef.АктОРасхожденияхПослеОтгрузки</types>
+      <types>DocumentRef.ПриходныйКассовыйОрдер</types>
+      <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+      <types>CatalogRef.МаркетинговыеМероприятия</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ОтчетКомиссионера</types>
+      <types>DocumentRef.ЗаказПоставщику</types>
+      <types>DocumentRef.ВозвратТоваровПоставщику</types>
+      <types>DocumentRef.СписаниеБезналичныхДенежныхСредств</types>
+      <types>DocumentRef.УдалитьАктПриемкиТоваров</types>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+      <types>CatalogRef.СоглашенияСПоставщиками</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+      <types>DocumentRef.ЗаявкаНаВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ОтчетКомитенту</types>
+      <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+      <types>DocumentRef.КорректировкаРеализации</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>CatalogRef.СоглашенияСКлиентами</types>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.Партнеры</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациямиОСписании</types>
+      <types>DocumentRef.ОтчетКомитентуОСписании</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.КоммерческоеПредложениеКлиенту</types>
+      <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.СверкаВзаиморасчетов</types>
+      <types>DocumentRef.УдалитьАктОРасхожденияхПриПоступленииТоваров</types>
+      <types>DocumentRef.ОтчетКомиссионераОСписании</types>
+      <types>CatalogRef.КонтактныеЛицаПартнеров</types>
+      <types>DocumentRef.СчетНаОплатуКлиенту</types>
+      <types>DocumentRef.ЗаказКлиента</types>
+      <types>CatalogRef.ШаблоныСообщений</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="92a012bf-479f-435f-8762-51584affe9e8">
+    <name>НаписатьПисьмоПоШаблону</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо по шаблону</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Лист за шаблоном</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="a2507b34-fdb3-4c9f-a78c-a2f4046c8c73">
+    <name>НаписатьСообщениеSMSПоШаблону</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение SMS по шаблону</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Повідомлення SMS за шаблоном</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

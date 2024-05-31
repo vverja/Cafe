@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b2026c0-ab1a-4bf4-bcf1-5cbefac322ec">
+  <name>НДСИсходящийДокументПоставкиОбработкаУдаленияПроведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сбросить флаг пересчета начальные периоды расчета НО (обработка удаления проведения)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Скинути прапор перерахунку початкові періоди розрахунку ПЗ (обробка видалення проведення)</value>
+  </synonym>
+  <source>
+    <types>DefinedType.ДокументПоставкиОбъектИсходящийНДС</types>
+  </source>
+  <event>UndoPosting</event>
+  <handler>CommonModule.НДСИсходящийСервер.ДокументПоставкиОбработкаУдаленияПроведения</handler>
+</mdclass:EventSubscription>

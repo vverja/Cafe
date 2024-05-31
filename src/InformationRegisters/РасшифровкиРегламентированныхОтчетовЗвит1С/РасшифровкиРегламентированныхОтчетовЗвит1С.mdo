@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11d9f907-90ac-4a18-94b9-f185b78b56b4">
+  <producedTypes>
+    <selectionType typeId="788c1564-89bc-4e28-a63a-be71c40abe8f" valueTypeId="94f5fe56-fbff-47f0-bdcd-3a5d3e740ad3"/>
+    <listType typeId="24c0158e-db41-4e96-b18c-17ea1a189877" valueTypeId="d8027c8d-2f8a-4001-9ec2-ec07f21761be"/>
+    <managerType typeId="febf93b6-aa9c-41af-a32b-1de16b439d6b" valueTypeId="9c5ed40c-3936-4fca-a025-b463fbc6d999"/>
+    <recordSetType typeId="e3528985-1ee0-4f9a-abc3-e23b6bb14b13" valueTypeId="5310cfc7-4471-4b96-bff0-e538413d33ac"/>
+    <recordKeyType typeId="c7a8e961-19bd-4b21-be3b-b33ffebd2634" valueTypeId="796dc826-ff97-4331-9c92-1ceebbaedd72"/>
+    <recordType typeId="7567871a-8e9d-4f8a-abe1-a9fd952f7027" valueTypeId="c9a2394d-3f19-462f-ba30-551648bb05b8"/>
+    <recordManagerType typeId="45dc326c-7a30-4689-a95e-56a61c619eda" valueTypeId="7d67e5c8-8492-4c22-9e2b-52d61e61671b"/>
+  </producedTypes>
+  <name>РасшифровкиРегламентированныхОтчетовЗвит1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расшифровки регламентированных отчетов &quot;FREDO Звіт&quot;</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Розшифровки регламентованих звітів &quot;FREDO Звіт&quot;</value>
+  </synonym>
+  <defaultListForm>InformationRegister.РасшифровкиРегламентированныхОтчетовЗвит1С.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="0d9bd4cc-a9a1-4ee4-bd5d-29689f610081">
+    <name>Расшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розшифрування</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="d0dd3c37-38d7-443f-9486-ba811c2c1374">
+    <name>ДатаФормирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата формирования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата формування</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5485fabb-1a59-4726-bf45-5e30184cd454">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="efa2b447-f1db-461c-91ee-fc1fc0acb34f">
+    <name>ИмяСхемыЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя схемы звит 1С</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я схеми звіт 1С</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f3612334-82c0-49be-8f1b-a00af1dab98a">
+    <name>ПредставлениеПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Представлення періоду</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a7e95368-7a56-4866-8a83-884f87fdcf8a">
+    <name>ПериодНач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала периода отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата початку періоду звіту</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5ff06801-23d1-4c2b-ac1e-c4b5849b16cd">
+    <name>ПериодКон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата конца периода отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата кінця періоду звіту</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="abe3986c-801f-4889-ad85-0b41da383c92">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ce325b0e-47a3-4c1f-b2f2-36410b395bd3">
+    <name>ТипПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тип періоду</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="dfd899e9-00ee-40d5-8508-92ca2c046699">
+    <name>ИдОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД отчета &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ІД звіту &quot;FREDO Звіт&quot;</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3eb5edbd-971e-49b1-8c53-735bff75125d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

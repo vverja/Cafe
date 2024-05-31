@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec633168-524a-4e56-937d-cc609098aaae">
+  <producedTypes>
+    <objectType typeId="ab4e16a3-93f8-4c5a-bf4f-b7dab2ca7ae2" valueTypeId="c53486d5-8771-476a-8c1d-484de2d83a6d"/>
+    <managerType typeId="ab074475-c5c4-4e20-809a-b5da6fd85fcb" valueTypeId="d7db59f0-9053-4f81-bba1-425083d9f0bb"/>
+  </producedTypes>
+  <name>НачальноеЗаполнениеИОбновлениеОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начальное заполнение и обновление объектов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Початкове заповнення й оновлення об'єктів</value>
+  </synonym>
+  <defaultForm>DataProcessor.НачальноеЗаполнениеИОбновлениеОбъектов.Form.Форма</defaultForm>
+  <attributes uuid="42e05ee1-e540-403b-9b65-9f28512e42aa">
+    <name>ЗаполнитьПредопределенные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнить предопределенные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Заповнити напередвизначені</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <quickChoice>Use</quickChoice>
+    <createOnInput>DontUse</createOnInput>
+  </attributes>
+  <attributes uuid="bba1b4fe-bfba-45da-ab98-f9602c5567fe">
+    <name>ЗаполнитьНеПредопределенные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнить не предопределенные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Заповнити не напередвизначені</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="e973ee81-e402-496a-a646-5b3258869729">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="83ea4510-f826-41a7-b478-f1414459b2de">
+    <name>ПриИзмененииЯзыкаИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>При изменении языка информационной базы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>При зміні мови інформаційної бази</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="0d7a060f-5fde-47a3-bf68-b8774f6fb44a">
+    <name>НачальноеЗаполнениеИОбновлениеОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение и обновление объектов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення й оновлення об'єктів</value>
+    </synonym>
+    <group>CommandGroup.НачальноеЗаполнение</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Обработка выполняет заполнение синонимов предопределенных элементов на языке информационной базы.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Обробка виконує заповнення синонімів напередвизначених елементів  мовою інформаційної бази.</value>
+    </toolTip>
+  </commands>
+  <commands uuid="76db38c6-b9c5-4870-aa6d-e809c8c8e72d">
+    <name>ПриИзмененииЯзыкаИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>При изменении языка ИБ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>При зміні мови ІБ</value>
+    </synonym>
+    <group>CommandGroup.НачальноеЗаполнение</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Обработка выполняет заполнение синонимов предопределенных элементов на языке информационной базы.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Обробка виконує заповнення синонімів напередвизначених елементів  мовою інформаційної бази.</value>
+    </toolTip>
+  </commands>
+</mdclass:DataProcessor>

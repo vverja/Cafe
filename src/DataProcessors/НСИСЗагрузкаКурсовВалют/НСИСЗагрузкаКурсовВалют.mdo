@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="469b8cd3-3ea6-40af-885c-c8e70faf46ba">
+  <producedTypes>
+    <objectType typeId="4b75db5d-a21b-412e-9063-829a2854283f" valueTypeId="2081659c-78fa-45f4-83b3-e283f4f011b7"/>
+    <managerType typeId="f319ca8c-4fc7-4bee-bc4d-c83085cbc526" valueTypeId="5a1de57a-fc25-4b52-a730-7b74f464219c"/>
+  </producedTypes>
+  <name>НСИСЗагрузкаКурсовВалют</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка курсов валют RDI</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Завантаження курсів валют RDI</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.НСИСЗагрузкаКурсовВалют.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="bea8c168-6b13-46cc-a397-8507b398117e">
+    <name>ДатаС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата С</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата З</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0647343e-f10a-4cce-90a6-1f49921d1d2f">
+    <name>ДатаПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата по</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата по</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="db4b4d31-f2ed-4e7d-b1a0-77704a2a4fdd">
+    <producedTypes>
+      <objectType typeId="727629c8-f914-4fc8-863f-313067cc34cf" valueTypeId="8dface4f-96b9-41af-a2f1-b2581e735444"/>
+      <rowType typeId="9aa27046-5344-41b7-ba24-0cb1b5b11d66" valueTypeId="137b7301-d3a5-47fb-bd78-a86b1370958c"/>
+    </producedTypes>
+    <name>Валюты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюти</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="8d69f08a-c087-42a8-959a-7249817b46e4">
+      <name>Валюта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Валюта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="48b5e4c0-d13b-4433-83df-1bdb75043280">
+      <name>Код</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Код</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>3</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="f1cac151-c711-4c8b-9011-c5af218ee95c">
+      <name>Пометка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Позначка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="67b8255f-40b4-4387-a350-9fba62410d26">
+      <name>НаименованиеПолное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование валюты</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Найменування валюти</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полное наименование валюты</value>
+      </toolTip>
+      <toolTip>
+        <key>uk</key>
+        <value>Повне найменування валюти</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8733f05d-378a-4288-be8a-fe2f2e4399e5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="63e5484c-ef25-4930-a517-b89bd7e38565">
+    <name>НСИСЗагрузкаКурсовВалют</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка курсов валют RDI</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Завантаження курсів валют RDI</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

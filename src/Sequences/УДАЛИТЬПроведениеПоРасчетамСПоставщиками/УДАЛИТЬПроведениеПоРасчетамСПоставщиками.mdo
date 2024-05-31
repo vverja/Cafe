@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c0f92a9-090c-46b9-94d5-106f541033ab">
+  <producedTypes>
+    <recordType typeId="7006d6f2-d168-49d3-8295-972800a8edf7" valueTypeId="8a95199a-82d9-45f5-a991-59ac1ee5566b"/>
+    <managerType typeId="7f6e2691-1646-472a-b495-ab9e730b4b2a" valueTypeId="80ed7376-da38-4da7-a532-12ec08f3b376"/>
+    <recordSetType typeId="c99ae4e8-84e1-47bd-a166-2c3c14cdcb1e" valueTypeId="0316a729-e032-4683-a3f9-f826828bdca2"/>
+  </producedTypes>
+  <name>УДАЛИТЬПроведениеПоРасчетамСПоставщиками</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Проведение по расчетам с поставщиками</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Проведення за розрахунками з постачальниками</value>
+  </synonym>
+  <moveBoundaryOnPosting>DontMove</moveBoundaryOnPosting>
+  <documents>Document.ВзаимозачетЗадолженности</documents>
+  <documents>Document.ПередачаТоваровМеждуОрганизациями</documents>
+  <documents>Document.СписаниеБезналичныхДенежныхСредств</documents>
+  <documents>Document.СписаниеЗадолженности</documents>
+  <documents>Document.РасходныйКассовыйОрдер</documents>
+  <documents>Document.ПриходныйКассовыйОрдер</documents>
+  <documents>Document.ПоступлениеБезналичныхДенежныхСредств</documents>
+  <documents>Document.АвансовыйОтчет</documents>
+  <documents>Document.ВозвратТоваровПоставщику</documents>
+  <documents>Document.ОтчетКомитенту</documents>
+  <documents>Document.ПоступлениеТоваровУслуг</documents>
+  <documents>Document.ЗаказПоставщику</documents>
+  <documents>Document.ВводОстатков</documents>
+  <documents>Document.ОтчетКомиссионера</documents>
+  <documents>Document.ОтчетКомитентуОСписании</documents>
+  <documents>Document.ОтчетПоКомиссииМеждуОрганизациями</documents>
+  <documents>Document.ПоступлениеУслугПрочихАктивов</documents>
+  <documents>Document.ВозвратТоваровМеждуОрганизациями</documents>
+  <documents>Document.ТаможеннаяДекларацияИмпорт</documents>
+  <documents>Document.ВыкупВозвратнойТарыУПоставщика</documents>
+  <registerRecords>AccumulationRegister.РасчетыСПоставщиками</registerRecords>
+  <dimensions uuid="6a1709f2-442f-4140-a7c4-6b197f2ec53a">
+    <name>АналитикаУчетаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку за партнерами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоПартнерам</types>
+    </type>
+    <registerRecordsMap>AccumulationRegister.РасчетыСПоставщиками.Dimension.АналитикаУчетаПоПартнерам</registerRecordsMap>
+  </dimensions>
+</mdclass:Sequence>

@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc9cedf1-410d-414a-a05f-f167b8908470">
+  <producedTypes>
+    <selectionType typeId="1b4d6ed1-4ab4-4a01-9916-15e06ba0cb5c" valueTypeId="333d1466-5414-4c80-9e20-a603dd4e128c"/>
+    <listType typeId="7fc5f0a4-8ea3-4271-b37a-6edca3a58252" valueTypeId="420eb5a1-ce60-4183-83a4-25462588b43a"/>
+    <managerType typeId="d1c37df7-f26c-47f0-92ad-c575d099e4b1" valueTypeId="7ba48d9b-b666-4162-80af-8ec8f90afc46"/>
+    <recordSetType typeId="425e2cfa-b571-4971-9c80-757fd0bf6ccc" valueTypeId="ba516b9e-26a1-46f5-8cb0-021b4d0422df"/>
+    <recordKeyType typeId="7ef0377a-471c-440b-aebc-0e1d13f19f76" valueTypeId="1b1bd152-19d8-46b9-80b7-2bb7ba9e3912"/>
+    <recordType typeId="f9e347cf-7c8e-44d0-ad3b-f6fed3d1715a" valueTypeId="090048f0-b431-4796-b021-ed36a40ff90a"/>
+  </producedTypes>
+  <name>ВыручкаИСебестоимостьПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выручка и себестоимость продаж</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Виторг і собівартість продажів</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.ВыручкаИСебестоимостьПродаж.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="edd9691b-b496-451a-a788-235f34120109">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество проданных товаров</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Кількість проданих товарів</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="4504d8d2-02f7-422b-8c29-e0883636ad98">
+    <name>СуммаВыручки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма выручки с НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума виторгу з ПДВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выручка от продажи товаров с НДС в валюте управленческого учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Виторг від продажу товарів з ПДВ у валюті управлінського обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="2fbafb19-6ca1-43fa-85d2-6a4c87d42eb3">
+    <name>СуммаВыручкиБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма выручки без НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума виторгу без ПДВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выручка от продажи товаров без НДС в валюте управленческого учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Виторг від продажу товарів без ПДВ у валюті управлінського обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="4d8c59a7-85b4-4c9d-9f30-bfd66d2ea1c5">
+    <name>Себестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Себестоимость с НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Собівартість з ПДВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Себестоимость проданных товаров с НДС в валюте управленческого учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Собівартість проданих товарів з ПДВ у валюті управлінського обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="9d0454cc-268b-4614-9e5d-f3c0ee507af1">
+    <name>СебестоимостьБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Себестоимость без НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Собівартість без ПДВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Себестоимость проданных товаров без НДС в валюте управленческого учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Собівартість проданих товарів без ПДВ у валюті управлінського обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="db7a0438-d3cb-4318-99d5-03bf8a12e605">
+    <name>СуммаДополнительныхРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма дополнительных расходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума додаткових витрат</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма транспортно-заготовительных расходов с НДС в валюте управленческого учета, распределенных на проданную номенклатуру.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума транспортно-заготівельних витрат з ПДВ у валюті управлінського обліку, розподілених на продану номенклатуру.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="b480ee1c-6147-4390-a5b4-f7da34d553a3">
+    <name>СуммаДополнительныхРасходовБезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма дополнительных расходов без НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума додаткових витрат без ПДВ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма транспортно-заготовительных расходов без НДС в валюте управленческого учета, распределенных на проданную номенклатуру.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума транспортно-заготівельних витрат без ПДВ у валюті управлінського обліку, розподілених на продану номенклатуру.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="791fb719-bbb4-4eb4-b6f3-53bf000b859a">
+    <name>СебестоимостьРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Себестоимость (регл.)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Собівартість (регл.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Себестоимость проданных товаров без НДС в валюте регламентированного учета (включает в себя стоимость дополнительных рахсодов по товарам)</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Собівартість проданих товарів без ПДВ у валюті регламентованого обліку (включає в себе вартість додаткових витрат по товарах)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="8fe31c8d-0ded-4f3d-9d11-da1deae029b2">
+    <name>СуммаВыручкиРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма выручки без НДС (регл.)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума виторгу без ПДВ (регл.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выручка от продажи товаров без НДС в валюте регламентированного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Виторг від продажу товарів без ПДВ у валюті регламентованого обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="64867008-b82f-4766-9f7d-c90f8062e8db">
+    <name>ПостояннаяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Себестоимость (ПР)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Собівартість (ПР)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма постоянной разницы в себестоимости товаров по данным налогового учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума постійної різниці в собівартості товарів за даними податкового обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="ee81f54b-e33c-44d3-bca4-1979b279a78f">
+    <name>ВременнаяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Себестоимость (ВР)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Собівартість (ТР)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма временной разницы в себестоимости товаров по данным налогового учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума тимчасової різниці в собівартості товарів за даними податкового обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="81c4428b-ec37-4c06-a1a6-b55886f980f7">
+    <name>СуммаВыручкиСНДСРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма выручки с НДС (регл.)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума виторгу з ПДВ (регл.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выручка от продажи товаров с НДС в валюте регламентированного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Виторг від продажу товарів з ПДВ у валюті регламентованого обліку</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="0a9e3369-58e3-4c83-b8cd-5487a863fc55">
+    <name>СуммаРучнойСкидки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма ручной скидки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума ручної знижки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма ручной скидки или наценки в валюте управленческого учета.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума ручної знижки або націнки у валюті управлінського обліку.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="deef8deb-2b93-4d66-9f52-a1f9a28a4efe">
+    <name>СуммаАвтоматическойСкидки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма автоматической скидки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума автоматичної знижки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма автоматической скидки или наценки в валюте управленческого учета.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума автоматичної знижки або націнки у валюті управлінського обліку.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="c681f710-09e1-41a9-a786-6ae7ae28b943">
+    <name>НалоговоеНазначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговое назначение (реализации)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податкове призначення (реалізації)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НалоговыеНазначенияАктивовИЗатрат</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Налоговое назначение запасов.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Податкове призначення запасів.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Подразделение</name>
+      <changeMode>DontChange</changeMode>
+      <field>0:024fcdb1-7276-45d6-9cb9-f3b1bb21029e</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Номенклатура</name>
+      <changeMode>DontChange</changeMode>
+      <field>0:941aa10e-3657-48ec-8f9d-92e38e90ecbf/0:6b535f05-ac01-4fbe-a57c-0c88609787de</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Склад</name>
+      <changeMode>DontChange</changeMode>
+      <field>0:941aa10e-3657-48ec-8f9d-92e38e90ecbf/0:c312e59b-ecd8-4b4a-a960-833d0bbcbd24</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Характеристика</name>
+      <changeMode>DontChange</changeMode>
+      <field>0:941aa10e-3657-48ec-8f9d-92e38e90ecbf/0:07770f6f-1b6b-4728-8b1e-5727c63dbf6d</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d7909ada-b68a-403e-9860-51de800bc036">
+    <name>ВалютаВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта взаиморасчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта взаєморозрахунків</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта взаиморасчетов</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Валюта взаєморозрахунків</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4f8729e5-bc47-41c5-a309-3e40069138a7">
+    <name>СуммаВВалютеВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма в валюте взаиморасчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума у валюті взаєморозрахунків</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте взаиморасчетов</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума у валюті взаєморозрахунків</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="1aefd2fd-2457-4711-873e-b8642ada9a2a">
+    <name>СуммаБезНДСВВалютеВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма без НДС в валюте взаиморасчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума без ПДВ у валюті взаєморозрахунків</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма без НДС в валюте взаиморасчетов</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума без ПДВ у валюті взаєморозрахунків</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="2727a882-5207-4a0d-aefd-42668a8adb73">
+    <name>ВалютаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта документа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Валюта документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="32777412-5843-413a-9db5-e3fdb94e3741">
+    <name>СуммаВВалютеДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма в валюте документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума у валюті документа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума у валюті документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="dbc559fb-5646-4900-bf18-859f73fb5a9e">
+    <name>СуммаБезНДСВВалютеДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма без НДС в валюте документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума без ПДВ у валюті документа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма без НДС в валюте документа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Сума без ПДВ у валюті документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="70d5cbd6-5cd1-437b-b5f7-d143fa157d93">
+    <name>ИсточникГФУНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник ГФУ номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Джерело ГФО номенклатури</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.ВидыЗапасов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Источник группы финансового учета номенклатуры.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Джерело групи фінансового обліку номенклатури.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="6505aa0d-5f46-4565-8ae8-b2a22e305fb0">
+    <name>ИсточникГФУРасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник ГФУ расчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Джерело ГФО розрахунків</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.ТаможеннаяДекларацияИмпорт</types>
+      <types>DocumentRef.ОтчетКомиссионера</types>
+      <types>DocumentRef.ЗаказПоставщику</types>
+      <types>DocumentRef.ВозвратТоваровПоставщику</types>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+      <types>DocumentRef.ЗаявкаНаВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ОтчетКомитенту</types>
+      <types>DocumentRef.РеализацияУслугПрочихАктивов</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациямиОСписании</types>
+      <types>DocumentRef.ПоступлениеУслугПрочихАктивов</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.ЗаказКлиента</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Источник группы финансового учета расчетов с партнерами.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Джерело групи фінансового обліку розрахунків з партнерами.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4452edfd-375f-45d5-bec3-1776210d4bef">
+    <name>ДокументДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ движения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ руху</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.ОтчетКомиссионера</types>
+      <types>DocumentRef.КорректировкаРегистров</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациями</types>
+      <types>DocumentRef.ОтчетКомитенту</types>
+      <types>DocumentRef.КорректировкаРеализации</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.ОтчетПоКомиссииМеждуОрганизациямиОСписании</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.ОтчетОРозничныхПродажах</types>
+      <types>DocumentRef.ВозвратТоваровМеждуОрганизациями</types>
+      <types>DocumentRef.ПередачаТоваровМеждуОрганизациями</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="0da81f44-49da-4ebf-94a6-d1eaa410871b">
+    <name>РасчетСебестоимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет себестоимости</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розрахунок собівартості</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Движение сформировано регламентной операцией закрытия месяца</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Рух сформовано регламентної операцією закриття місяця</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="7eadb439-cbf2-4e6a-9022-fc66b8de8d58">
+    <name>АналитикаУчетаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета номенклатуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку номенклатури</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Аналитика учета номенклатуры (товар и характеристика)</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Аналітика обліку номенклатури (товар і характеристика)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="76d9c27f-a066-45ee-8646-a029deff4e99">
+    <name>ЗаказКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ клиента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Замовлення клієнта</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаВозвратТоваровОтКлиента</types>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.ЗаказКлиента</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ клиента, по которому отражена продажа товаров и услуг.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Замовлення клієнта, по якому відображено продаж товарів і послуг.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cf1201fe-569c-4901-85d3-29da5aa53077">
+    <name>АналитикаУчетаПоПартнерам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета по партнерам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку за партнерами</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаПоПартнерам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет аналитику клиентов, которым реализованы товары..</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Визначає аналітику клієнтів, яким реалізовані товари..</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="91c78e8b-9661-4eab-9ec5-bd2bd9f567fb">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение, по которому отражены продажи</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Підрозділ, за яким відображені продажі</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e0bb1e5a-7014-4cbe-81bc-9d7cc9c9d05c">
+    <name>ТипЗапасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип запасов или услуга</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тип запасів або послуга</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыЗапасов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип запаса проданного товара: товар или комиссионный товар</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Тип запасу проданого товару: товар або комісійний товар</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="924018c6-a69a-4ec9-ac19-6837426e8364">
+    <name>ВидЗапасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид запасов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид запасів</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЗапасов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид запасов поступившего товара</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид запасів товару, що надійшов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0d619327-114b-4796-a50d-d3dc86dad60e">
+    <name>Менеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Менеджер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="39dff5de-8734-4206-b6c3-2587d83e025a">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад / комиссионер  / подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Склад / комісіонер / підрозділ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.СтруктураПредприятия</types>
+      <types>CatalogRef.Партнеры</types>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Склад, на котором учитываются товары, или комиссионер, которому переданы товары на комиссию, или подразделение в котором числятся материалы.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Склад, на якому обліковуються товари, або комісіонер, якому передані товари на комісію, або підрозділ в якому числяться матеріали.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c2e1c88d-cdf5-48bf-9615-3bd4ec44b646">
+    <name>Соглашение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соглашение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Оферта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СоглашенияСКлиентами</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Соглашение, в рамках которого оформлена продажа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Оферта, в можах якої оформлено продаж</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cadb4ea8-1ff0-41ef-8d30-a8e0e3fa2780">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Договір</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Договор с контрагентом, в рамках которого оформлена продажа</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Договір з контрагентом, у рамках якого оформлено продаж</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9c966579-d355-4e6a-bd83-150dfc936345">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственная операция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Господарська операція</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ХозяйственныеОперации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хозяйственная операция, по которой выполнены движения по регистру.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Господарська операція, за якою виконані рухи по регістру.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d77a20e2-af03-48a8-bcef-980ff337f702">
+    <name>АналитикаУчетаНаборов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика учета наборов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Аналітика обліку наборів</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиУчетаНаборов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Аналитика учета номенклатуры (товар и характеристика)</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Аналітика обліку номенклатури (товар і характеристика)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="65b82f4a-2dce-4b2c-84df-946af4e1d332">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed7eb4ed-4017-4e58-854e-b6c735e39574">
+  <producedTypes>
+    <selectionType typeId="c7329568-9989-4356-b45b-1a94f9ba891e" valueTypeId="35eeb1bf-c806-464d-a17f-fa601cb3c174"/>
+    <listType typeId="23347048-e03c-4e53-bbcd-d717d9bc67f4" valueTypeId="f2757ef6-154d-4d1e-b1c7-aba9ef9a6d8e"/>
+    <managerType typeId="0553fbae-9c0d-49d9-9bd2-5483079a084a" valueTypeId="f84c64bf-cd37-48dc-b450-951936cd5c64"/>
+    <recordSetType typeId="08abdf1a-a639-4463-bd8e-624c9dcaed05" valueTypeId="0abf6e24-a146-4244-bb83-5298eca05466"/>
+    <recordKeyType typeId="1b2ba471-e0cc-4885-a94f-f1d8239557ac" valueTypeId="65334c97-3333-4798-99ae-f52d4f669116"/>
+    <recordType typeId="d517510f-9e97-44b8-889b-6706aaa1ab63" valueTypeId="c7ddb02e-778b-4049-a39d-de0208d32f30"/>
+    <recordManagerType typeId="1442fe13-4b9f-4cb3-9724-f7a3af2fdf1a" valueTypeId="9deace74-3af9-404b-9150-367f24f5f248"/>
+  </producedTypes>
+  <name>АдресаДляВыбора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адреса для выбора</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Адреси для вибору</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.АдресаДляВыбора.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b7bb9134-6e2d-4b78-83aa-404bfa68787d">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рівень</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уровень объекта в классификации</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Рівень об'єкта класифікації</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="2e2e90c8-c77b-41cc-bb43-2bf912d67c51">
+    <name>ПочтовыйИндекс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почтовый индекс</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Поштовий індекс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Почтовый индекс адреса</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Поштовий індекс адреси</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="2aa6303f-b83f-4d80-b420-e175ae264363">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Найменування</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>120</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя объекта</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ім'я об'єкта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="59e97b53-d87c-4b53-ac4e-c52436735386">
+    <name>ИдентификаторРодителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор родителя</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ідентифікатор батька</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="63bfc878-76db-45f4-8bb8-e0b25e8266c0">
+    <name>КодКОАТУУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код КОАТУУ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код КОАТУУ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код КОАТУУ</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Код КОАТУУ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a33e88d2-99d7-42e8-9c2b-59f345c7b36f">
+    <name>ВведенВручную</name>
+    <synonym>
+      <key>ru</key>
+      <value>Введен вручную</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Введений вручну</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак способа, которым был сохранен адрес</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака способу, яким була збережена адреса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b178c694-c205-4831-ae1e-fe7adfeafde2">
+    <name>КодСтраны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код страны</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код країни</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код страны</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Код країни</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e14edc29-9165-41e5-ad9d-d19a250f0f97">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ідентифікатор</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="cef15424-2663-45f2-8e28-364519d8dced">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="83ec7028-190a-4919-88ff-59ab69ff29d7">
+    <name>ЗагрузкаАдресовДляВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка адресов для выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Завантаження для вибору адрес</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
